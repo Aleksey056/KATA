@@ -484,7 +484,7 @@ display: none;
 		width: 360px;
 		height: 208px;
 		border-radius: 2%;
-		/* background-image: url(img/body/_MG_3223.png); */
+		background-image: url(img/body/_MG_3223.png);
 	}	
 }
 
@@ -675,6 +675,7 @@ display: none;
 	width: 531.35px;
 	height: 307px;
 	border-radius: 2%;
+	background-image: url(img/body/_MG_3223.png);
 }
 }
 

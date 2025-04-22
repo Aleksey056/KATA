@@ -1,15 +1,18 @@
 @font-face{
 	font-family: TT Lakes;
+	font-weight: 500;
 	src:url('fonts/TTLakes/TTLakes-Medium.woff');
 }
 
 @font-face{
 	font-family: TT Lakes;
+	font-weight: 700;
 	src:url('fonts/TTLakes/TTLakes-Bold.woff');
 }
 
 @font-face{
 	font-family: TT Lakes;
+	font-weight: 400;
 	src:url('fonts/TTLakes/TTLakes-Regular.woff');
 }
 
@@ -22,6 +25,8 @@ body, p, ul, li {
 
 .header {
 	margin-bottom: 24px;
+	background: #FFFFFF;
+
 }
 
 .header-block {
@@ -311,6 +316,7 @@ body, p, ul, li {
 	align-items: center;
 	gap: 16px;
 }
+
 
 .logo {
 	background-color: #FFFFFF;

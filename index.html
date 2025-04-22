@@ -8,21 +8,19 @@
 </head>
 <body>
 	<header class="header">
-		<div class="header-width">
-			<div class="header-width__320">
+		<div class="header-block">
+			<div class="header-block__block1">
 					<button class="round-icon round-icon--burger" href="#"></button>
 					<button class="logo"></button>	
 					<hr class="icon icon--divider">
 			</div>
-		
-			<div class="header-width__768">
+			<div class="header-block__block2">
 				<button class="round-icon round-icon--call"></button>
 				<button class="round-icon round-icon--chat"></button>
 				<button class="round-icon round-icon--profile"></button>
 				<hr class="icon icon--divider">
 			</div>
-		
-			<div class="header-width__1120">
+			<div class="header-block__block3">
 				<button class="round-icon round-icon--repair"></button>
 				<button class="round-icon round-icon--checkstatus"></button>
 			</div>
@@ -31,11 +29,28 @@
 	</header>
 
 	<section class="title">
-		<div class="title__img"></div>
-		<h1 class="title__text">Услуги и сервисы</h1>
+		<div class="title-block">
+
+			<div class="title-block__block1">
+				<div class="title-block__img"></div>
+				<h1 class="title-block__text">Услуги и сервисы</h1>
+			</div>
+
+			<div class="title-block__block2">
+				<label class="title-block__text title-label">
+					<span>Оставить заявку</span>
+					<button class="round-icon round-icon--repair"></button>
+				</label>
+				<label class="title-block__text title-label">
+					<span>Статус ремонта</span>
+					<button class="round-icon round-icon--checkstatus"></button>
+				</label>
+			</div>
+
+		</div>	
 	</section>
 
-	<nav class="nav">
+	<nav class="nav">	
 		<ul class="menu">
 			<li><button class="menu__link menu__link--hover" href="#">Ремонтируемые устройства</button></li>
 			<li><button class="menu__link" href="#">Дополнительные услуги</button></li>
@@ -43,49 +58,13 @@
 			<li><button class="menu__link" href="#">Адреса сервисных центров</button></li>
 			<li><button class="menu__link" href="#">Специальные цены</button></li>
 		</ul>
+		<ul class="menu">
+			<li><button class="menu__link link-reviews" href="#">Отзывы</button></li>
+		</ul>
 	</nav>
 
-	<!-- ------------------------------------------------------------------------------ -->
-
-	<section class="width-1120">
-		<div class="width-1120__header">
-			<div class="title">
-				<div class="title__img"></div>
-				<h1 class="title__text">Услуги и сервисы</h1>
-			</div>
-			<div class="button">
-				<label>
-					<span>Оставить заявку</span>
-					<button class="round-icon round-icon--repair"></button>
-				</label>
-				<label>
-					<span>Статус ремонта</span>
-					<button class="round-icon round-icon--checkstatus"></button>
-				</label>
-				
-			</div>
-		</div>
-		<nav class="width-1120__navigation">
-			<ul class="menu">
-				<li><button class="menu__link menu__link--hover" href="#">Ремонтируемые устройства</button></li>
-				<li><button class="menu__link" href="#">Дополнительные услуги</button></li>
-				<li><button class="menu__link" href="#">Цены на услуги</button></li>
-				<li><button class="menu__link" href="#">Адреса сервисных центров</button></li>
-				<li><button class="menu__link" href="#">Специальные цены</button></li>
-				
-			</ul>
-			<ul>
-				<li><button class="link-reviews" href="#">Отзывы</button></li>
-			</ul>
-		</nav>
-	</section>
-
-
-	<!-- ------------------------------------------------------------------------------ -->
-
-
 	<section class="section-info">
-		<section class="section-info__text">
+		<div class="section-info__text">
 			<p class="scroll-text">
 				Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
 				<br><br>
@@ -97,10 +76,10 @@
 				</div>
 				<span class="expand-button__text">Читать далее</span>
 			</div>
-		</section>
-		<section >
+		</div>
+		<div >
 			<img class="section-info__img" src="img/body/info-img.png">
-		</section>
+		</div>
 	</section>
 </body>
 </html>

@@ -34,7 +34,6 @@ body, p, ul, li, button {
 }
 
 .header-block {
-	/* max-width: 320px; */
 	height: 87px;
 	display: flex;
 	justify-content: center;
@@ -107,7 +106,6 @@ body, p, ul, li, button {
 .shadow {
 	margin: 0;
 	margin-left: 0;
-	/* max-width: 320px; */
 	height: 1px;
 	border: none;
 	background-color: #D9FFF5;
@@ -137,7 +135,6 @@ body, p, ul, li, button {
 
 .title-block__text {
 	margin: 0;
-	/* font-family: TT Lakes; */
 	font-weight: 700;
 	font-size: 28px;
 	line-height: 40px;
@@ -156,12 +153,10 @@ body, p, ul, li, button {
 
 .menu {
 	padding: 0;
-	/* max-width: 320px; */
 	white-space: nowrap;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	/* Для скрытия лишних элементов */
 	overflow: auto; 
 	scrollbar-width: none;
 }
@@ -190,7 +185,6 @@ body, p, ul, li, button {
 	background-color: #FFFFFF;
 }
 
-/* Чисто макетная функция, потом удалить ахахах */
 .menu__link--hover {
 	border: 2px solid #B8FFEC;
 	background-color: #FFFFFF;
@@ -208,15 +202,12 @@ body, p, ul, li, button {
 
 .scroll-text {
 	max-height: 90px;
-	/* max-width: 288px; */
 	text-align: start;
-	/* font-family: "TT Lakes"; */
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
 	letter-spacing: 0.2px;
 	overflow: auto; 
-	/* прячем скрол у поля */
 	scrollbar-width: none;
 	margin-bottom: 16px;
 }
@@ -234,8 +225,6 @@ body, p, ul, li, button {
 }
 
 .expand-button__text {
-	/* font-family: TT Lakes; */
-	/* font-weight: 500; */
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: -0.2px;
@@ -264,24 +253,6 @@ body, p, ul, li, button {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 768px) {
 
 .header {
@@ -290,7 +261,6 @@ body, p, ul, li, button {
 }
 
 .header-block {
-	/* max-width: 768px; */
 }
 	
 .header-block__block1 {
@@ -329,13 +299,11 @@ body, p, ul, li, button {
 }
 
 .menu {
-	/* max-width: 768px; */
 	max-height: 40px;
 }
 
 
 .section-info {
-	/* width: 720px; */
 	height: 208px;
 	margin-bottom: 40px;
 	display: flex;
@@ -351,7 +319,6 @@ body, p, ul, li, button {
 }
 
 .scroll-text {
-	/* max-width: 312px; */
 	max-height: 160px;
 	line-height: 20px;
 	margin-bottom: 10px;
@@ -368,19 +335,6 @@ body, p, ul, li, button {
 }	
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -428,17 +382,11 @@ body, p, ul, li, button {
 	letter-spacing: -0.2px;
 }
 
-.menu {
-	/* max-width: 1120px; */
-}
-
 .section-info {
-	/* width: 1120px; */
 	height: 307px;
 }
 
 .scroll-text {
-	/* max-width: 490px; */
 	max-height: 160px;
 }
 

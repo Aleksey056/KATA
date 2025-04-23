@@ -17,11 +17,14 @@
 	src:url('fonts/TTLakes/TTLakes-Regular.woff');
 }
 
-body, p, ul, li {
+body, p, ul, li, button {
 	background-color: #F8F8F8;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	font-family: TT Lakes;
+	font-weight: 500;
+	border: none;
 }
 
 .header {
@@ -134,7 +137,7 @@ body, p, ul, li {
 
 .title-block__text {
 	margin: 0;
-	font-family: TT Lakes;
+	/* font-family: TT Lakes; */
 	font-weight: 700;
 	font-size: 28px;
 	line-height: 40px;
@@ -154,7 +157,6 @@ body, p, ul, li {
 .menu {
 	padding: 0;
 	max-width: 320px;
-	max-height: 40px;
 	white-space: nowrap;
 	display: flex;
 	flex-direction: row;
@@ -162,23 +164,21 @@ body, p, ul, li {
 	/* Для скрытия лишних элементов */
 	overflow: auto; 
 	scrollbar-width: none;
-	list-style-type: none;
 }
 
 .menu__link {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 8px 10px;
+	height: 40px;
 	border: 2px solid transparent;
 	background-color: #F8F8F8;
 	border-radius: 6px;
-	text-decoration: none;
-	font-family: "TT Lakes";
-	font-weight: 500;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: -0.2px;
 	color: #7E7E82;
-	/* margin: 0 15px; */
 	text-decoration: none;
-	list-style-type: none;
 }
 
 .link-reviews {
@@ -188,7 +188,6 @@ body, p, ul, li {
 .menu__link:hover {
 	border: 2px solid #B8FFEC;
 	background-color: #FFFFFF;
-	border-radius: 6px;
 }
 
 /* Чисто макетная функция, потом удалить ахахах */
@@ -211,7 +210,7 @@ body, p, ul, li {
 	max-height: 90px;
 	max-width: 288px;
 	text-align: start;
-	font-family: "TT Lakes";
+	/* font-family: "TT Lakes"; */
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
@@ -226,6 +225,7 @@ body, p, ul, li {
 	display: flex;
 	gap: 8px;
 	margin-bottom: 16px;
+	border: none;
 }
 
 .expand-button__img {
@@ -234,8 +234,8 @@ body, p, ul, li {
 }
 
 .expand-button__text {
-	font-family: TT Lakes;
-	font-weight: 500;
+	/* font-family: TT Lakes; */
+	/* font-weight: 500; */
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: -0.2px;
@@ -414,7 +414,6 @@ body, p, ul, li {
 	height: 40px;
 	display: flex;
 	gap: 8px;
-	align-items: center;
 	margin-right: 35px;
 	margin-left: auto;
 }

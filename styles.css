@@ -36,7 +36,8 @@ body, p, ul, li, button {
 .header-block {
 	height: 87px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	margin: 0 24px;
 	gap: 15px;
 }
 
@@ -162,7 +163,8 @@ body, p, ul, li, button {
 }
 
 .menu__link {
-	display: inline-block;
+	display: flex;
+	align-items: center;
 	box-sizing: border-box;
 	padding: 8px 10px;
 	height: 40px;
@@ -188,7 +190,6 @@ body, p, ul, li, button {
 .menu__link--hover {
 	border: 2px solid #B8FFEC;
 	background-color: #FFFFFF;
-	border-radius: 6px;
 }
 
 .section-info {
@@ -198,6 +199,7 @@ body, p, ul, li, button {
 .section-info__text {
 	padding: 0;
 	margin: 0 16px;
+	margin-bottom: 16px;
 }
 
 .scroll-text {
@@ -215,13 +217,13 @@ body, p, ul, li, button {
 .expand-button {
 	display: flex;
 	gap: 8px;
-	margin-bottom: 16px;
 	border: none;
 }
 
 .expand-button__img {
 	background-image: url(img/body/expand.svg);
 	width: 24px;
+	height: 24px;
 }
 
 .expand-button__text {
@@ -232,8 +234,9 @@ body, p, ul, li, button {
 
 .section-info__img{
 	margin:0;
-	width: 320px;
-	height: 176px;
+	width: 100%
+	/* width: 320px;
+	height: 176px; */
 }
 
 
@@ -260,15 +263,11 @@ body, p, ul, li, button {
 	background-color: #FFFFFF;
 }
 
-.header-block {
-}
-	
 .header-block__block1 {
 	justify-content: center;
 	display: flex;
 	align-items: center;
 	gap: 16px;
-	margin-left: 24px;
 }
 
 .header-block__block2 {
@@ -316,6 +315,7 @@ body, p, ul, li, button {
 	padding: 0;
 	border: 2px #B8FFEC;
 	gap: 10px;
+	min-width: 312px;
 }
 
 .scroll-text {

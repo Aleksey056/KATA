@@ -110,6 +110,10 @@ body {
 	color: #7E7E82;
 }
 
+.menu-block__text--hover:hover {
+	color: #7E7E82;	
+}
+
 .footer {
 	margin-left: 24px;
 	padding-bottom: 40px;

@@ -10,20 +10,15 @@
 	src:url('fonts/TTLakes/TTLakes-Bold.woff');
 }
 
-
 @font-face{
 	font-family: TT Lakes;
 	font-weight: 400;
 	src:url('fonts/TTLakes/TTLakes-Regular.woff');
 }
 
-
-
 body, p, ul, li, button, h1 {
 	width: 320px;
 	background-color:#FFFFFF;
-	margin: 0;
-	padding: 0;
 	list-style-type: none;
 	font-family: TT Lakes;
 	font-weight: 500;
@@ -31,32 +26,22 @@ body, p, ul, li, button, h1 {
 	line-height: 24px;
 	letter-spacing: -0.2px;
 	text-decoration: none;
+	border: none;
+	margin: 0;
+	padding: 0;
 }
-
-
 
 body {
-	height: 1024px;
-	
-}
-
-/* .mobile_menu {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-} */
-
-header {
-	margin-bottom: 45px;
-	margin-top: 20px;
+	box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
 }
 
 .header-block {
-	/* height: 87px; */
+	padding-top: 20px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	gap: 15px;
+	margin-bottom: 45px;
 }
 
 .header-block_block-1 {
@@ -96,10 +81,6 @@ header {
 	background-image: url(img/mobile_menu/search.svg);
 }
 
-
-
-
-
 .nav {
 	margin-bottom: 268px;
 }
@@ -107,58 +88,31 @@ header {
 .menu {
 	display: flex;
 	flex-direction: column;
-	gap: 32px;
+	gap: 24px;
 }
 
 .menu-block {
 	display: flex;
-	flex-direction: row;
+	align-items: center;
+	height: 32px;
 }
 
 .menu-block__text {
-	height: 32px;
 	color: #1B1C21;
 	text-decoration: none;
 	margin: 0;
 	margin-left: 24px;	
 }
 
-
-.menu-block__text--hover:hover {
+.menu-block--hover:hover {
+	background-image: url(img/title/highlight.svg);
+	background-repeat: no-repeat;
 	color: #7E7E82;
-	gap: 20px;
-	
 }
 
-.menu-block__img {
-	height: 32px;
-	width: 4px;
-	background-image: url(img/title/highlight.svg);
-	display: none;
-}
-
-.menu-block__img--hover:hover {
-	display: block;
-	height: 32px;
-	width: 4px;
-	background-image: url(img/title/highlight.svg);
-}
-
-/* .clearfix {
-	clear: both;
-} */
-
-
-
-
-
-
-
-
-footer {
+.footer {
 	margin-left: 24px;
-	/* position: absolute;
-	bottom: 32px; */
+	padding-bottom: 40px;
 }
 
 .contact-info {
@@ -166,7 +120,6 @@ footer {
 	flex-direction: column;
 	gap: 14px;
 	margin-bottom: 40px;
-	
 }
 
 .round-icon--call {
@@ -194,7 +147,10 @@ footer {
 }
 
 .contact-info__lang {
+	width: 24px;
+	height: 24px;
 	display: flex;
+	align-items: self-start;
 	gap: 7px;
 }
 
@@ -202,8 +158,4 @@ footer {
 	display: flex;
 	gap: 7px;
 	color: #7E7E82;
-}
-
-a:visited {
-	color: inherit;
 }

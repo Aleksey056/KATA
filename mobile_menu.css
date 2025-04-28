@@ -92,6 +92,7 @@ body {
 }
 
 .menu-block {
+	background-image: none;
 	display: flex;
 	align-items: center;
 	height: 32px;
@@ -99,15 +100,15 @@ body {
 
 .menu-block__text {
 	color: #1B1C21;
-	text-decoration: none;
 	margin: 0;
 	margin-left: 24px;	
+	text-decoration: none;
+	transition: all 0.5s ease-out;
 }
 
 .menu-block--hover:hover {
 	background-image: url(img/title/highlight.svg);
 	background-repeat: no-repeat;
-	color: #7E7E82;
 }
 
 .menu-block__text--hover:hover {

@@ -14,49 +14,49 @@
 		</div>
 
 		<div class="brands__list" id="brandsList">
-			<button class="brands__block" href="#">
-				<div class="info__img--lenovo"></div>
-				<div class="info__button"></div>
+			<button class="brands-block" href="#">
+				<div class="brands-block__img brands-block__img--lenovo"></div>
+				<div class="brands-block__button"></div>
 			</button>
-			<div class="brands__block">
-				<div class="info__img--samsung"></div>
-				<div class="info__button"></div>
+			<div class="brands-block">
+				<div class="brands-block__img brands-block__img--samsung"></div>
+				<div class="brands-block__button"></div>
 			</div>
-			<div class="brands__block">
-				<div class="info__img--apple"></div>
-				<div class="info__button"></div>
+			<div class="brands-block">
+				<div class="brands-block__img brands-block__img--apple"></div>
+				<div class="brands-block__button"></div>
 			</div>
-			<div class="brands__block">
-				<div class="info__img--view-sonic"></div>
-				<div class="info__button"></div>
+			<div class="brands-block">
+				<div class="brands-block__img brands-block__img--view-sonic"></div>
+				<div class="brands-block__button"></div>
 			</div>
-			<div class="brands__block">
-				<div class="info__img--bosch"></div>
-				<div class="info__button"></div>
+			<div class="brands-block">
+				<div class="brands-block__img brands-block__img--bosch"></div>
+				<div class="brands-block__button"></div>
 			</div>
-			<div class="brands__block">
-				<div class="info__img--hp"></div>
-				<div class="info__button"></div>
+			<div class="brands-block">
+				<div class="brands-block__img brands-block__img--hp"></div>
+				<div class="brands-block__button"></div>
 			</div>
-			<div class="brands__block">
-				<div class="info__img--acer"></div>
-				<div class="info__button"></div>
+			<div class="brands-block">
+				<div class="brands-block__img brands-block__img--acer"></div>
+				<div class="brands-block__button"></div>
 			</div>
-			<div class="brands__block">
-				<div class="info__img--sony"></div>
-				<div class="info__button"></div>
+			<div class="brands-block">
+				<div class="brands-block__img brands-block__img--sony"></div>
+				<div class="brands-block__button"></div>
 			</div>
-			<div class="brands__block">
-				<div class="info__img--lenovo"></div>
-				<div class="info__button"></div>
+			<div class="brands-block">
+				<div class="brands-block__img brands-block__img--lenovo"></div>
+				<div class="brands-block__button"></div>
 			</div>
-			<div class="brands__block">
-				<div class="info__img--samsung"></div>
-				<div class="info__button"></div>
+			<div class="brands-block">
+				<div class="brands-block__img brands-block__img--samsung"></div>
+				<div class="brands-block__button"></div>
 			</div>
-			<div class="brands__block">
-				<div class="info__img--apple"></div>
-				<div class="info__button"></div>
+			<div class="brands-block">
+				<div class="brands-block__img brands-block__img--apple"></div>
+				<div class="brands-block__button"></div>
 			</div>
 		</div>
 		
@@ -68,13 +68,13 @@
 	</section>
 
 <script>
-	const expandButton = document.getElementById('expandButton');
+
 	const expandBrands = document.getElementById('brandsList');
 	const expandButtonText = document.getElementById('expandButtonText');
 
-	expandButton.addEventListener('click', function () {
+	expandButtonText.addEventListener('click', function () {
 		expandBrands.classList.toggle('brands__list--expand');
-		expandButton.classList.toggle('expand-button--on');
+		expandButton.classList.toggle('expand-button--expand');
 
 		if (expandBrands.classList.contains('brands__list--expand')) {
 			expandButtonText.textContent = 'Скрыть';

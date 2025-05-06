@@ -60,7 +60,7 @@ body, button, li, ul {
 	height: auto;
 }
 
-.brands__block {
+.brands-block {
 	background-color: #FFFFFF	;
 	display: flex;
 	justify-content: space-between;
@@ -74,7 +74,7 @@ body, button, li, ul {
 	box-sizing: border-box;
 }
 
-.info__button {
+.brands-block__button {
 	background-color: #F8F8F8;
 	margin: 0;
 	padding: 0;
@@ -85,49 +85,49 @@ body, button, li, ul {
 	background-image: url(/img/brands/go.svg);
 }
 
-.info__img--lenovo {
+.brands-block__img--lenovo {
 	width: 108px;
 	height: 32px;
 	background-image: url(/img/brands/lenovo.svg);
 }
 
-.info__img--samsung {
+.brands-block__img--samsung {
 	width: 116px;
 	height: 38.515625px;
 	background-image: url(/img/brands/samsung.svg);
 }
 
-.info__img--apple {
+.brands-block__img--apple {
 	width: 44px;
 	height: 44px;
 	background-image: url(/img/brands/apple.svg);
 }
 
-.info__img--view-sonic {
+.brands-block__img--view-sonic {
 	width: 128px;
 	height: 21px;
 	background-image: url(/img/brands/view-sonic.svg);
 }
 
-.info__img--bosch {
+.brands-block__img--bosch {
 	width: 128px;
 	height: 28.601268768310547px;
 	background-image: url(/img/brands/bosch.svg);
 }
 
-.info__img--hp {
+.brands-block__img--hp {
 	width: 52px;
 	height: 52px;
 	background-image: url(/img/brands/hp.svg);
 }
 
-.info__img--acer {
+.brands-block__img--acer {
 	width: 94px;
 	height: 24px;
 	background-image: url(/img/brands/acer.svg);
 }
 
-.info__img--sony {
+.brands-block__img--sony {
 	width: 128px;
 	height: 25.600000381469727px;
 	background-image: url(/img/brands/sony.svg);
@@ -146,7 +146,7 @@ body, button, li, ul {
 	padding-bottom: 34px;
 }
 
-.expand-button--on > .expand-button__img {
+.expand-button--expand > .expand-button__img {
 	rotate: 180deg;
 }
 
@@ -176,7 +176,7 @@ body, button, li, ul {
 	margin-left: 24px;
 }
 
-.brands__block {
+.brands-block {
 	width: 224px;
 }
 

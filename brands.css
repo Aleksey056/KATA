@@ -42,6 +42,7 @@ body, button, li, ul {
 	background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
 	margin-bottom: 24px;
 	color: #7E7E82;
+	text-transform: uppercase;
 }
 
 .brands__list {
@@ -133,12 +134,7 @@ body, button, li, ul {
 }
 
 
-.swiper {
-	display: flex;
-	width: 320px;
-	height: 86px;
 
- }
 
 .expand-button {
 	display: flex;
@@ -171,6 +167,23 @@ body, button, li, ul {
 }
 
 
+.swiper {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
 
 .brands__title {
@@ -189,5 +202,60 @@ body, button, li, ul {
 .expand-button {
 	margin-left: 24px;
 }
+
+.swiper {
+	display: none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 320px) {
+
+.brands__list {
+	display: none;
+}
+
+
+
+.expand-button {
+	display: none;
+}
+
+	.brands__title {
+		margin-left: 24px;
+	}
+	
+	.brands__list {
+		column-gap: 24px;
+		margin-left: 24px;
+	}
+	
+	.brands-block {
+		width: 224px;
+	}
+	
+	.expand-button {
+		margin-left: 24px;
+	}
+
+.swiper {
+	display: flex;
+	width: 320px;
+	height: 114px;
+}
+
+/* .swiper-wrapper > .swiper-slide {
+	display: flex;
+   justify-content: center;
+} */
 
 }

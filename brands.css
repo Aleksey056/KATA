@@ -26,13 +26,12 @@ body, button, li, ul {
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: -0.2px;
-	text-transform: uppercase;
+
 }
 
 .brands {
 	margin: 0;
 	padding: 0;
-
 }
 
 
@@ -133,6 +132,13 @@ body, button, li, ul {
 	background-image: url(/img/brands/sony.svg);
 }
 
+
+.swiper {
+	display: flex;
+	width: 320px;
+	height: 86px;
+
+ }
 
 .expand-button {
 	display: flex;

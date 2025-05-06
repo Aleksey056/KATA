@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Btands</title>
 	<link rel="stylesheet" href="brands.css">
+	<link rel="stylesheet" href="swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
 	<section class="brands">
@@ -59,7 +61,7 @@
 				<div class="brands-block__button"></div>
 			</button>
 		</div>
-		
+
 		<button class="expand-button expand-button--brands" id="expandButton">
 			<div class="expand-button__img" id="expandButtonImg"></div>
 			<span class="expand-button__text" id="expandButtonText">Показать всё</span>
@@ -67,22 +69,90 @@
 
 	</section>
 
-<script>
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<button class="brands-block" href="#">
+						<div class="brands-block__img brands-block__img--lenovo"></div>
+						<div class="brands-block__button"></div>
+					</button>
+				</div>
+				<div class="swiper-slide">
+					<button class="brands-block">
+						<div class="brands-block__img brands-block__img--samsung"></div>
+						<div class="brands-block__button"></div>
+					</button>
+				</div>
+				<div class="swiper-slide">
+					<button class="brands-block">
+						<div class="brands-block__img brands-block__img--apple"></div>
+						<div class="brands-block__button"></div>
+					</button>
+				</div>
+				<div class="swiper-slide">
+					<button class="brands-block">
+						<div class="brands-block__img brands-block__img--view-sonic"></div>
+						<div class="brands-block__button"></div>
+					</button>
+				</div>
+				<div class="swiper-slide">
+					<button class="brands-block">
+						<div class="brands-block__img brands-block__img--bosch"></div>
+						<div class="brands-block__button"></div>
+					</button>
+				</div>
+				<div class="swiper-slide">
+					<button class="brands-block">
+						<div class="brands-block__img brands-block__img--hp"></div>
+						<div class="brands-block__button"></div>
+					</button>
+				</div>
+				<div class="swiper-slide">
+					<button class="brands-block">
+						<div class="brands-block__img brands-block__img--acer"></div>
+						<div class="brands-block__button"></div>
+					</button>
+				</div>
+				<div class="swiper-slide">
+					<button class="brands-block">
+						<div class="brands-block__img brands-block__img--sony"></div>
+						<div class="brands-block__button"></div>
+					</button>
+				</div>
+				<div class="swiper-slide">
+					<button class="brands-block" href="#">
+						<div class="brands-block__img brands-block__img--lenovo"></div>
+						<div class="brands-block__button"></div>
+					</button>
+				</div>
+				<div class="swiper-slide">
+					<button class="brands-block">
+						<div class="brands-block__img brands-block__img--samsung"></div>
+						<div class="brands-block__button"></div>
+					</button>
+				</div>
+				<div class="swiper-slide">
+					<button class="brands-block">
+						<div class="brands-block__img brands-block__img--apple"></div>
+						<div class="brands-block__button"></div>
+					</button>
+				</div>
 
-	const expandBrands = document.getElementById('brandsList');
-	const expandButtonText = document.getElementById('expandButtonText');
+			</div>
+			<!-- If we need pagination -->
+			<!-- <div class="swiper-pagination"></div> -->
+		
+			<!-- If we need navigation buttons -->
+			<!-- <div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div> -->
+		
+			<!-- If we need scrollbar -->
+			<div class="swiper-scrollbar"></div>
+		</div>
 
-	expandButtonText.addEventListener('click', function () {
-		expandBrands.classList.toggle('brands__list--expand');
-		expandButton.classList.toggle('expand-button--expand');
-
-		if (expandBrands.classList.contains('brands__list--expand')) {
-			expandButtonText.textContent = 'Скрыть';
-		} else {
-			expandButtonText.textContent = 'Показать всё';
-		}
-	});
-</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="brands.js"></script>
+<script src="swiper-bundle.min.js"></script>
 
 
 </body>

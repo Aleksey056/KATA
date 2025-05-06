@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="brands.css">
+</head>
+<body>
+	<section class="brands">
+
+		<div class="brands__title">
+			<span>Ремонт техники различных брендов</span>
+		</div>
+
+		<div class="brands__list" id="brandsList">
+			<div class="brands__block">
+				<div class="info__img--lenovo"></div>
+				<div class="info__button"></div>
+			</div>
+			<div class="brands__block">
+				<div class="info__img--samsung"></div>
+				<div class="info__button"></div>
+			</div>
+			<div class="brands__block">
+				<div class="info__img--apple"></div>
+				<div class="info__button"></div>
+			</div>
+			<div class="brands__block">
+				<div class="info__img--view-sonic"></div>
+				<div class="info__button"></div>
+			</div>
+			<div class="brands__block">
+				<div class="info__img--bosch"></div>
+				<div class="info__button"></div>
+			</div>
+			<div class="brands__block">
+				<div class="info__img--hp"></div>
+				<div class="info__button"></div>
+			</div>
+			<div class="brands__block">
+				<div class="info__img--acer"></div>
+				<div class="info__button"></div>
+			</div>
+			<div class="brands__block">
+				<div class="info__img--sony"></div>
+				<div class="info__button"></div>
+			</div>
+			<div class="brands__block">
+				<div class="info__img--lenovo"></div>
+				<div class="info__button"></div>
+			</div>
+			<div class="brands__block">
+				<div class="info__img--samsung"></div>
+				<div class="info__button"></div>
+			</div>
+			<div class="brands__block">
+				<div class="info__img--apple"></div>
+				<div class="info__button"></div>
+			</div>
+		</div>
+		
+		<button class="expand-button expand-button--brands" id="expandButton">
+			<div class="expand-button__img" id="expandButtonImg"></div>
+			<span class="expand-button__text" id="expandButtonText">Показать всё</span>
+		</button>
+
+	</section>
+
+<script>
+	const expandButton = document.getElementById('expandButton');
+	const expandBrands = document.getElementById('brandsList');
+	const expandButtonText = document.getElementById('expandButtonText');
+
+	expandButton.addEventListener('click', function () {
+		expandBrands.classList.toggle('brands__list--expand');
+		expandButton.classList.toggle('expand-button--on');
+
+		if (expandBrands.classList.contains('brands__list--expand')) {
+			expandButtonText.textContent = 'Скрыть';
+		} else {
+			expandButtonText.textContent = 'Показать всё';
+		}
+	});
+</script>
+
+
+</body>
+</html>

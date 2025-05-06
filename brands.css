@@ -1,0 +1,186 @@
+@font-face{
+	font-family: TT Lakes;
+	font-weight: 500;
+	src:url('fonts/TTLakes/TTLakes-Medium.woff');
+}
+
+@font-face{
+	font-family: TT Lakes;
+	font-weight: 700;
+	src:url('fonts/TTLakes/TTLakes-Bold.woff');
+}
+
+
+@font-face{
+	font-family: TT Lakes;
+	font-weight: 400;
+	src:url('fonts/TTLakes/TTLakes-Regular.woff');
+}
+
+body, button, li, ul {
+	margin: 0;
+	padding: 0;
+	background-color: #F8F8F8;
+	font-family: TT Lakes;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	text-transform: uppercase;
+}
+
+.brands {
+	margin: 0;
+	padding: 0;
+
+}
+
+
+.brands__title {
+	height: 24px;
+	padding: 16px 0;
+	margin-left: 32px;
+	background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+	margin-bottom: 24px;
+	color: #7E7E82;
+}
+
+.brands__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 32px;
+	row-gap: 16px;
+	column-gap: 32px;
+	margin-bottom: 24px;
+	height: 160px;
+	overflow: hidden;
+}
+
+.brands__list--expand {
+	height: auto;
+}
+
+.brands__block {
+	background-color: #FFFFFF	;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 16px;
+	align-items: center;
+	width: 240px;
+	height: 72px;
+	border: 1px solid #EAEAEA;
+	border-radius: 6px;
+	border-width: 1px;
+	box-sizing: border-box;
+}
+
+.info__button {
+	background-color: #F8F8F8;
+	margin: 0;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 50% ;
+	border-style: none; 
+	background-image: url(/img/brands/go.svg);
+}
+
+.info__img--lenovo {
+	width: 108px;
+	height: 32px;
+	background-image: url(/img/brands/lenovo.svg);
+}
+
+.info__img--samsung {
+	width: 116px;
+	height: 38.515625px;
+	background-image: url(/img/brands/samsung.svg);
+}
+
+.info__img--apple {
+	width: 44px;
+	height: 44px;
+	background-image: url(/img/brands/apple.svg);
+}
+
+.info__img--view-sonic {
+	width: 128px;
+	height: 21px;
+	background-image: url(/img/brands/view-sonic.svg);
+}
+
+.info__img--bosch {
+	width: 128px;
+	height: 28.601268768310547px;
+	background-image: url(/img/brands/bosch.svg);
+}
+
+.info__img--hp {
+	width: 52px;
+	height: 52px;
+	background-image: url(/img/brands/hp.svg);
+}
+
+.info__img--acer {
+	width: 94px;
+	height: 24px;
+	background-image: url(/img/brands/acer.svg);
+}
+
+.info__img--sony {
+	width: 128px;
+	height: 25.600000381469727px;
+	background-image: url(/img/brands/sony.svg);
+}
+
+
+.expand-button {
+	display: flex;
+	gap: 8px;
+	border: none;
+}
+
+.expand-button--brands {
+	background-color: #F8F8F8;
+	margin-left: 32px;
+	padding-bottom: 34px;
+}
+
+.expand-button--on {
+}
+
+.expand-button__img {
+	background-image: url(img/body/expand.svg);
+	width: 24px;
+	height: 24px;
+}
+
+.expand-button__text {
+	font-family: TT Lakes;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;	
+}
+
+
+@media (max-width: 768px) {
+
+.brands__title {
+	margin-left: 24px;
+}
+
+.brands__list {
+	column-gap: 24px;
+	margin-left: 24px;
+}
+
+.brands__block {
+	width: 224px;
+}
+
+.expand-button {
+	margin-left: 24px;
+}
+
+}

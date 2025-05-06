@@ -146,7 +146,8 @@ body, button, li, ul {
 	padding-bottom: 34px;
 }
 
-.expand-button--on {
+.expand-button--on > .expand-button__img {
+	rotate: 180deg;
 }
 
 .expand-button__img {

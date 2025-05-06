@@ -100,19 +100,19 @@ body, button, li, ul {
 .brands-block__img--apple {
 	width: 44px;
 	height: 44px;
-	background-image: url(/img/brands/apple.svg);
+	background-image: url(img/brands/apple.svg);
 }
 
 .brands-block__img--view-sonic {
 	width: 128px;
 	height: 21px;
-	background-image: url(/img/brands/view-sonic.svg);
+	background-image: url(img/brands/view-sonic.svg);
 }
 
 .brands-block__img--bosch {
 	width: 128px;
 	height: 28.601268768310547px;
-	background-image: url(/img/brands/bosch.svg);
+	background-image: url(img/brands/bosch.svg);
 }
 
 .brands-block__img--hp {

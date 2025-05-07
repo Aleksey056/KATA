@@ -79,55 +79,55 @@ body, button, li, ul {
 	height: 40px;
 	border-radius: 50% ;
 	border-style: none; 
-	background-image: url(/img/brands/go.svg);
+	background-image: url(img/brands/go.svg);
 }
 
 .brands-block__img--lenovo {
 	width: 108px;
 	height: 32px;
-	background-image: url(/img/brands/lenovo.svg);
+	background-image: url(img/brands/lenovo.svg);
 }
 
 .brands-block__img--samsung {
 	width: 116px;
 	height: 38.515625px;
-	background-image: url(/img/brands/samsung.svg);
+	background-image: url(img/brands/samsung.svg);
 }
 
 .brands-block__img--apple {
 	width: 44px;
 	height: 44px;
-	background-image: url(/img/brands/apple.svg);
+	background-image: url(img/brands/apple.svg);
 }
 
 .brands-block__img--view-sonic {
 	width: 128px;
 	height: 21px;
-	background-image: url(/img/brands/view-sonic.svg);
+	background-image: url(img/brands/view-sonic.svg);
 }
 
 .brands-block__img--bosch {
 	width: 128px;
 	height: 28.601268768310547px;
-	background-image: url(/img/brands/bosch.svg);
+	background-image: url(img/brands/bosch.svg);
 }
 
 .brands-block__img--hp {
 	width: 52px;
 	height: 52px;
-	background-image: url(/img/brands/hp.svg);
+	background-image: url(img/brands/hp.svg);
 }
 
 .brands-block__img--acer {
 	width: 94px;
 	height: 24px;
-	background-image: url(/img/brands/acer.svg);
+	background-image: url(img/brands/acer.svg);
 }
 
 .brands-block__img--sony {
 	width: 128px;
 	height: 25.600000381469727px;
-	background-image: url(/img/brands/sony.svg);
+	background-image: url(img/brands/sony.svg);
 }
 
 .expand-button {

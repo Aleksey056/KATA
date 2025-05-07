@@ -1,5 +1,8 @@
+
+
 const expandBrands = document.getElementById('brandsList');
 const expandButtonText = document.getElementById('expandButtonText');
+
 expandButtonText.addEventListener('click', function () {
 	expandBrands.classList.toggle('brands__list--expand');
 	expandButton.classList.toggle('expand-button--expand');
@@ -18,15 +21,15 @@ const swiper = new Swiper('.swiper', {
 	keyboard: {
 		enabled: true,
 		onlyInViewport: false,
-	 },
+	},
 
 	direction: 'horizontal',
 	loop: true,
 
 
 	navigation: {
-	  nextEl: '.swiper-button-next',
-	  prevEl: '.swiper-button-prev',
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
 	},
 
 	pagination: {
@@ -35,11 +38,9 @@ const swiper = new Swiper('.swiper', {
 		clickable: true,
 		// dynamicBullets: true,
 		// dynamicMainBullets: 1,
-	 },
+	},
 
 	mousewheel: {
 		invert: true,
-	 },
- 
-
- });
+	},
+});

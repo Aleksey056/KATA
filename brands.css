@@ -10,7 +10,6 @@
 	src:url('fonts/TTLakes/TTLakes-Bold.woff');
 }
 
-
 @font-face{
 	font-family: TT Lakes;
 	font-weight: 400;
@@ -26,17 +25,15 @@ body, button, li, ul {
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: -0.2px;
-
 }
 
 .brands {
 	margin: 0;
 	padding: 0;
+	background-color: #F8F8F8;
 }
 
-
 .brands__title {
-	height: 24px;
 	padding: 16px 0;
 	margin-left: 32px;
 	background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
@@ -133,9 +130,6 @@ body, button, li, ul {
 	background-image: url(img/brands/sony.svg);
 }
 
-
-
-
 .expand-button {
 	display: flex;
 	gap: 8px;
@@ -166,15 +160,9 @@ body, button, li, ul {
 	letter-spacing: -0.2px;	
 }
 
-
-.swiper {
+div.swiper {
 	display: none;
 }
-
-
-
-
-
 
 
 
@@ -203,7 +191,7 @@ body, button, li, ul {
 	margin-left: 24px;
 }
 
-.swiper {
+div.swiper {
 	display: none;
 }
 
@@ -220,42 +208,51 @@ body, button, li, ul {
 
 @media (max-width: 320px) {
 
+div.swiper {
+	display: block;
+}
+
 .brands__list {
 	display: none;
 }
-
-
 
 .expand-button {
 	display: none;
 }
 
-	.brands__title {
-		margin-left: 24px;
-	}
-	
-	.brands__list {
-		column-gap: 24px;
-		margin-left: 24px;
-	}
-	
-	.brands-block {
-		width: 224px;
-	}
-	
-	.expand-button {
-		margin-left: 24px;
-	}
-
-.swiper {
-	display: flex;
-	width: 320px;
-	height: 114px;
+.brands__title {
+	margin-left: 24px;
+	margin-bottom: 0;
 }
 
-/* .swiper-wrapper > .swiper-slide {
+.brands__list {
+	column-gap: 24px;
+	margin-left: 24px;
+}
+
+.brands-block {
+	width: 224px;
+}
+
+.expand-button {
+	margin-left: 24px;
+}
+
+.swiper-wrapper {
 	display: flex;
-   justify-content: center;
-} */
+	margin: 16px 0 40px 16px;
+}
+
+span.swiper-pagination-bullet{
+	width: 12px;
+	height: 12px;
+	background-color: #DDDDDD;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background-color: #B5B6BC !important; 
+	width: 12px;
+	height: 12px;
+}
 
 }

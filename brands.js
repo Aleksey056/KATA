@@ -13,11 +13,16 @@ expandButtonText.addEventListener('click', function () {
 
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
-	
+	spaceBetween: -80,
+
+	keyboard: {
+		enabled: true,
+		onlyInViewport: false,
+	 },
 
 	direction: 'horizontal',
 	loop: true,
-	centeredSlides: true,
+
 
 	navigation: {
 	  nextEl: '.swiper-button-next',
@@ -27,6 +32,9 @@ const swiper = new Swiper('.swiper', {
 	pagination: {
 		el: '.swiper-pagination',
 		type: 'bullets',
+		clickable: true,
+		// dynamicBullets: true,
+		// dynamicMainBullets: 1,
 	 },
 
 	mousewheel: {

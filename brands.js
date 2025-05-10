@@ -16,7 +16,7 @@ expandButtonText.addEventListener('click', function () {
 
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
-	spaceBetween: -80,
+	// spaceBetween: -80,
 
 	keyboard: {
 		enabled: true,

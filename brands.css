@@ -16,7 +16,7 @@
 	src:url('fonts/TTLakes/TTLakes-Regular.woff');
 }
 
-body, button, li, ul {
+body, button, li, ul, h2 {
 	margin: 0;
 	padding: 0;
 	background-color: #F8F8F8;
@@ -25,12 +25,20 @@ body, button, li, ul {
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: -0.2px;
+	text-decoration: none;
+	list-style-type: none;
 }
 
 .brands {
 	margin: 0;
 	padding: 0;
 	background-color: #F8F8F8;
+}
+
+.green-line {
+	height: 1px;
+	border-radius: 1px;
+	background: #D9FFF5;
 }
 
 .brands__title {
@@ -206,7 +214,7 @@ div.swiper {
 
 
 
-@media (max-width: 320px) {
+@media (max-width: 500px) {
 
 div.swiper {
 	display: block;
@@ -232,6 +240,8 @@ div.swiper {
 
 .brands-block {
 	width: 224px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .expand-button {
@@ -240,8 +250,9 @@ div.swiper {
 
 .swiper-wrapper {
 	display: flex;
-	margin: 16px 0 40px 16px;
+	margin: 16px 0 40px 0;
 }
+
 
 span.swiper-pagination-bullet{
 	width: 12px;

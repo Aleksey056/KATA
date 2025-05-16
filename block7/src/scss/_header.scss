@@ -1,5 +1,7 @@
+@import 'var', 'mix';
+
 .header {
-	// background-color: $colorHeader;
+	background-color: $colorHeader;
 	.header-block {
 		height: 87px;
 		display: flex;
@@ -29,7 +31,7 @@
 	}
 
 	.round-icon {
-		// background-color: $colorFon;
+		background-color: $colorFon;
 		margin: 0;
 		padding: 0;
 		width: 40px;
@@ -57,7 +59,7 @@
 	}
 
 	.logo {
-		// background-color: $colorHeader;
+		background-color: $colorHeader;
 		background-image: url(/img/header/Header_Group.svg);
 		width: 96.54814910888672px;
 		height: 50.814815521240234px;
@@ -77,7 +79,7 @@
 		margin-left: 0;
 		height: 1px;
 		border: none;
-		// background-color: $colorShadow;
+		background-color: $colorShadow;
 	}
 	
 
@@ -85,7 +87,7 @@
 
 	.header {
 		margin-bottom: 24px;
-		// background-color: $colorHeader;
+		background-color: $colorHeader;
 	}
 	
 	.header-block {
@@ -113,7 +115,7 @@
 	}
 
 	.logo {
-		// background-color: $colorHeader;
+		background-color: $colorHeader;
 		background-image: url(/img/header/Header_Group.svg);
 		width: 96.54814910888672px;
 		height: 50.814815521240234px;

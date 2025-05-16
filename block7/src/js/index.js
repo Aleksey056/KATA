@@ -1,7 +1,6 @@
 import '../scss/style.scss'
 
 
-
 const expandBrands = document.getElementById('brandsList');
 const expandButtonText = document.getElementById('expandButtonText');
 

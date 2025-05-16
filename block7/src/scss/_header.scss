@@ -1,6 +1,5 @@
 .header {
-	background-color: $colorHeader;
-
+	// background-color: $colorHeader;
 	.header-block {
 		height: 87px;
 		display: flex;
@@ -25,12 +24,12 @@
 		display: flex;
 		align-items: center;
 		gap: 15px;
-		
 		}
+
 	}
 
 	.round-icon {
-		background-color: #F8F8F8;
+		// background-color: $colorFon;
 		margin: 0;
 		padding: 0;
 		width: 40px;
@@ -58,7 +57,7 @@
 	}
 
 	.logo {
-		background-color: $colorHeader;
+		// background-color: $colorHeader;
 		background-image: url(/img/header/Header_Group.svg);
 		width: 96.54814910888672px;
 		height: 50.814815521240234px;
@@ -78,7 +77,7 @@
 		margin-left: 0;
 		height: 1px;
 		border: none;
-		background-color: #D9FFF5;
+		// background-color: $colorShadow;
 	}
 	
 
@@ -86,35 +85,35 @@
 
 	.header {
 		margin-bottom: 24px;
-		background-color: $colorHeader;
+		// background-color: $colorHeader;
 	}
 	
-	.header-block__block1 {
+	.header-block {
+		&__block1 {
 		justify-content: center;
 		display: flex;
 		align-items: center;
 		gap: 16px;
-	}
-
-	.header-block__block2 {
+		}
+		&__block2 {
 		margin-right: 0px;
 		margin-left: auto;
 		justify-content: center;
 		display: flex;
 		align-items: center;
 		gap: 16px;
-	}
-
-	.header-block__block3 {
+		}
+		&__block3 {
 		margin-right: 24px;
 		justify-content: center;
 		display: flex;
 		align-items: center;
 		gap: 16px;
 	}
+	}
 
 	.logo {
-		background-color: $colorHeader;
+		// background-color: $colorHeader;
 		background-image: url(/img/header/Header_Group.svg);
 		width: 96.54814910888672px;
 		height: 50.814815521240234px;
@@ -123,7 +122,7 @@
 	}
 	}
 
-	@media (min-width: 1120px) {
+	@media (min-width: 1440px) {
 	.header {
 		display: none;
 	}

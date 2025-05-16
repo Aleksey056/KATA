@@ -1,12 +1,10 @@
-@import 
-	'variables',
-	'normalize',
-	'mixin',
-	'fonts'
-;
+@import 'var' ,
+ 'normalize',
+ 'mix',
+ 'fonts',
+ 'var';
 
-@import 
-	'blocks/header',
-	'blocks/main',
+@import 'header';
+	// 'blocks/main',
 	// 'blocks/brands',
-	'blocks/mobil-menu';
+	// 'blocks/mobil-menu';

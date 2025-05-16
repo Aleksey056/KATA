@@ -1,1 +1,12 @@
-@import "_main.scss";
+@import 
+	'variables',
+	'normalize',
+	'mixin',
+	'fonts'
+;
+
+@import 
+	'blocks/header',
+	'blocks/main',
+	// 'blocks/brands',
+	'blocks/mobil-menu';

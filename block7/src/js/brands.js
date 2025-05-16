@@ -1,5 +1,3 @@
-import '../scss/style.scss'
-
 
 
 const expandBrands = document.getElementById('brandsList');

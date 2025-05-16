@@ -1,0 +1,131 @@
+.header {
+	background-color: $colorHeader;
+
+	.header-block {
+		height: 87px;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 24px;
+		gap: 15px;
+		&__block1 {
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		}
+		&__block2 {
+			display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
+		display: none;
+		}
+		&__block3 {
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		
+		}
+	}
+
+	.round-icon {
+		background-color: #F8F8F8;
+		margin: 0;
+		padding: 0;
+		width: 40px;
+		height: 40px;
+		border-radius: 50% ;
+		border-style: none; 
+		&--burger {
+	background-image: url(/img/header/burger.svg);
+		}
+		&--repair {
+	background-image: url(/img/header/repair.svg);
+		}
+		&--checkstatus {
+	background-image: url(/img/header/checkstatus.svg);
+		}
+		&--call {
+	background-image: url(/img/header/call.svg);
+		}
+		&--chat {
+	background-image: url(/img/header/chat.svg);
+		}
+		&--profile {
+	background-image: url(/img/header/profile.svg);
+		}
+	}
+
+	.logo {
+		background-color: $colorHeader;
+		background-image: url(/img/header/Header_Group.svg);
+		width: 96.54814910888672px;
+		height: 50.814815521240234px;
+		border-style: none; 
+	}
+
+	.icon--divider {
+		padding: 0px;
+		border: 0px;
+		width: 2px;
+		height: 32px;
+		background-image: url(/img/header/divider.svg);
+	}
+
+	.shadow {
+		margin: 0;
+		margin-left: 0;
+		height: 1px;
+		border: none;
+		background-color: #D9FFF5;
+	}
+	
+
+	@media (min-width: 768px) {
+
+	.header {
+		margin-bottom: 24px;
+		background-color: $colorHeader;
+	}
+	
+	.header-block__block1 {
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
+
+	.header-block__block2 {
+		margin-right: 0px;
+		margin-left: auto;
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
+
+	.header-block__block3 {
+		margin-right: 24px;
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
+
+	.logo {
+		background-color: $colorHeader;
+		background-image: url(/img/header/Header_Group.svg);
+		width: 96.54814910888672px;
+		height: 50.814815521240234px;
+		order: 1;
+		border-style: none; 
+	}
+	}
+
+	@media (min-width: 1120px) {
+	.header {
+		display: none;
+	}
+	}
+}

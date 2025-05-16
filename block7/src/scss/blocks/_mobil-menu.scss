@@ -1,21 +1,6 @@
-body, p, ul, li, button, h1 {
-	width: 320px;
-	background-color:#FFFFFF;
-	list-style-type: none;
-	font-family: TT Lakes;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 24px;
-	letter-spacing: -0.2px;
-	text-decoration: none;
-	border: none;
-	margin: 0;
-	padding: 0;
-}
 
-body {
+.mobil-menu {
 	box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
-}
 
 .header-block {
 	padding-top: 20px;
@@ -131,4 +116,6 @@ body {
 		gap: 7px;
 		color: #7E7E82;
 	}
+}
+
 }

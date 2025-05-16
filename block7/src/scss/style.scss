@@ -1,17 +1,20 @@
-$bgColor: #24292e;
-$text: #fff;
+@import "_mobil-menu.scss";
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+@font-face{
+	font-family: TT Lakes;
+	font-weight: 500;
+	src:url('/fonts/TTLakes/TTLakes-Medium.woff');
+	// src:url('fonts/TTLakes/TTLakes-Medium.woff');
 }
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+@font-face{
+	font-family: TT Lakes;
+	font-weight: 700;
+	src:url('/fonts/TTLakes/TTLakes-Bold.woff');
+}
+
+@font-face{
+	font-family: TT Lakes;
+	font-weight: 400;
+	src:url('/fonts/TTLakes/TTLakes-Regular.woff');
 }

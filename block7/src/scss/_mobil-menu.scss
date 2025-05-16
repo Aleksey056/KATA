@@ -1,0 +1,136 @@
+
+
+body, p, ul, li, button, h1 {
+	width: 320px;
+	background-color:#FFFFFF;
+	list-style-type: none;
+	font-family: TT Lakes;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	text-decoration: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+}
+
+.header-block {
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 45px;
+	&__block-1 {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+	&__block-2 {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.round-icon {
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 50% ;
+	border-style: none; 
+	&--burger {
+		background-image: url(/img/mobile_menu/burger.svg);
+	}
+	&--search {
+		background-image: url(/img/mobile_menu/search.svg);
+	}
+	&--call {
+	background-image: url(/img/header/call.svg);
+	}
+	&--chat {
+	background-image: url(/img/header/chat.svg);
+	}
+	&--profile {
+		background-image: url(/img/header/profile.svg);
+	}
+}
+
+.logo {
+	background-color:#FFFFFF;
+	background-image: url(/img/header/Header_Group.svg);
+	width: 96.54814910888672px;
+	height: 50.814815521240234px;
+	border-style: none; 
+}
+
+.nav {
+	margin-bottom: 268px;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.menu-block {
+	background-image: none;
+	display: flex;
+	align-items: center;
+	height: 32px;
+	&__text {
+	color: #1B1C21;
+	margin: 0;
+	margin-left: 24px;	
+	text-decoration: none;
+	transition: all 0.5s ease-out;
+	}
+	&--hover:hover {
+	background-image: url(/img/title/highlight.svg);
+	background-repeat: no-repeat;
+	}
+	&__text--hover:hover {
+	color: #7E7E82;
+	}
+}
+
+.footer {
+	margin-left: 24px;
+	padding-bottom: 40px;
+}
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	margin-bottom: 40px;
+	&__round-icon {
+		display: flex;
+		gap: 16px;
+	}
+	&__number {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 32px;
+		letter-spacing: -0.6px;
+	}
+	&__lang {
+		width: 24px;
+		height: 24px;
+		display: flex;
+		align-items: self-start;
+		gap: 7px;
+	}
+	&__lang--hover:hover {
+		display: flex;
+		gap: 7px;
+		color: #7E7E82;
+	}
+}

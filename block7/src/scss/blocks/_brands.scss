@@ -3,22 +3,22 @@
 .brands {
 	padding-bottom: 50px;
 	background-color: #F8F8F8;
-	// &__title-block {
-	// margin: 0;
-	// font-weight: 400;
-	// font-size: 16px;
-	// text-transform: uppercase;
-	// color: $colorTextBlock;
-	// padding: 16px 0 16px 24px;
-	// background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
-	// margin-bottom: 24px;
-	// text-transform: uppercase;
-	// 	.green-line {
-	// 		height: 1px;	
-	// 		border-radius: 1px;
-	// 		background: #D9FFF5;
-	// 	}
-	// }
+	&__title-block {
+	margin: 0;
+	font-weight: 400;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: $colorTextBlock;
+	padding: 16px 0 16px 24px;
+	background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+	margin-bottom: 24px;
+	text-transform: uppercase;
+		.green-line {
+			height: 1px;	
+			border-radius: 1px;
+			background: #D9FFF5;
+		}
+	}
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
@@ -35,70 +35,70 @@
 	}
 
 
+	.brands-block {
+		background-color: #FFFFFF	;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 16px;
+		align-items: center;
+		width: 240px;
+		height: 72px;
+		border: 1px solid #EAEAEA;
+		border-radius: 6px;
+		border-width: 1px;
+		box-sizing: border-box;
+		&__button {
+			background-color: #F8F8F8;
+			margin: 0;
+			padding: 0;
+			width: 40px;
+			height: 40px;
+			border-radius: 50% ;
+			border-style: none; 
+			background-image: url(/img/brands/go.svg);
+		}
+		&__img--lenovo {
+			width: 108px;
+			height: 32px;
+			background-image: url(/img/brands/lenovo.svg);
+		}
+		&__img--samsung {
+		width: 116px;
+		height: 38.515625px;
+		background-image: url(/img/brands/samsung.svg);
+		}
+		&__img--apple {
+			width: 44px;
+			height: 44px;
+			background-image: url(/img/brands/apple.svg);
+		}
+		&__img--view-sonic {
+			width: 128px;
+			height: 21px;
+			background-image: url(/img/brands/view-sonic.svg);
+		}
+		&__img--bosch {
+			width: 128px;
+			height: 28.601268768310547px;
+			background-image: url(/img/brands/bosch.svg);
+		}
+		&__img--hp {
+			width: 52px;
+			height: 52px;
+			background-image: url(/img/brands/hp.svg);
+		}
+		&__img--acer {
+			width: 94px;
+			height: 24px;
+			background-image: url(/img/brands/acer.svg);
+		}
+		&__img--sony {
+			width: 128px;
+			height: 25.600000381469727px;
+			background-image: url(/img/brands/sony.svg);
+		}
+	}
 
-.brands-block {
-	background-color: #FFFFFF	;
-	display: flex;
-	justify-content: space-between;
-	padding: 0 16px;
-	align-items: center;
-	width: 240px;
-	height: 72px;
-	border: 1px solid #EAEAEA;
-	border-radius: 6px;
-	border-width: 1px;
-	box-sizing: border-box;
-	&__button {
-		background-color: #F8F8F8;
-		margin: 0;
-		padding: 0;
-		width: 40px;
-		height: 40px;
-		border-radius: 50% ;
-		border-style: none; 
-		background-image: url(/img/brands/go.svg);
-	}
-	&__img--lenovo {
-		width: 108px;
-		height: 32px;
-		background-image: url(/img/brands/lenovo.svg);
-	}
-	&__img--samsung {
-	width: 116px;
-	height: 38.515625px;
-	background-image: url(/img/brands/samsung.svg);
-	}
-	&__img--apple {
-		width: 44px;
-		height: 44px;
-		background-image: url(/img/brands/apple.svg);
-	}
-	&__img--view-sonic {
-		width: 128px;
-		height: 21px;
-		background-image: url(/img/brands/view-sonic.svg);
-	}
-	&__img--bosch {
-		width: 128px;
-		height: 28.601268768310547px;
-		background-image: url(/img/brands/bosch.svg);
-	}
-	&__img--hp {
-		width: 52px;
-		height: 52px;
-		background-image: url(/img/brands/hp.svg);
-	}
-	&__img--acer {
-		width: 94px;
-		height: 24px;
-		background-image: url(/img/brands/acer.svg);
-	}
-	&__img--sony {
-		width: 128px;
-		height: 25.600000381469727px;
-		background-image: url(/img/brands/sony.svg);
-	}
-}
 
 	.expand-button {
 		display: flex;
@@ -124,11 +124,17 @@
 		}		
 	}
 
+
 .expand-button--expand > .expand-button__img {
 	rotate: 180deg;
 }
 
-div.swiper {
+div.swiper-wrapper {
+	display: flex;
+	width: 1120px;
+}
+
+.swiper-pagination {
 	display: none;
 }
 
@@ -150,9 +156,14 @@ div.swiper {
 .expand-button {
 	margin-left: 24px;
 }
-div.swiper {
-	display: none;
-}
+// div.swiper {
+// 	display: none;
+// }
+
+// div .swiper-pagination {
+// 	display: none;
+// }
+
 }
 
 

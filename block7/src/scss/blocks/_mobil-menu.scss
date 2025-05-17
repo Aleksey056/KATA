@@ -89,7 +89,7 @@
 	}
 }
 
-.footer {
+.aside-footer {
 	margin-left: 24px;
 	padding-bottom: 40px;
 	
@@ -112,7 +112,7 @@
 		line-height: 32px;
 		letter-spacing: -0.6px;
 	}
-	&__lang {
+	&__lang-hover {
 		width: 24px;
 		height: 24px;
 		display: flex;
@@ -123,7 +123,7 @@
 				background-color: $colorWhite;
 			}
 	}
-	&__lang--hover:hover {
+	&__lang:hover {
 		display: flex;
 		gap: 7px;
 		color: #7E7E82;

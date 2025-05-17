@@ -189,7 +189,7 @@
 
 @media (min-width: 1440px) {
 	.title {
-		margin-top: 42px;
+		padding-top: 42px;
 		height: 40px;
 		margin-bottom: 8px;
 	}
@@ -199,6 +199,9 @@
 		gap: 8px;
 		margin-right: 35px;
 		margin-left: auto;
+			button {
+				background-color: $colorFon;
+			}
 	}
 	.title-label {
 		display: flex;
@@ -208,6 +211,7 @@
 		font-size: 16px;
 		line-height: 24px;
 		letter-spacing: -0.2px;
+			
 	}
 	.section-info {
 		height: 307px;

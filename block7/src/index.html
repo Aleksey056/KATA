@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<title>Главная</title>
 </head>
 <body>
@@ -80,7 +81,7 @@
 			<h2>Ремонт техники различных брендов</h2>
 		</div>
 
-		<ul class="brands__list" id="brandsList">
+		<!-- <ul class="brands__list" id="brandsList">
 			<li>
 				<a href="#" class="brands-block">
 					<div class="brands-block__img brands-block__img--lenovo"></div>
@@ -147,16 +148,31 @@
 					<div class="brands-block__button"></div>
 				</a>
 			</li>
-		</ul>
+		</ul> -->
 
-		<button class="expand-button expand-button--brands" id="expandButton">
+		<!-- <button class="expand-button expand-button--brands" id="expandButton">
 			<span class="expand-button__img" id="expandButtonImg"></span>
 			<span class="expand-button__text" id="expandButtonText">Показать всё</span>
-		</button>
+		</button> -->
 
 
-		<div class="swiper">
-			<div class="swiper-wrapper">
+		<section class="section-swiper">
+                <h2 class="heading">Ремонт техники различных брендов</h2>
+                <div class="swiper slider">
+                    <span class="repaired-devices__shadow"></span>
+                    <div class="swiper-wrapper swiper-brands"> 
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <button class="btn-functional" type="button">
+                        <span class="btn-functional__arrow2"></span>
+                        <span class="btn-functional__text2">Показать все</span>
+                    </button> 
+                </div>
+            </section>
+
+		<!-- <div class="swiper">
+			<div class="swiper-wrapper swiper-brands">
 				<div class="swiper-slide">
 					<a href="#" class="brands-block">
 						<div class="brands-block__img brands-block__img--lenovo"></div>
@@ -226,15 +242,15 @@
 
 			</div>
 			<div class="swiper-pagination"></div>
-		</div>
+		</div> -->
 	</section>
 
 	<section class="technic">
 		<div class="title-section">
 			<div class="green-line"></div>
-			<h2>Ремонт техники различных брендов</h2>
+			<h2>Ремонт различных видов техники</h2>
 		</div>
-		<div class="">
+		<div class="technic__block">
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit 
 			consequatur vero est mollitia alias a pariatur, rerum cupiditate eius! 
 			Excepturi modi voluptates neque ipsum eius optio accusantium, odio commodi 
@@ -247,7 +263,7 @@
 			<div class="green-line"></div>
 			<h2>цены на услуги</h2>
 		</div>
-		<div class="">
+		<div class="price__block">
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit 
 			consequatur vero est mollitia alias a pariatur, rerum cupiditate eius! 
 			Excepturi modi voluptates neque ipsum eius optio accusantium, odio commodi 
@@ -260,32 +276,28 @@
 			Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. 
 			Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
 		</h4>
-
 		<a class = "commercial__link" href="#">
 			Получить коммерческое предложение<span class="line"></span>
 		</a>
-		
 	</section>
 
 	
 
 	<footer>
 		<div class="green-line"></div>
-		<div class="main-footer">
-			<div class="main-footer__block--1">
+		<div class="footer">
+			<div class="footer__block--1">
 				<span>© 2019 CPS</span>
 				<span>Разработано командой Apesong</span>
 			</div>
-			<div class="main-footer__block--2">
+			<div class="footer__block--2">
 				<span>Политика конфиденциальности</span>
 			</div>
-			<div class="main-footer__block--3">
+			<div class="footer__block--3">
 				<span>Информация, размещенная на данной странице, не является публичной офертой</span>
 			</div>
 		</div>
 	</footer>
-
-
 
 </main>
 	<aside class="mobil-menu">
@@ -328,7 +340,7 @@
 			</ul> 
 		</nav>
 		</div>
-		<div class="footer">
+		<div class="aside-footer">
 			<div class="contact-info">
 				<div class="contact-info__round-icon">
 					<button class="round-icon round-icon--call"></button>
@@ -338,17 +350,17 @@
 				<span>mail@cps.com</span>
 				<span class="contact-info__number">8 800 890 8900</span>
 			</div>
-			<div class="contact-info__lang">
-				<button class="contact-info__lang--hover">RU</button>
-				<button class="contact-info__lang--hover">EN</button>
-				<button class="contact-info__lang--hover">CH</button>
+			<div class="contact-info__lang-hover">
+				<button class="contact-info__lang">RU</button>
+				<button class="contact-info__lang">EN</button>
+				<button class="contact-info__lang">CH</button>
 			</div>
 		</div>
 	</aside>
 
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-	<script src="brands.js"></script>
+	<!-- <script src="/src/js/index.js"></script> -->
 
 </body>
 </html>

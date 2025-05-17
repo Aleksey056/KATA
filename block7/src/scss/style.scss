@@ -1,15 +1,17 @@
 @import 'var' ,
- 'normalize',
- 'mix',
- 'fonts',
- 'var';
+				'normalize',
+				'mix',
+				'fonts',
+				'var';
 
 @import 'blocks/header',
-	'blocks/main',
-	'blocks/brands',
-	'blocks/mobil-menu',
-	'blocks/commercial',
-	'blocks/footer';
+				'blocks/main',
+				'blocks/brands',
+				'blocks/technic',
+				'blocks/price',
+				'blocks/mobil-menu',
+				'blocks/commercial',
+				'blocks/footer';
 
 	.round-icon {
 		background-color: $colorFon;
@@ -80,7 +82,7 @@
 }
 
 @media (min-width: 1600px) {
-	.main, .brands, .technic, .price, .commercial {
+	.main, .brands, .technic, .price, .commercial, .main-footer {
 		display: block;
 		width: 1440px;
 		margin-left: auto;

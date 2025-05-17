@@ -5,8 +5,8 @@
  'var';
 
 @import 'blocks/header',
-	'blocks/main';
-	// 'blocks/brands',
+	'blocks/main',
+	'blocks/brands';
 	// 'blocks/mobil-menu';
 
 
@@ -17,7 +17,7 @@
 }
 
 @media (min-width: 1600px) {
-	.main {
+	.main, .brands {
 		display: block;
 		width: 1440px;
 		margin-left: auto;

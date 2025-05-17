@@ -83,7 +83,7 @@
 	}
 	
 
-	@media (min-width: 768px) {
+	@media screen and (min-device-width: 768px) {
 
 	.header {
 		margin-bottom: 24px;
@@ -123,10 +123,9 @@
 		border-style: none; 
 	}
 	}
-
-	@media (min-width: 1440px) {
+	}
+	@media screen and (min-device-width: 1440px) {
 	.header {
 		display: none;
-	}
 	}
 }

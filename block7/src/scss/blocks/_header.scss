@@ -1,7 +1,7 @@
 @import 'var', 'mix';
 
 .header {
-	background-color: $colorHeader;
+	background-color: $colorWhite;
 	.header-block {
 		height: 87px;
 		display: flex;
@@ -59,7 +59,7 @@
 	}
 
 	.logo {
-		background-color: $colorHeader;
+		background-color: $colorWhite;
 		background-image: url(/img/header/Header_Group.svg);
 		width: 96.54814910888672px;
 		height: 50.814815521240234px;
@@ -87,7 +87,7 @@
 
 	.header {
 		margin-bottom: 24px;
-		background-color: $colorHeader;
+		background-color: $colorWhite;
 	}
 	
 	.header-block {
@@ -115,7 +115,7 @@
 	}
 
 	.logo {
-		background-color: $colorHeader;
+		background-color: $colorWhite;
 		background-image: url(/img/header/Header_Group.svg);
 		width: 96.54814910888672px;
 		height: 50.814815521240234px;
@@ -124,8 +124,9 @@
 	}
 	}
 	}
-	@media screen and (min-device-width: 1440px) {
-	.header {
-		display: none;
-	}
-}
+
+// 	@media (min-device-width: 1440px) {
+// 	.header {
+// 		display: none;
+// 	}
+// }

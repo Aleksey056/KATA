@@ -129,7 +129,6 @@ div.swiper {
 
 
 @media (max-width: 768px) {
-
 .brands {
 	&__title {
 		margin-left: 24px;
@@ -139,7 +138,6 @@ div.swiper {
 		margin-left: 24px;
 	}
 }
-
 .brands-block {
 	width: 224px;
 }
@@ -147,11 +145,9 @@ div.swiper {
 .expand-button {
 	margin-left: 24px;
 }
-
 div.swiper {
 	display: none;
 }
-
 }
 
 
@@ -159,8 +155,14 @@ div.swiper {
 
 @media (max-width: 500px) {
 
+.swiper-wrapper {
+	width: 100%;
+}
+
 div.swiper {
 	display: block;
+	// width: 320px;
+	// overflow: hidden;
 }
 
 .brands__list {

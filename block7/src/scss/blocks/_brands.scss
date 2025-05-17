@@ -3,6 +3,7 @@
 .brands {
 	padding-bottom: 50px;
 	background-color: #F8F8F8;
+
 	&__title-block {
 	margin: 0;
 	font-weight: 400;
@@ -19,85 +20,114 @@
 			background: #D9FFF5;
 		}
 	}
-	&__list {
+
+.swiper-wrapper {
+gap: 32px;
+}
+
+	.swiper-slide {
 		display: flex;
-		flex-wrap: wrap;
+
+		flex-direction: column;
 		justify-content: center;
-		margin-left: 32px;
-		row-gap: 16px;
-		column-gap: 32px;
-		margin-bottom: 24px;
-		height: 160px;
-		overflow: hidden;
-		&--expand {
-			height: auto;
-		}
-	}
-
-
-	.brands-block {
-		background-color: #FFFFFF	;
-		display: flex;
-		justify-content: space-between;
-		padding: 0 16px;
-		align-items: center;
 		width: 240px;
 		height: 72px;
 		border: 1px solid #EAEAEA;
 		border-radius: 6px;
-		border-width: 1px;
-		box-sizing: border-box;
-		&__button {
-			background-color: #F8F8F8;
-			margin: 0;
-			padding: 0;
-			width: 40px;
-			height: 40px;
-			border-radius: 50% ;
-			border-style: none; 
-			background-image: url(/img/brands/go.svg);
+		a {
+			display: flex;
+			justify-content: space-around;
+			align-items: stretch;
+
+			.icon-button {
+				background-color: $colorFon;
+				width: 40px;
+				height: 40px;
+				background-image: url(/img/brands/go.svg);
 		}
-		&__img--lenovo {
-			width: 108px;
-			height: 32px;
-			background-image: url(/img/brands/lenovo.svg);
 		}
-		&__img--samsung {
-		width: 116px;
-		height: 38.515625px;
-		background-image: url(/img/brands/samsung.svg);
-		}
-		&__img--apple {
-			width: 44px;
-			height: 44px;
-			background-image: url(/img/brands/apple.svg);
-		}
-		&__img--view-sonic {
-			width: 128px;
-			height: 21px;
-			background-image: url(/img/brands/view-sonic.svg);
-		}
-		&__img--bosch {
-			width: 128px;
-			height: 28.601268768310547px;
-			background-image: url(/img/brands/bosch.svg);
-		}
-		&__img--hp {
-			width: 52px;
-			height: 52px;
-			background-image: url(/img/brands/hp.svg);
-		}
-		&__img--acer {
-			width: 94px;
-			height: 24px;
-			background-image: url(/img/brands/acer.svg);
-		}
-		&__img--sony {
-			width: 128px;
-			height: 25.600000381469727px;
-			background-image: url(/img/brands/sony.svg);
-		}
+		
 	}
+
+	// div.swiper-slide {
+	// 	display: flex;
+	// 	flex-wrap: wrap;
+	// 	justify-content: center;
+	// 	margin-left: 32px;
+	// 	row-gap: 16px;
+	// 	column-gap: 32px;
+	// 	margin-bottom: 24px;
+	// 	height: 160px;
+	// 	overflow: hidden;
+	// 	&--expand {
+	// 		height: auto;
+	// 	}
+	// }
+
+
+	// .brands-block {
+	// 	background-color: #FFFFFF	;
+	// 	display: flex;
+	// 	justify-content: space-between;
+	// 	padding: 0 16px;
+	// 	align-items: center;
+	// 	width: 240px;
+	// 	height: 72px;
+	// 	border: 1px solid #EAEAEA;
+	// 	border-radius: 6px;
+	// 	border-width: 1px;
+	// 	box-sizing: border-box;
+	// 	&__button {
+	// 		background-color: #F8F8F8;
+	// 		margin: 0;
+	// 		padding: 0;
+	// 		width: 40px;
+	// 		height: 40px;
+	// 		border-radius: 50% ;
+	// 		border-style: none; 
+	// 		background-image: url(/img/brands/go.svg);
+	// 	}
+	// 	&__img--lenovo {
+	// 		width: 108px;
+	// 		height: 32px;
+	// 		background-image: url(/img/brands/lenovo.svg);
+	// 	}
+	// 	&__img--samsung {
+	// 	width: 116px;
+	// 	height: 38.515625px;
+	// 	background-image: url(/img/brands/samsung.svg);
+	// 	}
+	// 	&__img--apple {
+	// 		width: 44px;
+	// 		height: 44px;
+	// 		background-image: url(/img/brands/apple.svg);
+	// 	}
+	// 	&__img--view-sonic {
+	// 		width: 128px;
+	// 		height: 21px;
+	// 		background-image: url(/img/brands/view-sonic.svg);
+	// 	}
+	// 	&__img--bosch {
+	// 		width: 128px;
+	// 		height: 28.601268768310547px;
+	// 		background-image: url(/img/brands/bosch.svg);
+	// 	}
+	// 	&__img--hp {
+	// 		width: 52px;
+	// 		height: 52px;
+	// 		background-image: url(/img/brands/hp.svg);
+	// 	}
+	// 	&__img--acer {
+	// 		width: 94px;
+	// 		height: 24px;
+	// 		background-image: url(/img/brands/acer.svg);
+	// 	}
+	// 	&__img--sony {
+	// 		width: 128px;
+	// 		height: 25.600000381469727px;
+	// 		background-image: url(/img/brands/sony.svg);
+	// 	}
+	// }
 
 
 	.expand-button {
@@ -124,114 +154,113 @@
 		}		
 	}
 
-
 .expand-button--expand > .expand-button__img {
 	rotate: 180deg;
 }
 
-div.swiper-wrapper {
-	display: flex;
-	width: 1120px;
-}
+// div.swiper-wrapper {
+// 	display: flex;
+// 	width: 1120px;
+// }
 
-.swiper-pagination {
-	display: none;
-}
+// .swiper-pagination {
+// 	display: none;
+// }
 
 
-@media (max-width: 768px) {
-.brands {
-	// &__title {
-	// 	margin-left: 24px;
-	// }
-	&__list {
-		column-gap: 24px;
-		margin-left: 24px;
-	}
-}
-.brands-block {
-	width: 224px;
-}
+// @media (max-width: 768px) {
+// .brands {
+// 	// &__title {
+// 	// 	margin-left: 24px;
+// 	// }
+// 	&__list {
+// 		column-gap: 24px;
+// 		margin-left: 24px;
+// 	}
+// }
+// .brands-block {
+// 	width: 224px;
+// }
 
-.expand-button {
-	margin-left: 24px;
-}
+// .expand-button {
+// 	margin-left: 24px;
+// }
+// // div.swiper {
+// // 	display: none;
+// // }
+
+// // div .swiper-pagination {
+// // 	display: none;
+// // }
+
+// }
+
+
+
+
+// @media (max-width: 500px) {
+
 // div.swiper {
-// 	display: none;
-// }
-
-// div .swiper-pagination {
-// 	display: none;
-// }
-
-}
-
-
-
-
-@media (max-width: 500px) {
-
-div.swiper {
-	display: block;
-	overflow: hidden;
+// 	display: block;
+// 	overflow: hidden;
 	
-	// width: 100%;
-}
+// 	// width: 100%;
+// }
 
-.brands__list {
-	display: none;
-}
+// .brands__list {
+// 	display: none;
+// }
 
-.expand-button {
-	display: none;
-}
+// .expand-button {
+// 	display: none;
+// }
 
-.brands {
-	&__title {
-		// margin-left: 24px;
-		margin-bottom: 0;
-	}
-	&__list {
-		column-gap: 24px;
-		margin-left: 24px;
-	}
-}
+// .brands {
+// 	&__title {
+// 		// margin-left: 24px;
+// 		margin-bottom: 0;
+// 	}
+// 	&__list {
+// 		column-gap: 24px;
+// 		margin-left: 24px;
+// 	}
+// }
 
-.brands-block {
-	width: 224px;
-	margin-left: 16px;
-	margin-right: auto;
-}
+// .brands-block {
+// 	width: 224px;
+// 	margin-left: 16px;
+// 	margin-right: auto;
+// }
 
-.expand-button {
-	margin-left: 24px;
-}
+// .expand-button {
+// 	margin-left: 24px;
+// }
 
-.swiper-wrapper {
-	display: flex;
-	margin: 16px 0 40px 0;
-}
+// .swiper-wrapper {
+// 	display: flex;
+// 	margin: 16px 0 40px 0;
+// }
 
-div.swiper-pagination {
-	border-radius: 50%;
-	display: flex;
-	gap: 12px;
-	justify-content: center;
-}
+// div.swiper-pagination {
+// 	border-radius: 50%;
+// 	display: flex;
+// 	gap: 12px;
+// 	justify-content: center;
+// }
 
-span.swiper-pagination-bullet{
-	border-radius: 50%;
-	width: 12px;
-	height: 12px;
-	background-color: #DDDDDD;
-}
+// span.swiper-pagination-bullet{
+// 	border-radius: 50%;
+// 	width: 12px;
+// 	height: 12px;
+// 	background-color: #DDDDDD;
+// }
 
-span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-	border-radius: 50%;
-	background-color: #B5B6BC !important; 
-	width: 12px;
-	height: 12px;
-}
+// span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+// 	border-radius: 50%;
+// 	background-color: #B5B6BC !important; 
+// 	width: 12px;
+// 	height: 12px;
+// }
 
-}
+// }
 }

@@ -60,7 +60,21 @@
 
 
 @media (min-device-width: 1440px) {
+	main {
+		margin-left: 320px;
+	}
 	.header {
+		display: none;
+	}
+	.mobil-menu {
+		box-shadow: none;
+		background-color: $colorWhite;
+
+		.nav {
+			background-color: $colorWhite;
+		}
+	}
+	.round-icon--burger {
 		display: none;
 	}
 }

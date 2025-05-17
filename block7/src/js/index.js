@@ -18,24 +18,18 @@ expandButtonText.addEventListener('click', function () {
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
 	// spaceBetween: -80,
-
+	slidesPerView: 'auto',
+	direction: 'horizontal',
+	loop: true,
+	
 	keyboard: {
 		enabled: true,
 		onlyInViewport: false,
 	},
 
-	direction: 'horizontal',
-	loop: true,
-
-
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-
 	pagination: {
 		el: '.swiper-pagination',
-		type: 'bullets',
+		// type: 'bullets',
 		clickable: true,
 		// dynamicBullets: true,
 		// dynamicMainBullets: 1,
@@ -44,4 +38,9 @@ const swiper = new Swiper('.swiper', {
 	mousewheel: {
 		invert: true,
 	},
+
+	// navigation: {
+	// 	nextEl: '.swiper-button-next',
+	// 	prevEl: '.swiper-button-prev',
+	// },
 });

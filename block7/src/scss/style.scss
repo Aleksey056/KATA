@@ -6,26 +6,12 @@
 
 @import 'blocks/header',
 	'blocks/main',
-	'blocks/brands';
-	// 'blocks/mobil-menu';
+	'blocks/brands',
+	'blocks/mobil-menu',
+	'blocks/commercial',
+	'blocks/footer';
 
-
-@media (min-device-width: 1440px) {
-	.header {
-		display: none;
-	}
-}
-
-@media (min-width: 1600px) {
-	.main, .brands {
-		display: block;
-		width: 1440px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-
-.round-icon {
+	.round-icon {
 		background-color: $colorFon;
 		margin: 0;
 		padding: 0;
@@ -52,6 +38,43 @@
 	background-image: url(/img/header/profile.svg);
 		}
 	}
+
+.title-section {
+	margin: 0;
+	font-weight: 400;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-bottom: 24px;
+	text-transform: uppercase;
+		.green-line {
+			height: 1px;	
+			border-radius: 1px;
+			background: #D9FFF5;
+		}
+		h2 {
+			background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%); 
+			padding: 16px 0 16px 24px;
+			color: $colorTextBlock;
+		}
+	}
+
+
+@media (min-device-width: 1440px) {
+	.header {
+		display: none;
+	}
+}
+
+@media (min-width: 1600px) {
+	.main, .brands, .technic, .price, .commercial {
+		display: block;
+		width: 1440px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
 // @include mix.desktop {
 // 	main {
 // 		display: block;

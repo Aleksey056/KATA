@@ -21,83 +21,38 @@
 		}
 	}
 
-
-
 .swiper {
-	margin-left: 16px;
-	margin-right: 16px;
-		@media (min-width: 768px) {
-			margin-left: 0;
-			margin-right: 0;
-		&-wrapper {
-			display: flex;
-			flex-wrap: wrap;
-		}
-		}
-	&-pagination {
-			position: static;
-		}
-	
 	.swiper-brands {
-	&__item {
-		display: flex;
-		gap: 16px;
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-content: center;
-		justify-content: space-around;
-		width: 240px;
-		height: 72px;
-		border: 1px solid #EAEAEA;
-		border-radius: 6px;
-			@media (min-width: 768px) {
-
-	}
-			.icon-button {
-				background-color: $colorFon;
-				width: 40px;
-				height: 40px;
-				background-image: url(/img/brands/go.svg);
-			}
+		&__item {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-content: center;
+			justify-content: space-around;
+			width: 240px;
+			height: 72px;
+			border: 1px solid #EAEAEA;
+			border-radius: 6px;
+				.icon-button {
+					background-color: $colorFon;
+					width: 40px;
+					height: 40px;
+					background-image: url(/img/brands/go.svg);
+				}
 		}
 		.swiper-slide {
 			display: flex;
 			width: 240px;
-			gap: 16px;
+			// gap: 16px;
+		}
+
+		@media (min-width: 768px) {
+			gap: 24px;
 		}
 	}
 
-	.expand-button {
-		display: none;
-			@media (min-width: 768px) {
-				padding-top: 24px;
-				display: flex;
-				gap: 8px;
-				border: none;
-					&--brands {
-						background-color: #F8F8F8;
-						margin-left: 32px;
-					}
-					&__img {
-						background-image: url(/img/body/expand.svg);
-						width: 24px;
-						height: 24px;
-					}
-		}
-		&__text {
-			font-family: TT Lakes;
-			font-weight: 500;
-			font-size: 16px;
-			line-height: 24px;
-			letter-spacing: -0.2px;	
-		}		
-	}
 }
 
-
-.expand-button--expand > .expand-button__img {
-	rotate: 180deg;
-}
 
 
 

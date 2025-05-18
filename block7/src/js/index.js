@@ -124,9 +124,9 @@ const expandBrands = document.getElementById('brandsList');
 const expandButtonText = document.getElementById('expandButtonText');
 
 expandButtonText.addEventListener('click', function () {
-	expandBrands.classList.toggle('swiper-wrapper--expand');
+	expandBrands.classList.toggle('swiper-brands--expand');
 	expandButton.classList.toggle('expand-button--expand');
-	if (expandBrands.classList.contains('swiper-wrapper--expand')) {
+	if (expandBrands.classList.contains('swiper-brands--expand')) {
 		expandButtonText.textContent = 'Скрыть';
 	} else {
 		expandButtonText.textContent = 'Показать всё';

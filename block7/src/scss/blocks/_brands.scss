@@ -44,11 +44,10 @@
 			display: flex;
 			width: 240px;
 			height: 72px;
-				@media (min-width: 768px) and (max-width: 1120px) {
+				@media (min-width: 768px) and (max-width: 1119px) {
 					width: 224px;
 				}
 		}
-
 		@media (min-width: 768px) {
 			gap: 16px 24px;
 			height: 162px;
@@ -56,6 +55,10 @@
 		}
 		&--expand {
 			height: auto;
+		}
+		@media (min-width: 1120px) {
+			margin-left: 32px;
+			gap: 16px 32px;
 		}
 	}
 }

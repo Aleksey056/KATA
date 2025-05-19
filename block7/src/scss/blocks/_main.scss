@@ -12,6 +12,10 @@
 		}
 	.title {
 		margin-bottom: 24px;
+			@media (min-width) {
+				height: 40px;
+				margin-bottom: 8px;
+			}
 	}
 
 	.title-block {
@@ -39,8 +43,28 @@
 			display: none;
 				@media (min-width: 1440) {
 					display: block;
+					height: 40px;
+					display: flex;
+					gap: 8px;
+					margin-right: 35px;
+					margin-left: auto;
+						button {
+							background-color: $colorFon;
+						}
 				}
 		}	
+	}
+
+	.title-label {
+		@media (min-width: 1440px) {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			letter-spacing: -0.2px;
+		}
 	}
 
 	.nav {
@@ -175,31 +199,7 @@
 }
 
 @media (min-width: 1440px) {
-	.title {
-		// padding-top: 42px;
-		height: 40px;
-		margin-bottom: 8px;
-	}
-	.title-block__block2 {
-		height: 40px;
-		display: flex;
-		gap: 8px;
-		margin-right: 35px;
-		margin-left: auto;
-			button {
-				background-color: $colorFon;
-			}
-	}
-	.title-label {
-		display: flex;
-		align-items: center;
-		gap: 8px;
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 24px;
-		letter-spacing: -0.2px;
-			
-	}
+
 	.section-info {
 		height: 307px;
 		&__img {

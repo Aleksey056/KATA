@@ -4,6 +4,12 @@
 	padding-bottom: 32px;
 	padding-top: 24px;
 	background-color: $colorFon;
+		@media (min-width: 768px) {
+			padding-top: 24px;
+		}
+		@media (min-width: 1440px) {
+			padding-top: 42px;
+		}
 	.title {
 		margin-bottom: 24px;
 	}
@@ -125,35 +131,6 @@
 	}
 
 @media (min-width: 768px) {
-	// .header {
-	// 	margin-bottom: 24px;
-	// 	background-color: #FFFFFF;
-	// }
-
-	// .header-block {
-	// 	&__block1 {
-	// 	justify-content: center;
-	// 	display: flex;
-	// 	align-items: center;
-	// 	gap: 16px;
-	// 	}
-	// 	&__block2 {
-	// 	margin-right: 0px;
-	// 	margin-left: auto;
-	// 	justify-content: center;
-	// 	display: flex;
-	// 	align-items: center;
-	// 	gap: 16px;
-	// 	}
-	// 	&__block3 {
-	// 	margin-right: 24px;
-	// 	justify-content: center;
-	// 	display: flex;
-	// 	align-items: center;
-	// 	gap: 16px;
-	// 	}
-	// }
-
 	.logo {
 		background-color: #FFFFFF;
 		background-image: url(/img/header/Header_Group.svg);
@@ -199,7 +176,7 @@
 
 @media (min-width: 1440px) {
 	.title {
-		padding-top: 42px;
+		// padding-top: 42px;
 		height: 40px;
 		margin-bottom: 8px;
 	}
@@ -237,26 +214,4 @@
 		display: flex;
 	}
 	}
-	@media (min-device-width: 1120px) {
-		padding-top: 42px;
-	}
 }
-
-// @media (min-width: 1600px) {
-// 	.main{
-// 		display: block;
-// 		width: 1440px;
-// 		margin-left: auto;
-// 		margin-right: auto;
-// 	}
-// 	}
-// }
-// @include mix.desktop {
-// 	main {
-// 		display: block;
-// 		width: 1440px;
-// 		margin-left: auto;
-// 		margin-right: auto;
-// 	}
-// }
-

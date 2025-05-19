@@ -78,15 +78,16 @@
 	.mobil-menu {
 		box-shadow: none;
 		background-color: $colorWhite;
-
-		.nav {
-			background-color: $colorWhite;
-		}
+			.nav {
+				background-color: $colorWhite;
+			}
 	}
 	.round-icon--burger {
 		display: none;
 	}
-
+	.mobil-menu {
+		display: block;
+	}
 }
 
 // @media (min-width: 1600px) {

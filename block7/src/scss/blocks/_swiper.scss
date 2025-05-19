@@ -8,6 +8,9 @@
 			position: absolute;
 			z-index: 100;
 			right: 0;
+				@media (min-width: 768px) {
+					display: none;
+				}
 		}
 	&-wrapper {
 		margin-left: 16px;

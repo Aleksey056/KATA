@@ -31,6 +31,9 @@
 		}
 		&__block2 {
 			display: none;
+				@media (min-width: 1440) {
+					display: block;
+				}
 		}	
 	}
 

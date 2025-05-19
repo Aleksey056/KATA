@@ -2,6 +2,7 @@
 
 .main {
 	padding-bottom: 32px;
+	padding-top: 24px;
 	background-color: $colorFon;
 	.title {
 		margin-bottom: 24px;
@@ -36,6 +37,9 @@
 	.nav {
 		margin-bottom: 24px;
 		margin-left: 16px;
+			@media (min-width: 768px) {
+				margin-left: 24px;
+			}
 	}
 	
 	.menu {
@@ -79,6 +83,9 @@
 			margin: 0 16px;
 			margin-bottom: 16px;
 		}
+		@media (min-width: 768px) {
+			margin-left: 24px;
+		}
 	}
 
 	.scroll-text {
@@ -90,13 +97,13 @@
 		letter-spacing: 0.2px;
 		overflow: auto; 
 		scrollbar-width: none;
-		margin-bottom: 16px;
 	}
 
 	.expand-button {
 		display: flex;
 		gap: 8px;
 		border: none;
+		background-color: $colorFon;
 		&__img {
 			background-image: url(/img/body/expand.svg);
 			width: 24px;
@@ -226,6 +233,9 @@
 	.link-reviews {
 		display: flex;
 	}
+	}
+	@media (min-device-width: 1120px) {
+		padding-top: 42px;
 	}
 }
 

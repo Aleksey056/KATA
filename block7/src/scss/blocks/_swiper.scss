@@ -1,24 +1,29 @@
 @import 'var', 'mix';
 
+
 .swiper {
+	&__shadow {
+			background: linear-gradient(270deg, #F8F8F8 16.84%, #F8F8F800 100%);
+			width: 24px;
+			position: absolute;
+			z-index: 100;
+			right: 0;
+		}
 	&-wrapper {
-		display: flex;
 		margin-left: 16px;
-			.swiper-slide {
-				margin: 0;
-			}
+		display: flex;
+		.swiper-slide {
+			margin: 0;
+		}
 		}
 		@media (min-width: 768px) {
 			margin-left: 0;
 			margin-right: 0;
-		&-wrapper {
-			display: flex;
-			flex-wrap: wrap;
-			margin-left: 16px;
-				// .swiper-slide {
-				// 	margin: 0;
-				// }
-		}
+			&-wrapper {
+				display: flex;
+				flex-wrap: wrap;
+				margin-left: 24px;
+			}
 		}
 	&-pagination {
 			padding-top: 16px;
@@ -37,7 +42,7 @@
 				border: none;
 					&--brands {
 						background-color: #F8F8F8;
-						margin-left: 32px;
+						margin-left: 24px;
 					}
 					&__img {
 						background-image: url(/img/body/expand.svg);

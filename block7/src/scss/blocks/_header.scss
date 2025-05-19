@@ -1,7 +1,6 @@
 @import 'var', 'mix';
 
 .header {
-	// margin-bottom: 24px;
 	background-color: $colorWhite;
 	.header-block {
 			height: 87px;
@@ -30,34 +29,6 @@
 		}
 	}
 
-	// .round-icon {
-	// 	background-color: $colorFon;
-	// 	margin: 0;
-	// 	padding: 0;
-	// 	width: 40px;
-	// 	height: 40px;
-	// 	border-radius: 50% ;
-	// 	border-style: none; 
-	// 	&--burger {
-	// background-image: url(/img/header/burger.svg);
-	// 	}
-	// 	&--repair {
-	// background-image: url(/img/header/repair.svg);
-	// 	}
-	// 	&--checkstatus {
-	// background-image: url(/img/header/checkstatus.svg);
-	// 	}
-	// 	&--call {
-	// background-image: url(/img/header/call.svg);
-	// 	}
-	// 	&--chat {
-	// background-image: url(/img/header/chat.svg);
-	// 	}
-	// 	&--profile {
-	// background-image: url(/img/header/profile.svg);
-	// 	}
-	// }
-
 	.logo {
 		background-color: $colorWhite;
 		background-image: url(/img/header/Header_Group.svg);
@@ -80,7 +51,7 @@
 		height: 1px;
 		border: none;
 		background-color: $colorShadow;
-		margin-bottom: 32px;
+		// margin-bottom: 32px;
 	}
 	
 
@@ -107,7 +78,6 @@
 			gap: 16px;
 		}
 		&__block3 {
-			margin-right: 24px;
 			justify-content: center;
 			display: flex;
 			align-items: center;
@@ -122,6 +92,9 @@
 			order: 1;
 			border-style: none; 
 		}
+	}
+	@media (min-device-width: 1120px) {
+		display: none;
 	}
 }
 

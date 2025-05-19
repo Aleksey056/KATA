@@ -1,7 +1,14 @@
 @import 'var', 'mix';
 
+
+.swiper {
+	&__shadow {
+			height: 81px;
+		}
+}
+
 .brands {
-	padding-bottom: 50px;
+	padding-bottom: 24px;
 	background-color: #F8F8F8;
 
 	&__title-block {
@@ -27,14 +34,15 @@
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
-			align-content: center;
+			align-items: center;
 			justify-content: space-around;
 			width: 240px;
 			height: 72px;
 			border: 1px solid #EAEAEA;
 			border-radius: 6px;
+			background-color: $colorWhite;
 				.icon-button {
-					background-color: $colorFon;
+					background-color: $colorWhite;
 					width: 40px;
 					height: 40px;
 					background-image: url(/img/brands/go.svg);
@@ -61,5 +69,6 @@
 			gap: 16px 32px;
 		}
 	}
+	
 }
 }

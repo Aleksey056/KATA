@@ -115,6 +115,16 @@ console.log('ТЕСТ - выполнено');
 
 
 
+function dropBurger () {
+	
+}
+// dropBurger():
+
+const buttonBurger = document.getElementById('buttonBurger');
+
+
+
+
 
 
 
@@ -132,3 +142,5 @@ expandButtonText.addEventListener('click', function () {
 		expandButtonText.textContent = 'Показать всё';
 	}
 });
+
+

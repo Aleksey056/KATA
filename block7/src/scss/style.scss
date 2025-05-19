@@ -64,25 +64,9 @@
 		}
 	}
 
-
-
-
 @media (min-width: 1440px) {
 	body {
 		max-width: 1440px;
 		margin: 0 auto;
 	}
-	main {
-		max-width: 1120px;
-		margin-left: 320px;
-	}
-	.mobil-menu {
-		box-shadow: none;
-		background-color: $colorWhite;
-		display: block;
-			.nav {
-				background-color: $colorWhite;
-			}
-	}
 }
-

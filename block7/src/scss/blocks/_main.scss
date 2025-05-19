@@ -1,15 +1,37 @@
 @import 'var', 'mix';
 
+main {
+	@media (min-width: 1440px) {
+		max-width: 1120px;
+		margin-left: 320px;
+	}
+}
+
 .main {
 	padding-bottom: 32px;
 	padding-top: 24px;
 	background-color: $colorFon;
+
 		@media (min-width: 768px) {
 			padding-top: 24px;
 		}
+
 		@media (min-width: 1440px) {
 			padding-top: 42px;
+			
 		}
+
+	.logo {
+		@media (min-width: 768px) {
+			background-color: #FFFFFF;
+			background-image: url(/img/header/Header_Group.svg);
+			width: 96.54814910888672px;
+			height: 50.814815521240234px;
+			order: 1;
+			border-style: none;
+		}
+	}
+
 	.title {
 		margin-bottom: 24px;
 			@media (min-width) {
@@ -41,8 +63,7 @@
 		}
 		&__block2 {
 			display: none;
-				@media (min-width: 1440) {
-					display: block;
+				@media (min-width: 1440px) {
 					height: 40px;
 					display: flex;
 					gap: 8px;
@@ -84,7 +105,7 @@
 		overflow: auto; 
 		scrollbar-width: none;
 			@media (min-width: 768px) {
-				
+				max-height: 40px;
 			}
 		&__link {
 			display: flex;
@@ -117,6 +138,11 @@
 
 	.section-info {
 		@media (min-width: 768px) {
+			height: 208px;
+			margin-bottom: 40px;
+			display: flex;
+			gap: 48px;
+			margin: 0 24px;
 			margin-left: 24px;
 		}
 		@media (min-width: 1440px) {
@@ -126,10 +152,22 @@
 			padding: 0;
 			margin: 0 16px;
 			margin-bottom: 16px;
+				@media (min-width: 768px) {
+					margin: 0;
+					padding: 0;
+					border: 2px #B8FFEC;
+					gap: 10px;
+					min-width: 312px;
+				}
 		}
 		&__img {
 		margin:0;
 		width: 100%;
+			@media (min-width: 768px) {
+				width: 360px;
+				height: 208px;
+				border-radius: 2%;
+			}
 			@media (min-width: 1440px) {
 				width: 531.34619140625px;
 				height: 307px;
@@ -146,6 +184,11 @@
 		letter-spacing: 0.2px;
 		overflow: auto; 
 		scrollbar-width: none;
+			@media (min-width: 768px) {
+				max-height: 160px;
+				line-height: 20px;
+				margin-bottom: 10px;
+			}
 			@media (min-width: 1440px) {
 				max-height: 160px;
 			}
@@ -156,6 +199,9 @@
 		gap: 8px;
 		border: none;
 		background-color: $colorFon;
+			@media (min-width: 768px) {
+				margin: 0;
+			}
 		&__img {
 			background-image: url(/img/body/expand.svg);
 			width: 24px;
@@ -166,57 +212,5 @@
 			line-height: 24px;
 			letter-spacing: -0.2px;
 		}
-	}
-
-@media (min-width: 768px) {
-
-}
-
-@media (min-width: 768px) {
-	.logo {
-		background-color: #FFFFFF;
-		background-image: url(/img/header/Header_Group.svg);
-		width: 96.54814910888672px;
-		height: 50.814815521240234px;
-		order: 1;
-		border-style: none; 
-	}
-
-	.menu {
-		max-height: 40px;
-	}
-	.section-info {
-		height: 208px;
-		margin-bottom: 40px;
-		display: flex;
-		gap: 48px;
-		margin: 0 24px;
-		&__text {
-		margin: 0;
-		padding: 0;
-		border: 2px #B8FFEC;
-		gap: 10px;
-		min-width: 312px;
-		}
-		&__img {
-		width: 360px;
-		height: 208px;
-		border-radius: 2%;
-		}	
-	}
-
-	.scroll-text {
-		max-height: 160px;
-		line-height: 20px;
-		margin-bottom: 10px;
-	}
-
-	.expand-button {
-		margin: 0;
-	}
-}
-
-@media (min-width: 1440px) {
-
 	}
 }

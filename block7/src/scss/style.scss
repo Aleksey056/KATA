@@ -23,22 +23,25 @@
 		border-radius: 50% ;
 		border-style: none; 
 		&--burger {
-	background-image: url(/img/header/burger.svg);
+			background-image: url(/img/header/burger.svg);
+				@media (min-width: 1440px) {
+					display: none;
+				}
 		}
 		&--repair {
-	background-image: url(/img/header/repair.svg);
+			background-image: url(/img/header/repair.svg);
 		}
 		&--checkstatus {
-	background-image: url(/img/header/checkstatus.svg);
+			background-image: url(/img/header/checkstatus.svg);
 		}
 		&--call {
-	background-image: url(/img/header/call.svg);
+			background-image: url(/img/header/call.svg);
 		}
 		&--chat {
-	background-image: url(/img/header/chat.svg);
+			background-image: url(/img/header/chat.svg);
 		}
 		&--profile {
-	background-image: url(/img/header/profile.svg);
+			background-image: url(/img/header/profile.svg);
 		}
 	}
 
@@ -61,7 +64,8 @@
 		}
 	}
 
-	
+
+
 
 @media (min-width: 1440px) {
 	body {
@@ -72,40 +76,13 @@
 		max-width: 1120px;
 		margin-left: 320px;
 	}
-	.header {
-		display: none;
-	}
 	.mobil-menu {
 		box-shadow: none;
 		background-color: $colorWhite;
+		display: block;
 			.nav {
 				background-color: $colorWhite;
 			}
 	}
-	.round-icon--burger {
-		display: none;
-	}
-	.mobil-menu {
-		display: block;
-	}
 }
-
-// @media (min-width: 1600px) {
-// 	.main, .brands, .technic, .price, .commercial, .main-footer {
-// 		display: block;
-// 		width: 1440px;
-// 		margin-left: auto;
-// 		margin-right: auto;
-// 	}
-// }
-
-
-// @include mix.desktop {
-// 	main {
-// 		display: block;
-// 		width: 1440px;
-// 		margin-left: auto;
-// 		margin-right: auto;
-// 	}
-// }
 

@@ -2,6 +2,9 @@
 
 .header {
 	background-color: $colorWhite;
+		@media (min-device-width: 1440px) {
+			display: none;
+		}
 	.header-block {
 			height: 87px;
 			display: flex;
@@ -93,9 +96,7 @@
 			border-style: none; 
 		}
 	}
-	@media (min-device-width: 1440px) {
-		display: none;
-	}
+	
 }
 
 // 	@media (min-device-width: 1440px) {

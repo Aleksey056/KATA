@@ -83,6 +83,9 @@
 		flex-wrap: nowrap;
 		overflow: auto; 
 		scrollbar-width: none;
+			@media (min-width: 768px) {
+				
+			}
 		&__link {
 			display: flex;
 			align-items: center;
@@ -102,6 +105,9 @@
 
 	.link-reviews {
 		display: none;
+			@media (min-width: 1440px) {
+				display: flex;
+			}
 	}
 
 	.menu__link:hover {
@@ -110,14 +116,24 @@
 	}
 
 	.section-info {
-		// margin-bottom: 35px;
+		@media (min-width: 768px) {
+			margin-left: 24px;
+		}
+		@media (min-width: 1440px) {
+			height: 307px;
+		}
 		&__text {
 			padding: 0;
 			margin: 0 16px;
 			margin-bottom: 16px;
 		}
-		@media (min-width: 768px) {
-			margin-left: 24px;
+		&__img {
+		margin:0;
+		width: 100%;
+			@media (min-width: 1440px) {
+				width: 531.34619140625px;
+				height: 307px;
+			}
 		}
 	}
 
@@ -130,6 +146,9 @@
 		letter-spacing: 0.2px;
 		overflow: auto; 
 		scrollbar-width: none;
+			@media (min-width: 1440px) {
+				max-height: 160px;
+			}
 	}
 
 	.expand-button {
@@ -149,10 +168,9 @@
 		}
 	}
 
-	.section-info__img{
-		margin:0;
-		width: 100%
-	}
+@media (min-width: 768px) {
+
+}
 
 @media (min-width: 768px) {
 	.logo {
@@ -200,18 +218,5 @@
 
 @media (min-width: 1440px) {
 
-	.section-info {
-		height: 307px;
-		&__img {
-			width: 531.34619140625px;
-			height: 307px;
-		}
-	}
-	.scroll-text {
-		max-height: 160px;
-	}
-	.link-reviews {
-		display: flex;
-	}
 	}
 }

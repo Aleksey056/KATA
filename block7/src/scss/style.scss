@@ -63,8 +63,13 @@
 
 	
 
-@media (min-device-width: 1440px) {
+@media (min-width: 1440px) {
+	body {
+		max-width: 1440px;
+		margin: 0 auto;
+	}
 	main {
+		max-width: 1120px;
 		margin-left: 320px;
 	}
 	.header {
@@ -84,14 +89,14 @@
 
 }
 
-@media (min-width: 1600px) {
-	.main, .brands, .technic, .price, .commercial, .main-footer {
-		display: block;
-		width: 1440px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
+// @media (min-width: 1600px) {
+// 	.main, .brands, .technic, .price, .commercial, .main-footer {
+// 		display: block;
+// 		width: 1440px;
+// 		margin-left: auto;
+// 		margin-right: auto;
+// 	}
+// }
 
 
 // @include mix.desktop {

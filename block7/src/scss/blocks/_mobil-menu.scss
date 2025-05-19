@@ -8,10 +8,11 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	transform: translateX(-320px);
 		@media (min-width: 1440px) {
 			box-shadow: none;
 			background-color: $colorWhite;
-			display: block;
+			transform: translateX(0);
 		}
 
 	.header-block {
@@ -138,5 +139,4 @@
 			color: #7E7E82;
 		}
 	}
-display: none;
 }

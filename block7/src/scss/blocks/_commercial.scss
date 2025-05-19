@@ -4,6 +4,10 @@
 	padding-left: 16px;
 	padding-bottom: 40px;
 	background-color: $colorFon;
+		@media (min-width: 768px) {
+			padding-left: 24px;
+			padding-bottom: 47px;
+		}
 	h4 {
 		font-weight: 400;
 		font-size: 14px;
@@ -13,12 +17,19 @@
 		// height: 100px;
 		padding-bottom: 16px;
 		color: $colorBlack;
+			@media (min-width: 768px) {
+				width: 421px;
+				height: 60px;
+			}
 	}
 	
 	&__link {
 		display: inline-block;
 		color: $colorBlack;
 		width: 192px;
+			@media (min-width: 768px) {
+				display: inline;
+			}
 
 		.line {
 			position: absolute;

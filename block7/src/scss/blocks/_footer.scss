@@ -12,14 +12,22 @@ footer {
 }
 
 .footer {
-	margin-top: 16px;
+	padding-top: 16px;
 	height: 129px;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 0 32px 20px 32px;
+  // padding: 0 32px 20px 32px;
   flex-wrap: nowrap;
   align-items: center;
+		@media (min-width: 768px) {
+			flex-direction: row;
+			padding: 32px 24px 20px 24px;
+			height: auto;
+			align-items: normal;
+			gap: 0;
+			justify-content: space-between;
+		}
 		
 		span {
 			font-weight: 500;
@@ -33,9 +41,22 @@ footer {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+					@media (min-width: 768px) {
+						width: 218px;
+						height: 32px;
+						align-items: baseline;
+					}
 			}
 			&--3 {
 				text-align: center;
+					@media (min-width: 768px) {
+						width: 213px;
+						text-align: right;
+							span {
+								display: block;
+								height: 48px;
+							}
+					}
 			}
 		}
 }

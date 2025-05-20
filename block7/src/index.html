@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="drops-menu">
-	<aside class="mobil-menu" id="mobil-menu">
+	<div class="mobil-menu" id="mobil-menu">
 		<div>
 		<div class="header-block">
 			<div class="header-block__block-1">
@@ -64,8 +64,39 @@
 				<button class="contact-info__lang">CH</button>
 			</div>
 		</div>
-	</aside>
+	</div>
+	<div class="feedback">
+		<button class="round-icon round-icon--feedback" id="buttonFeedbackHidden"></button>
+		<div class="feedback-title">
+			<div class="feedback-title__img"></div>
+			<h1 class="feedback-title__text">Обратная связь</h1>
+		</div>
+		<form class="form">
+			<input type="text" class="form__name" placeholder="Имя">
+			<input type="text" class="form__number" placeholder="Телефон">
+			<input type="text" class="form__email" placeholder="Электронная почта">
+			<textarea name="" id="" class="form__text" placeholder="Сообщение"></textarea>
+			<p>Нажимая “отправить”, вы даете согласие на <span class="text-color--red">обработку 
+				персональных данных</span> и соглашаетесь 
+				с нашей <span class="text-color--red">политикой конфиденциальности</span></p>
+			<button class="form__button-send"></button>
+		</form>
 </div>
+<div class="callback">
+		<button class="round-icon round-icon--callback" id="buttonCallbackHidden"></button>
+		<div class="callback-title">
+			<div class="callback-title__img"></div>
+			<h1 class="callback-title__text">Заказать звонок</h1>
+		</div>
+		<form class="form">
+			<input type="text" class="form__number" placeholder="Телефон">
+			<p>Нажимая “отправить”, вы даете согласие на <span class="text-color--red">обработку 
+				персональных данных</span> и соглашаетесь 
+				с нашей <span class="text-color--red">политикой конфиденциальности</span></p>
+			<button class="form__button-send"></button>
+		</form>
+</div>
+
 <main>
 	<header class="header">
 		<div class="header-block">

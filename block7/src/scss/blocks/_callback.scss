@@ -1,0 +1,85 @@
+@import 'var', 'mix';
+
+.callback {
+  background-color: $colorWhite;
+  width: 320px;
+  position: absolute;
+  transform: translateX(1950px);
+  // padding-bottom: 75px;
+  height: 100%;
+
+  .callback-title {
+		display: flex;
+		align-items: center;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		&__img {
+			height: 40px;
+			width: 4px;
+			background-image: url(/src/img/title/highlight.svg);
+		}
+		&__text {
+			margin: 0;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 32px;
+			letter-spacing: -0.6px;
+		}
+	}
+  .round-icon--callback {
+    background-image: url(/img/mobile_menu/burger.svg);
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-bottom: 32px;
+  }
+  .form {
+    padding-top: 24px;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+      &__name, &__number, &__email {
+        width: 288px;
+        height: 48px;
+        border-radius: 8px;
+        border: 1px solid $colorFormBorder;
+      }
+      &__text {
+        box-sizing: border-box;
+        width: 288px;
+        height: 118px;
+        border-radius: 8px;
+        border: 1px solid $colorFormBorder;
+      }
+      input, textarea {
+        box-sizing: border-box;
+        padding: 16px 0 16px 12px;
+        font-family: TT Lakes;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+      }
+      &__button-send {
+        margin-left: auto;
+        margin-right: 16px;
+      }
+      p {
+        margin-right: 16px;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0px;
+          .text-color--red {
+              color: $colorRed;
+          }
+      }
+      &__button-send {
+        width: 136px;
+        height: 32px;
+        border-radius: 16px;
+        background-image: url('/src/img/feedback/Group\ 10.svg');
+      }
+  }
+}

@@ -1,6 +1,9 @@
 @import 'var', 'mix';
 
 .mobil-menu {
+	div {
+		background-color: $colorWhite;
+	}
 	position: absolute;
 	top: 0;
 	box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
@@ -10,7 +13,6 @@
 	flex-direction: column;
 	justify-content: space-between;
 	transform: translateX(-320px);
-	background-color: #FFFFFF;
 		@media (min-width: 1440px) {
 			box-shadow: none;
 			background-color: $colorWhite;
@@ -24,6 +26,7 @@
 		align-items: center;
 		gap: 15px;
 		margin-bottom: 45px;
+		background-color: $colorWhite;
 		&__block-1 {
 			display: flex;
 			align-items: center;
@@ -102,7 +105,7 @@
 	}
 
 	.aside-footer {
-		margin-left: 24px;
+		padding-left: 24px;
 		padding-bottom: 40px;
 		
 	}

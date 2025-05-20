@@ -121,8 +121,19 @@ function dropBurger () {
 // dropBurger():
 
 const buttonBurger = document.getElementById('buttonBurger');
+const buttonBurgerHidden = document.getElementById('buttonBurgerHidden');
+const mobilMenu = document.getElementById('mobil-menu');
+const main = document.querySelector('main');
 
 
+buttonBurger.addEventListener('click', function () {
+	mobilMenu.classList.add('mobil-menu--active');
+	main.classList.add('blur');
+});
+buttonBurgerHidden.addEventListener('click', function() {
+	mobilMenu.classList.remove('mobil-menu--active');
+	main.classList.remove('blur');
+});
 
 
 

@@ -1,6 +1,7 @@
 @import 'var', 'mix';
 
 main {
+	
 	@media (min-width: 1440px) {
 		max-width: 1120px;
 		margin-left: 320px;
@@ -212,5 +213,12 @@ main {
 			line-height: 24px;
 			letter-spacing: -0.2px;
 		}
+	}
+}
+
+
+.blur {
+	@media (max-width: 1440px) {
+		opacity: 4%;
 	}
 }

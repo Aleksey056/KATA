@@ -1,3 +1,4 @@
+@import 'var', 'mix';
 
 .mobil-menu {
 	position: absolute;
@@ -9,6 +10,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	transform: translateX(-320px);
+	background-color: #FFFFFF;
 		@media (min-width: 1440px) {
 			box-shadow: none;
 			background-color: $colorWhite;
@@ -139,4 +141,10 @@
 			color: #7E7E82;
 		}
 	}
+}
+
+.mobil-menu--active {
+	transform: translateX(0);
+	background-color: $colorFon;
+	z-index: 200;
 }

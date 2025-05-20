@@ -6,7 +6,7 @@
 	}
 	position: absolute;
 	top: 0;
-	box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+	
 	width: 320px;
 	height: 100%;
 	display: flex;
@@ -148,6 +148,10 @@
 
 .mobil-menu--active {
 	transform: translateX(0);
-	background-color: $colorFon;
+	background-color: $colorWhite;
 	z-index: 200;
+	box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+	 @media (min-width: 1440px) {
+		box-shadow: none;
+	 }
 }

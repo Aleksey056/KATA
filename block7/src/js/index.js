@@ -110,9 +110,89 @@ function createCardBrands(image) {
 
 createCardBrands(brandsImage);
 
-console.log('ТЕСТ - выполнено');
 
 
+const swiperTechnic = document.querySelectorAll('.swiper-technic');
+
+let services = [
+	{
+		name: 'Ремонт ноутбуков'
+	},
+
+	{
+		name: 'Ремонт планшетов'
+	},
+
+	{
+		name: 'Ремонт ПК'
+	},
+
+	{
+		name: 'Ремонт мониторов'
+	},
+
+	{
+		name: 'Ремонт ноутбуков'
+	},
+
+	{
+		name: 'Ремонт планшетов'
+	},
+
+	{
+		name: 'Ремонт ПК'
+	},
+
+	{
+		name: 'Ремонт мониторов'
+	},
+
+]
+
+function createCardTechnic (name) {
+
+	for (let i = 0; i < services.length; i++ ) {
+
+		const slide = document.createElement('div');
+		slide.classList.add('swiper-slide');
+		swiperTechnic[0].appendChild(slide);
+
+		const slideItem = document.createElement('a');
+		slideItem.classList.add('swiper-technic__item');
+		slide.appendChild(slideItem);
+
+		const slideName = document.createElement('span');
+		slideName.textContent = services[i].name;
+		slideItem.appendChild(slideName);
+
+		const btn = document.createElement('button');
+		btn.classList.add('icon-button');
+		slideItem.appendChild(btn);
+	}
+}
+
+createCardTechnic (services);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// BUTTON FUNCTIONAL
 
 
 function dropBurger () {

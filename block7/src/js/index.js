@@ -122,10 +122,19 @@ function dropBurger () {
 
 const buttonBurger = document.getElementById('buttonBurger');
 const buttonBurgerHidden = document.getElementById('buttonBurgerHidden');
+
+const buttonFeedback = document.getElementById('buttonFeedback');
+const buttonFeedbackHidden = document.getElementById('buttonFeedbackHidden');
+
+const buttonCallback = document.getElementById('buttonCallback');
+const buttonCallbackHidden = document.getElementById('buttonCallbackHidden');
+
 const mobilMenu = document.getElementById('mobil-menu');
+const feedback = document.getElementById('feedback');
+const callback = document.getElementById('');
 const main = document.querySelector('main');
 
-
+// drop-burger
 buttonBurger.addEventListener('click', function () {
 	mobilMenu.classList.add('mobil-menu--active');
 	main.classList.add('blur');
@@ -135,8 +144,16 @@ buttonBurgerHidden.addEventListener('click', function() {
 	main.classList.remove('blur');
 });
 
-
-
+// drop-feedback
+buttonFeedback.addEventListener('click', function() {
+	feedback.classList.add('feedback--active');
+	main.classList.add('blur');
+});
+buttonFeedbackHidden.addEventListener('click', function() {
+	console.log('ckic')
+	feedback.classList.remove('feedback--active');
+	main.classList.remove('blur');
+});
 
 
 

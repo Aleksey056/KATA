@@ -9,24 +9,7 @@
 
 .brands {
 	padding-bottom: 24px;
-	background-color: #F8F8F8;
-
-	// &__title-block {
-	// margin: 0;
-	// font-weight: 400;
-	// font-size: 16px;
-	// text-transform: uppercase;
-	// color: $colorTextBlock;
-	// padding: 16px 0 16px 24px;
-	// background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
-	// margin-bottom: 24px;
-	// text-transform: uppercase;
-	// 	.green-line {
-	// 		height: 1px;	
-	// 		border-radius: 1px;
-	// 		background: #D9FFF5;
-	// 	}
-	// }
+	background-color: $colorFon;
 
 .swiper {
 	&-brands {
@@ -38,7 +21,7 @@
 			justify-content: space-around;
 			width: 240px;
 			height: 72px;
-			border: 1px solid #EAEAEA;
+			border: 1px solid $colorFormBorder;
 			border-radius: 6px;
 			background-color: $colorWhite;
 				.icon-button {
@@ -52,11 +35,11 @@
 			display: flex;
 			width: 240px;
 			height: 72px;
-				@media (min-width: 768px) and (max-width: 1119px) {
+				@media (min-width: $tablet) and (max-width: 1119px) {
 					width: 224px;
 				}
 		}
-		@media (min-width: 768px) {
+		@media (min-width: $tablet) {
 			gap: 16px 24px;
 			height: 162px;
 			overflow: hidden;
@@ -64,7 +47,7 @@
 		&--expand {
 			height: auto;
 		}
-		@media (min-width: 1440px) {
+		@media (min-width: $widescreen) {
 			margin-left: 32px;
 			gap: 16px 32px;
 		}

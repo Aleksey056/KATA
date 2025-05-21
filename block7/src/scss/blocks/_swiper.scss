@@ -10,12 +10,15 @@
 		.green-line {
 			height: 1px;	
 			border-radius: 1px;
-			background: #D9FFF5;
+			background: $colorGreenLine;
 		}
 		h2 {
 			background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%); 
 			padding: 16px 0 16px 24px;
 			color: $colorTextBlock;
+				@media (min-width: $desctop) {
+					padding: 16px 0 16px 32px;
+				}
 		}
 	}
 
@@ -26,7 +29,7 @@
 			position: absolute;
 			z-index: 100;
 			right: 0;
-				@media (min-width: 768px) {
+				@media (min-width: $tablet) {
 					display: none;
 				}
 		}
@@ -37,7 +40,7 @@
 			margin: 0;
 		}
 		}
-		@media (min-width: 768px) {
+		@media (min-width: $tablet) {
 			margin-left: 0;
 			margin-right: 0;
 			&-wrapper {
@@ -49,20 +52,20 @@
 	&-pagination {
 			padding-top: 16px;
 			position: static;
-				@media (min-width: 768px) {
+				@media (min-width: $tablet) {
 					display: none;
 				}
 		}
 
 	.expand-button {
 		display: none;
-			@media (min-width: 768px) {
+			@media (min-width: $tablet) {
 				padding-top: 24px;
 				display: flex;
 				gap: 8px;
 				border: none;
 					&--brands {
-						background-color: #F8F8F8;
+						background-color: $colorFon;
 						margin-left: 24px;
 					}
 					&__img {

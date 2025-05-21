@@ -132,29 +132,34 @@ const buttonCallbackHidden = document.getElementById('buttonCallbackHidden');
 const mobilMenu = document.getElementById('mobil-menu');
 const feedback = document.getElementById('feedback');
 const callback = document.getElementById('');
-const blurBody = document.querySelector('main');
+const main = document.querySelector('main', 'mobil-menu');
 
 // drop-burger
 buttonBurger.addEventListener('click', function () {
 	mobilMenu.classList.add('mobil-menu--active');
-	blurBody.classList.add('blur');
+	main.classList.add('blur');
 });
 buttonBurgerHidden.addEventListener('click', function() {
 	mobilMenu.classList.remove('mobil-menu--active');
-	blurBody.classList.remove('blur');
+	main.classList.remove('blur');
 });
 
 // drop-feedback
 buttonFeedback.addEventListener('click', function() {
 	feedback.classList.add('feedback--active');
-	blurBody.classList.add('blur');
 	mobilMenu.classList.remove('mobil-menu--active');
+	mobilMenu.classList.add('blur')
+	main.classList.add('blur');
 });
 buttonFeedbackHidden.addEventListener('click', function() {
 	console.log('ckic')
 	feedback.classList.remove('feedback--active');
-	blurBody.classList.remove('blur');
+	main.classList.remove('blur');
+	mobilMenu.classList.remove('blur')
 });
+
+//drop-callback
+
 
 
 

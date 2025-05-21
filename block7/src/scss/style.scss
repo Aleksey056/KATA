@@ -70,15 +70,20 @@ body {
 	@media (min-width: 1440px) {
 		max-width: 1440px;
 		margin: 0 auto;
-		background-color:antiquewhite;
 	}
 }
 
 
 .blur {
-	position: relative;
+	position: fixed;
 	width: 100%;
 	height: 100%;
 	opacity: 4%;
 	z-index: 20;
+		@media (min-width: 320px) {
+			width: auto;
+		}
+	// @media (min-width:1440px) {
+	// 	width: auto;
+	// }
 }

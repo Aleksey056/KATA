@@ -131,7 +131,7 @@ const buttonCallbackHidden = document.getElementById('buttonCallbackHidden');
 
 const mobilMenu = document.getElementById('mobil-menu');
 const feedback = document.getElementById('feedback');
-const callback = document.getElementById('');
+const callback = document.getElementById('callback');
 const main = document.querySelector('main', 'mobil-menu');
 
 // drop-burger
@@ -159,7 +159,20 @@ buttonFeedbackHidden.addEventListener('click', function() {
 });
 
 //drop-callback
-
+buttonCallback.addEventListener('click', function() {
+	console.log("нажатие")
+	callback.classList.add('callback--active');
+	mobilMenu.classList.remove('mobil-menu--active');
+	mobilMenu.classList.add('blur')
+	main.classList.add('blur');
+});
+buttonCallbackHidden.addEventListener('click', function() {
+	console.log("закрытие")
+	console.log('ckic')
+	callback.classList.remove('callback--active');
+	main.classList.remove('blur');
+	mobilMenu.classList.remove('blur')
+});
 
 
 

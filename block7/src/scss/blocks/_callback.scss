@@ -1,15 +1,31 @@
 @import 'var', 'mix';
 
 .callback {
-  display: none;
+	position: fixed;
+	right: 0;
   background-color: $colorWhite;
   width: 320px;
-  position: absolute;
-  transform: translateX(1950px);
-  // padding-bottom: 75px;
+  z-index: 100;
+  transform: translateX(120%);
   height: 100%;
+    @media (min-width: 1440px) {
+      width: 440px;
+    }
+
+  .round-icon--callback {
+  background-image: url(/img/mobile_menu/burger.svg);
+  margin-top: 24px;
+  margin-left: 16px;
+    @media (min-width: 1440px) {
+      position: absolute;
+      margin-top: 0;
+      top: 32px;
+      left: -88px;
+    }
+  }
 
   .callback-title {
+    margin-top: 32px;
 		display: flex;
 		align-items: center;
 		height: 40px;
@@ -29,58 +45,67 @@
 			letter-spacing: -0.6px;
 		}
 	}
-  .round-icon--callback {
-    background-image: url(/img/mobile_menu/burger.svg);
-    margin-top: 24px;
-    margin-left: 16px;
-    margin-bottom: 32px;
-  }
+  
   .form {
     padding-top: 24px;
     padding-left: 16px;
     display: flex;
     flex-direction: column;
     row-gap: 16px;
-      &__name, &__number, &__email {
-        width: 288px;
-        height: 48px;
-        border-radius: 8px;
-        border: 1px solid $colorFormBorder;
-      }
-      &__text {
-        box-sizing: border-box;
-        width: 288px;
-        height: 118px;
-        border-radius: 8px;
-        border: 1px solid $colorFormBorder;
-      }
-      input, textarea {
-        box-sizing: border-box;
-        padding: 16px 0 16px 12px;
-        font-family: TT Lakes;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-      }
-      &__button-send {
-        margin-left: auto;
-        margin-right: 16px;
-      }
-      p {
-        margin-right: 16px;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0px;
-          .text-color--red {
-              color: $colorRed;
-          }
-      }
-      &__button-send {
-        width: 136px;
-        height: 32px;
-        border-radius: 16px;
-        background-image: url('/src/img/feedback/Group\ 10.svg');
-      }
+      @media (min-width: 1440px) {
+        padding-left: 32px;;
+        }
+    &__number{
+      width: 288px;
+      height: 48px;
+      border-radius: 8px;
+      border: 1px solid $colorFormBorder;
+        @media (min-width: 1440px) {
+          width: 376px;
+        }
+    }
+    }
+
+    input {
+      box-sizing: border-box;
+      padding: 16px 0 16px 12px;
+      font-family: TT Lakes;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+    }
+    &__button-send {
+      margin-left: auto;
+      margin-right: 16px;
+    }
+    p {
+      margin-right: 16px;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0px;
+        .text-color--red {
+            color: $colorRed;
+        }
+    }
+    &__button-send {
+      width: 136px;
+      height: 32px;
+      border-radius: 16px;
+      background-image: url('/src/img/feedback/Group\ 10.svg');
+    }
   }
+
+
+.callback--active {
+	display: block;
+  z-index: 300;
+  transform: translateX(0);
+	box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+		@media (min-width: 1440px) {
+			right: auto;
+			transform: translateX(1000px);
+			// чтоб не было по центру страницы закоментировать этот media
+		}
 }
+  

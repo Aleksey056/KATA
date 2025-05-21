@@ -1,29 +1,28 @@
 @import 'var', 'mix';
 
 .feedback {
-  // display: none;
+	position: fixed;
+	right: 0;
   background-color: $colorWhite;
   width: 320px;
-  position: absolute;
+  z-index: 100;
   transform: translateX(120%);
-  // padding-bottom: 75px;
   height: 100%;
     @media (min-width: 1440px) {
       width: 440px;
-      z-index: 100;
     }
 
-    .round-icon--feedback {
-    background-image: url(/img/mobile_menu/burger.svg);
-    margin-top: 24px;
-    margin-left: 16px;
-      @media (min-width: 1440px) {
-        position: absolute;
-        margin-top: 0;
-        top: 32px;
-        left: -88px;
-      }
+  .round-icon--feedback {
+  background-image: url(/img/mobile_menu/burger.svg);
+  margin-top: 24px;
+  margin-left: 16px;
+    @media (min-width: 1440px) {
+      position: absolute;
+      margin-top: 0;
+      top: 32px;
+      left: -88px;
     }
+  }
 
   .feedback-title {
     margin-top: 32px;
@@ -104,19 +103,15 @@
         background-image: url('/src/img/feedback/Group\ 10.svg');
       }
   }
-
-
-  @media (min-width: 1440px) {
-      
-  }
-
-
 }
 
 .feedback--active {
-  @media (min-width: 1440px) {
-    transform: translateX(-100%);
-    z-index: 300;
+	display: block;
+  z-index: 300;
+  transform: translateX(0);
+		@media (min-width: 1440px) {
+			right: auto;
+			transform: translateX(1000px);
+		}
 }
-  }
   

@@ -132,27 +132,28 @@ const buttonCallbackHidden = document.getElementById('buttonCallbackHidden');
 const mobilMenu = document.getElementById('mobil-menu');
 const feedback = document.getElementById('feedback');
 const callback = document.getElementById('');
-const main = document.querySelector('main');
+const blurBody = document.querySelector('main');
 
 // drop-burger
 buttonBurger.addEventListener('click', function () {
 	mobilMenu.classList.add('mobil-menu--active');
-	main.classList.add('blur');
+	blurBody.classList.add('blur');
 });
 buttonBurgerHidden.addEventListener('click', function() {
 	mobilMenu.classList.remove('mobil-menu--active');
-	main.classList.remove('blur');
+	blurBody.classList.remove('blur');
 });
 
 // drop-feedback
 buttonFeedback.addEventListener('click', function() {
 	feedback.classList.add('feedback--active');
-	main.classList.add('blur');
+	blurBody.classList.add('blur');
+	mobilMenu.classList.remove('mobil-menu--active');
 });
 buttonFeedbackHidden.addEventListener('click', function() {
 	console.log('ckic')
 	feedback.classList.remove('feedback--active');
-	main.classList.remove('blur');
+	blurBody.classList.remove('blur');
 });
 
 

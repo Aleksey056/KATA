@@ -56,6 +56,21 @@ body {
 	}
 }
 
+	.expand-button {
+		display: flex;
+		gap: 8px;
+		border: none;
+		background-color: $colorFon;
+		
+		&__img {
+			background-image: url(/img/body/expand.svg);
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+	
+
 
 .blur {
 	position: fixed;

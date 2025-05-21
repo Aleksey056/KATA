@@ -1,8 +1,58 @@
 @import 'var', 'mix';
 
-.technic {
-	background-color: $colorFon;
-		&__block {
-			background-color: $colorFon;
+.swiper {
+	&__shadow {
+			height: 81px;
 		}
+}
+
+.technic {
+	padding-bottom: 24px;
+	background-color: $colorFon;
+
+.swiper {
+	&-technic {
+		&__item {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			width: 240px;
+			height: 160px;
+			border: 1px solid $colorFormBorder;
+			border-radius: 6px;
+			background-color: $colorWhite;
+				span {
+					margin: 16px;
+				}
+				.icon-button {
+					margin: 16px;
+					margin-left: auto;
+					background-color: $colorWhite;
+					width: 40px;
+					height: 40px;
+					background-image: url(/img/brands/go.svg);
+				}
+		}
+		.swiper-slide {
+			display: flex;
+			width: 240px;
+			// height: 72px;
+				@media (min-width: $tablet) and (max-width: 1119px) {
+					width: 224px;
+				}
+		}
+		@media (min-width: $tablet) {
+			gap: 16px 24px;
+			height: 162px;
+			overflow: hidden;
+		}
+		&--expand {
+			height: auto;
+		}
+		@media (min-width: $widescreen) {
+			gap: 16px 32px;
+		}
+	}
+	
+}
 }

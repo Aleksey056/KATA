@@ -1,12 +1,43 @@
 @import 'var', 'mix';
 
-.title-section {
+// .title-section {
+// 	margin: 0;
+// 	font-weight: 400;
+// 	text-transform: uppercase;
+// 	margin-bottom: 24px;
+// 	text-transform: uppercase;
+// 		.green-line {
+// 			height: 1px;	
+// 			border-radius: 1px;
+// 			background: $colorGreenLine;
+// 		}
+// 		h2 {
+// 			background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%); 
+// 			padding: 16px 0 16px 0;
+// 			// padding: 16px 0 16px 24px;
+// 			color: $colorTextBlock;
+// 				// @media (min-width: $desctop) {
+// 				// 	padding: 16px 0 16px 32px;
+// 				// }
+// 		}
+// 	}
+
+.swiper-conteiner {
+	background-color: $colorFon;
+	padding-left: 16px;
+		@media (min-width: $tablet) {
+			padding-left: 24px;
+		}
+		@media (min-width: $widescreen) {
+			padding-left: 32px;
+		}
+	&__title-section {
 	margin: 0;
 	font-weight: 400;
-	font-size: 16px;
 	text-transform: uppercase;
-	margin-bottom: 24px;
+	padding-bottom: 24px;
 	text-transform: uppercase;
+	color: $colorTextBlock;
 		.green-line {
 			height: 1px;	
 			border-radius: 1px;
@@ -14,13 +45,15 @@
 		}
 		h2 {
 			background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%); 
-			padding: 16px 0 16px 24px;
+			padding: 16px 0 16px 0;
+			// padding: 16px 0 16px 24px;
 			color: $colorTextBlock;
-				@media (min-width: $desctop) {
-					padding: 16px 0 16px 32px;
-				}
+				// @media (min-width: $desctop) {
+				// 	padding: 16px 0 16px 32px;
+				// }
 		}
 	}
+}
 
 .swiper {
 	&__shadow {
@@ -34,7 +67,7 @@
 				}
 		}
 	&-wrapper {
-		margin-left: 16px;
+		// margin-left: 16px;
 		display: flex;
 		.swiper-slide {
 			margin: 0;
@@ -46,7 +79,7 @@
 			&-wrapper {
 				display: flex;
 				flex-wrap: wrap;
-				margin-left: 24px;
+				// margin-left: 24px;
 			}
 		}
 	&-pagination {
@@ -64,23 +97,16 @@
 				display: flex;
 				gap: 8px;
 				border: none;
-					&--brands {
-						background-color: $colorFon;
-						margin-left: 24px;
-					}
+				// margin-left: 24px;
+					// @media (min-width: $widescreen) {
+					// 	margin-left: 32px;
+					// }
 					&__img {
 						background-image: url(/img/body/expand.svg);
 						width: 24px;
 						height: 24px;
 					}
-		}
-		&__text {
-			font-family: TT Lakes;
-			font-weight: 500;
-			font-size: 16px;
-			line-height: 24px;
-			letter-spacing: -0.2px;	
-		}		
+		}	
 	}
 }
 

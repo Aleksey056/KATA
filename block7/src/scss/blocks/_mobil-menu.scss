@@ -15,7 +15,6 @@
 			background-color: $colorWhite;
 			transform: translateX(0);
 		}
-	
 	div {
 		background-color: $colorWhite;
 	}
@@ -112,7 +111,6 @@
 	}
 
 	.contact-info {
-		
 		display: flex;
 		flex-direction: column;
 		gap: 14px;
@@ -135,10 +133,11 @@
 			align-items: self-start;
 			gap: 7px;
 
-				button {
-					background-color: $colorWhite;
-				}
+		button {
+			background-color: $colorWhite;
 		}
+		}
+
 		&__lang:hover {
 			display: flex;
 			gap: 7px;
@@ -150,9 +149,8 @@
 .mobil-menu--active {
 	transform: translateX(0);
 	background-color: $colorWhite;
-	
 	box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
-	 @media (min-width: 1440px) {
-		box-shadow: none;
-	 }
+		@media (min-width: 1440px) {
+			box-shadow: none;
+		}
 }

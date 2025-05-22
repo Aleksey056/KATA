@@ -181,14 +181,11 @@ createCardTechnic (services);
 
 
 const swiperPrice = document.querySelectorAll('.swiper-price');
+
+
+
+
 let price = [
-
-	{
-		titleText: 'Ремонтные услуги',
-		titlePrice: 'Цена',
-		titlePeriod: 'Срок',
-	},
-
 	{
 		text: 'Диагностика',
 		price: 'Бесплатно',
@@ -218,6 +215,11 @@ let price = [
 ]
 
 function createCardPrice (price) {
+
+		const titleText = 'Ремонтные услуги';
+		const titlePrice = 'Цена';
+		const titlePeriod = 'Срок';
+
 	for (let i = 0; i < price.length; i++ ) {
 
 		const slide = document.createElement('div');
@@ -236,11 +238,13 @@ function createCardPrice (price) {
 		slideItem.appendChild(divText);
 
 			const spanTitleText = document.createElement('span');
-			spanTitleText.textContent = price[0].titleText;
+			spanTitleText.textContent = titleText;
+			spanTitleText.classList.add('span-title')
 			divText.appendChild(spanTitleText);
 	
 			const spanText = document.createElement('span');
 			spanText.textContent = price[i].text;
+			spanText.classList.add('span-text')
 			divText.appendChild(spanText);
 
 
@@ -249,11 +253,13 @@ function createCardPrice (price) {
 		slideItem.appendChild(divPrice);
 
 			const spanTitlePrice = document.createElement('span');
-			spanTitlePrice.textContent = price[0].titlePrice;
+			spanTitlePrice.textContent = titlePrice;
+			spanTitlePrice.classList.add('span-title')
 			divPrice.appendChild(spanTitlePrice);
 
 			const spanPrice = document.createElement('span');
 			spanPrice.textContent = price[i].price;
+			spanPrice.classList.add('span-text')
 			divPrice.appendChild(spanPrice);
 
 
@@ -262,11 +268,13 @@ function createCardPrice (price) {
 		slideItem.appendChild(divPeriod);
 		
 			const spanTitlePeriod = document.createElement('span');
-			spanTitlePeriod.textContent = price[0].titlePeriod;
+			spanTitlePeriod.textContent = titlePeriod;
+			spanTitlePeriod.classList.add('span-title')
 			divPeriod.appendChild(spanTitlePeriod);
 
 			const spanPeriod = document.createElement('span');
 			spanPeriod.textContent = price[i].period;
+			spanPeriod.classList.add('span-text')
 			divPeriod.appendChild(spanPeriod);
 
 

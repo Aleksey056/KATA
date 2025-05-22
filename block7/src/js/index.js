@@ -182,6 +182,13 @@ createCardTechnic (services);
 
 const swiperPrice = document.querySelectorAll('.swiper-price');
 let price = [
+
+	{
+		titleText: 'Ремонтные услуги',
+		titlePrice: 'Цена',
+		titlePeriod: 'Срок',
+	},
+
 	{
 		text: 'Диагностика',
 		price: 'Бесплатно',
@@ -207,7 +214,7 @@ let price = [
 		price: '1000',
 		period: '30-120 мин',
 	},
-
+	
 ]
 
 function createCardPrice (price) {
@@ -221,18 +228,60 @@ function createCardPrice (price) {
 		slideItem.classList.add('swiper-price__item');
 		slide.appendChild(slideItem);
 
-		const slideText = document.createElement('span');
-		slideText.textContent = price[i].text;
-		slideItem.appendChild(slideText);
 
-		const slidePrice = document.createElement('span');
-		slidePrice.textContent = price[i].price;
-		slideItem.appendChild(slidePrice);
 
-		const slidePeriod = document.createElement('span');
-		slidePeriod.textContent = price[i].period;
-		slideItem.appendChild(slidePeriod);
 
+
+		const divTitle = document.createElement('div');
+		divTitle.classList.add('title', 'title-hidden');
+		slideItem.appendChild(divTitle);
+
+		
+
+		const divText = document.createElement('span');
+		divText.textContent = price[0].titleText;
+		divTitle.appendChild(divText);
+
+		const divPrice = document.createElement('span');
+		divPrice.textContent = price[0].titlePrice;
+		divTitle.appendChild(divPrice);
+
+		const divPeriod = document.createElement('span');
+		divPeriod.textContent = price[0].titlePeriod;
+		divTitle.appendChild(divPeriod);
+
+
+
+
+
+
+
+
+
+
+
+
+		const divElement = document.createElement('div');
+		divElement.classList.add('element');
+		slideItem.appendChild(divElement);
+
+
+		
+		const div2Text = document.createElement('span');
+		div2Text.textContent = price[i].text;
+		divElement.appendChild(div2Text);
+
+		const div2Price = document.createElement('span');
+		div2Price.textContent = price[i].price;
+		divElement.appendChild(div2Price);
+
+		const div2Period = document.createElement('span');
+		div2Period.textContent = price[i].period;
+		divElement.appendChild(div2Period);
+
+
+
+		
 		const btn = document.createElement('button');
 		btn.classList.add('icon-price');
 		slideItem.appendChild(btn);

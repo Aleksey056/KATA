@@ -25,13 +25,6 @@
 .swiper-conteiner {
 
 	background-color: $colorFon;
-	// padding-left: 16px;
-		// @media (min-width: $tablet) {
-		// 	padding-left: 24px;
-		// }
-		// @media (min-width: $widescreen) {
-		// 	padding-left: 32px;
-		// }
 	.swiper {
 		padding-left: 16px;	
 			@media (min-width: $tablet) {
@@ -39,6 +32,9 @@
 			}
 			@media (min-width: $widescreen) {
 				padding-left: 32px;
+			}
+			&__shadow {
+				height: 100%;
 			}
 	}
 	&__title-section {

@@ -224,64 +224,53 @@ function createCardPrice (price) {
 		slide.classList.add('swiper-slide');
 		swiperPrice[0].appendChild(slide);
 
+
+
 		const slideItem = document.createElement('a');
 		slideItem.classList.add('swiper-price__item');
 		slide.appendChild(slideItem);
 
 
 
+		const divText = document.createElement('div');
+		slideItem.appendChild(divText);
+
+			const spanTitleText = document.createElement('span');
+			spanTitleText.textContent = price[0].titleText;
+			divText.appendChild(spanTitleText);
+	
+			const spanText = document.createElement('span');
+			spanText.textContent = price[i].text;
+			divText.appendChild(spanText);
 
 
-		const divTitle = document.createElement('div');
-		divTitle.classList.add('title', 'title-hidden');
-		slideItem.appendChild(divTitle);
 
+		const divPrice = document.createElement('div');
+		slideItem.appendChild(divPrice);
+
+			const spanTitlePrice = document.createElement('span');
+			spanTitlePrice.textContent = price[0].titlePrice;
+			divPrice.appendChild(spanTitlePrice);
+
+			const spanPrice = document.createElement('span');
+			spanPrice.textContent = price[i].price;
+			divPrice.appendChild(spanPrice);
+
+
+
+		const divPeriod = document.createElement('div');
+		slideItem.appendChild(divPeriod);
 		
+			const spanTitlePeriod = document.createElement('span');
+			spanTitlePeriod.textContent = price[0].titlePeriod;
+			divPeriod.appendChild(spanTitlePeriod);
 
-		const divText = document.createElement('span');
-		divText.textContent = price[0].titleText;
-		divTitle.appendChild(divText);
-
-		const divPrice = document.createElement('span');
-		divPrice.textContent = price[0].titlePrice;
-		divTitle.appendChild(divPrice);
-
-		const divPeriod = document.createElement('span');
-		divPeriod.textContent = price[0].titlePeriod;
-		divTitle.appendChild(divPeriod);
+			const spanPeriod = document.createElement('span');
+			spanPeriod.textContent = price[i].period;
+			divPeriod.appendChild(spanPeriod);
 
 
 
-
-
-
-
-
-
-
-
-
-		const divElement = document.createElement('div');
-		divElement.classList.add('element');
-		slideItem.appendChild(divElement);
-
-
-		
-		const div2Text = document.createElement('span');
-		div2Text.textContent = price[i].text;
-		divElement.appendChild(div2Text);
-
-		const div2Price = document.createElement('span');
-		div2Price.textContent = price[i].price;
-		divElement.appendChild(div2Price);
-
-		const div2Period = document.createElement('span');
-		div2Period.textContent = price[i].period;
-		divElement.appendChild(div2Period);
-
-
-
-		
 		const btn = document.createElement('button');
 		btn.classList.add('icon-price');
 		slideItem.appendChild(btn);

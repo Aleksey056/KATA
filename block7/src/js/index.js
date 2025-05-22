@@ -132,19 +132,19 @@ let services = [
 	},
 
 	{
-		name: 'Ремонт ноутбуков'
+		name: 'Ремонт видеокарты'
 	},
 
 	{
-		name: 'Ремонт планшетов'
+		name: 'Ремонт материнской платы'
 	},
 
 	{
-		name: 'Ремонт ПК'
+		name: 'Ремонт ЦП'
 	},
 
 	{
-		name: 'Ремонт мониторов'
+		name: 'Чистка компьютера'
 	},
 
 ]
@@ -257,6 +257,9 @@ buttonCallbackHidden.addEventListener('click', function() {
 
 
 
+
+
+
 const expandBrands = document.getElementById('brandsList');
 const expandButtonText = document.getElementById('expandButtonText');
 
@@ -267,6 +270,19 @@ expandButtonText.addEventListener('click', function () {
 		expandButtonText.textContent = 'Скрыть';
 	} else {
 		expandButtonText.textContent = 'Показать всё';
+	}
+});
+
+const expandTechnic = document.getElementById('technicList');
+const expandButtonTechnic = document.getElementById('technic-expandButtonText');
+
+expandButtonTechnic.addEventListener('click', function () {
+	expandTechnic.classList.toggle('swiper-technic--expand');
+	expandButton.classList.toggle('expand-button--expand');
+	if (expandTechnic.classList.contains('swiper-technic--expand')) {
+		expandButtonTechnic.textContent = 'Скрыть';
+	} else {
+		expandButtonTechnic.textContent = 'Показать всё';
 	}
 });
 

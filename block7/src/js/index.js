@@ -22,10 +22,32 @@ function swiperFunction() {
   });
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 swiperFunction();
 
 const swiperBrands = document.querySelectorAll('.swiper-brands');
-
 let brandsImage = [
 	{
 		imgUrl: require('../img/brands/Lenovo.svg'),
@@ -85,7 +107,6 @@ let brandsImage = [
 
 
 function createCardBrands(image) {
-
 	for (let i = 0; i < image.length; i++) {
 
 		const slide = document.createElement('div');
@@ -107,46 +128,48 @@ function createCardBrands(image) {
 
 	}
 }
-
 createCardBrands(brandsImage);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const swiperTechnic = document.querySelectorAll('.swiper-technic');
-
 let services = [
-	{
-		name: 'Ремонт ноутбуков'
-	},
-
-	{
-		name: 'Ремонт планшетов'
-	},
-
-	{
-		name: 'Ремонт ПК'
-	},
-
-	{
-		name: 'Ремонт мониторов'
-	},
-
-	{
-		name: 'Ремонт видеокарты'
-	},
-
-	{
-		name: 'Ремонт материнской платы'
-	},
-
-	{
-		name: 'Ремонт ЦП'
-	},
-
-	{
-		name: 'Чистка компьютера'
-	},
-
+	{name: 'Ремонт ноутбуков'},
+	{name: 'Ремонт планшетов'},
+	{name: 'Ремонт ПК'},
+	{name: 'Ремонт мониторов'},
+	{name: 'Ремонт видеокарты'},
+	{name: 'Ремонт материнской платы'},
+	{name: 'Ремонт ЦП'},
+	{name: 'Чистка компьютера'},
+	{name: 'VIP обслуживание ПК'},
 ]
 
 function createCardTechnic (name) {
@@ -192,13 +215,17 @@ createCardTechnic (services);
 
 
 
-// BUTTON FUNCTIONAL
+
 
 
 function dropBurger () {
 	
 }
 // dropBurger():
+
+
+// BUTTON FUNCTIONAL
+
 
 const buttonBurger = document.getElementById('buttonBurger');
 const buttonBurgerHidden = document.getElementById('buttonBurgerHidden');
@@ -258,7 +285,7 @@ buttonCallbackHidden.addEventListener('click', function() {
 
 
 
-
+// expand block
 
 const expandBrands = document.getElementById('brandsList');
 const expandButtonText = document.getElementById('expandButtonText');

@@ -1,3 +1,4 @@
+import { name } from 'file-loader';
 import '../scss/style.scss'
 
 function swiperFunction() {
@@ -182,50 +183,58 @@ createCardTechnic (services);
 const swiperPrice = document.querySelectorAll('.swiper-price');
 let price = [
 	{
-		name: 'Диагностика',
+		text: 'Диагностика',
 		price: 'Бесплатно',
 		period: '30 мин',
 	},
 	{
-		name: 'Замена дисплея',
+		text: 'Замена дисплея',
 		price: '1000',
 		period: '30-120 мин',
 	},
 	{
-		name: 'Замена полифонического динамика',
+		text: 'Замена полифонического динамика',
 		price: '1000',
 		period: '30-120 мин',
 	},
 	{
-		name: 'Тестирование с выдачей технического заключения',
+		text: 'Тестирование с выдачей технического заключения',
 		price: '1000',
 		period: '30-120 мин',
 	},
 	{
-		name: 'Замена программного обеспечения',
+		text: 'Замена программного обеспечения',
 		price: '1000',
 		period: '30-120 мин',
 	},
 
 ]
 
-function createCardPrice (name) {
-	for (let i = 0; i < services.length; i++ ) {
+function createCardPrice (price) {
+	for (let i = 0; i < price.length; i++ ) {
 
 		const slide = document.createElement('div');
 		slide.classList.add('swiper-slide');
-		swiperTechnic[0].appendChild(slide);
+		swiperPrice[0].appendChild(slide);
 
 		const slideItem = document.createElement('a');
 		slideItem.classList.add('swiper-price__item');
 		slide.appendChild(slideItem);
 
-		const slideName = document.createElement('span');
-		slideName.textContent = services[i].name;
-		slideItem.appendChild(slideName);
+		const slideText = document.createElement('span');
+		slideText.textContent = price[i].text;
+		slideItem.appendChild(slideText);
+
+		const slidePrice = document.createElement('span');
+		slidePrice.textContent = price[i].price;
+		slideItem.appendChild(slidePrice);
+
+		const slidePeriod = document.createElement('span');
+		slidePeriod.textContent = price[i].period;
+		slideItem.appendChild(slidePeriod);
 
 		const btn = document.createElement('button');
-		btn.classList.add('icon-button');
+		btn.classList.add('icon-price');
 		slideItem.appendChild(btn);
 	}
 }

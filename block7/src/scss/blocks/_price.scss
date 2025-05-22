@@ -14,22 +14,18 @@
 			border: 1px solid $colorFormBorder;
 			border-radius: 6px;
 			background-color: $colorWhite;
+			padding: 16px 16px 0 16px;
 			box-sizing: border-box;
-			padding: 16px;
 			div {
-				// position: absolute;
 				display: flex;
 				flex-direction: column;
 				margin-bottom: 16px;
-				
-				span {
-					margin: 0;
-				}
 				.span-title {
 					font-size: 14px;
 					line-height: 16px;
 					letter-spacing: 0px;
-
+					color: $colorTextBlock;
+					padding-bottom: 4px;
 				}
 				.span-text {
 					font-weight: 400;
@@ -41,8 +37,9 @@
 			}
 			
 		.icon-price {
-			margin: 16px;
-			margin-left: auto;
+			position: absolute;
+			bottom: 16px;
+			right: 16px;
 			background-color: $colorWhite;
 			width: 119px;
 			height: 32px;

@@ -29,7 +29,6 @@
 		}
 		h2 {
 			background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%); 
-			// padding: 16px 0 16px 0;
 			padding: 16px;
 			color: $colorTextBlock;
 				@media (min-width: $tablet) {
@@ -54,7 +53,7 @@
 				}
 		}
 	&-wrapper {
-		// margin-left: 16px;
+
 		display: flex;
 		.swiper-slide {
 			margin: 0;
@@ -66,7 +65,7 @@
 			&-wrapper {
 				display: flex;
 				flex-wrap: wrap;
-				// margin-left: 24px;
+	
 			}
 		}
 	&-pagination {

@@ -1,9 +1,12 @@
 @import 'var', 'mix';
 
 .price {
-	padding-left: 32px;
+	padding-bottom: 24px;
 	background-color: $colorFon;
-		&__block {
-			background-color: $colorFon;
+	.swiper {
+		&__shadow {
+			height: 166px;
 		}
+}
+
 }

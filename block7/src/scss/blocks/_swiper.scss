@@ -23,14 +23,24 @@
 // 	}
 
 .swiper-conteiner {
+
 	background-color: $colorFon;
-	padding-left: 16px;
-		@media (min-width: $tablet) {
-			padding-left: 24px;
-		}
-		@media (min-width: $widescreen) {
-			padding-left: 32px;
-		}
+	// padding-left: 16px;
+		// @media (min-width: $tablet) {
+		// 	padding-left: 24px;
+		// }
+		// @media (min-width: $widescreen) {
+		// 	padding-left: 32px;
+		// }
+	.swiper {
+		padding-left: 16px;	
+			@media (min-width: $tablet) {
+				padding-left: 24px;
+			}
+			@media (min-width: $widescreen) {
+				padding-left: 32px;
+			}
+	}
 	&__title-section {
 	margin: 0;
 	font-weight: 400;
@@ -45,12 +55,15 @@
 		}
 		h2 {
 			background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%); 
-			padding: 16px 0 16px 0;
-			// padding: 16px 0 16px 24px;
+			// padding: 16px 0 16px 0;
+			padding: 16px;
 			color: $colorTextBlock;
-				// @media (min-width: $desctop) {
-				// 	padding: 16px 0 16px 32px;
-				// }
+				@media (min-width: $tablet) {
+					padding: 16px 24px;
+				}
+				@media (min-width: $desctop) {
+					padding: 16px 32px;
+				}
 		}
 	}
 }

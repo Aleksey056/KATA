@@ -1,14 +1,19 @@
 @import 'var', 'mix';
 
-.swiper {
-	&__shadow {
-			height: 81px;
-		}
-}
+// .swiper {
+// 	&__shadow {
+// 			height: 81px;
+// 		}
+// }
 
 .technic {
 	padding-bottom: 24px;
 	background-color: $colorFon;
+	.swiper {
+		&__shadow {
+			height: 166px;
+		}
+}
 
 .swiper {
 	&-technic {

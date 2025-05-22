@@ -1,16 +1,21 @@
 @import 'var', 'mix';
 
 
-.swiper {
-	&__shadow {
-			height: 81px;
-		}
-}
+// .swiper {
+// 	&__shadow {
+// 			height: 81px;
+// 		}
+// }
 
 .brands {
 	padding-bottom: 24px;
 	// padding-left: 32px;
 	background-color: $colorFon;
+	.swiper {
+		&__shadow {
+			height: 81px;
+		}
+	}
 }
 
 .swiper {

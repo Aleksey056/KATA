@@ -22,10 +22,16 @@
 					margin: 16px;
 					margin-left: auto;
 					background-color: $colorWhite;
-					width: 40px;
-					height: 40px;
-					background-image: url(/img/brands/go.svg);
+					width: 119px;
+					height: 32px;
+					background-image: url('/src/img/price/price-button.svg');
 				}
+		}
+		.title {
+			display: flex;
+			span {
+				// width: 100%;
+			}
 		}
 		.swiper-slide {
 			display: flex;

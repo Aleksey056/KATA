@@ -137,28 +137,6 @@ createCardBrands(brandsImage);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const swiperTechnic = document.querySelectorAll('.swiper-technic');
 let services = [
 	{name: 'Ремонт ноутбуков'},
@@ -173,7 +151,6 @@ let services = [
 ]
 
 function createCardTechnic (name) {
-
 	for (let i = 0; i < services.length; i++ ) {
 
 		const slide = document.createElement('div');
@@ -193,7 +170,6 @@ function createCardTechnic (name) {
 		slideItem.appendChild(btn);
 	}
 }
-
 createCardTechnic (services);
 
 
@@ -203,7 +179,57 @@ createCardTechnic (services);
 
 
 
+const swiperPrice = document.querySelectorAll('.swiper-price');
+let price = [
+	{
+		name: 'Диагностика',
+		price: 'Бесплатно',
+		period: '30 мин',
+	},
+	{
+		name: 'Замена дисплея',
+		price: '1000',
+		period: '30-120 мин',
+	},
+	{
+		name: 'Замена полифонического динамика',
+		price: '1000',
+		period: '30-120 мин',
+	},
+	{
+		name: 'Тестирование с выдачей технического заключения',
+		price: '1000',
+		period: '30-120 мин',
+	},
+	{
+		name: 'Замена программного обеспечения',
+		price: '1000',
+		period: '30-120 мин',
+	},
 
+]
+
+function createCardPrice (name) {
+	for (let i = 0; i < services.length; i++ ) {
+
+		const slide = document.createElement('div');
+		slide.classList.add('swiper-slide');
+		swiperTechnic[0].appendChild(slide);
+
+		const slideItem = document.createElement('a');
+		slideItem.classList.add('swiper-price__item');
+		slide.appendChild(slideItem);
+
+		const slideName = document.createElement('span');
+		slideName.textContent = services[i].name;
+		slideItem.appendChild(slideName);
+
+		const btn = document.createElement('button');
+		btn.classList.add('icon-button');
+		slideItem.appendChild(btn);
+	}
+}
+createCardPrice (price);
 
 
 

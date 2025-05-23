@@ -347,6 +347,8 @@ const buttonBurger = document.getElementById('buttonBurger');
 const buttonBurgerHidden = document.getElementById('buttonBurgerHidden');
 
 const buttonFeedback = document.getElementById('buttonFeedback');
+// const buttonFeedback = document.querySelectorAll('#buttonFeedback', '#buttonFeedback2');
+
 const buttonFeedbackHidden = document.getElementById('buttonFeedbackHidden');
 
 const buttonCallback = document.getElementById('buttonCallback');

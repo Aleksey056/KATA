@@ -22,33 +22,14 @@ function swiperFunction() {
 
   });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 swiperFunction();
 
+
+
+
+
 const swiperBrands = document.querySelectorAll('.swiper-brands');
+
 let brandsImage = [
 	{
 		imgUrl: require('../img/brands/Lenovo.svg'),
@@ -106,7 +87,6 @@ let brandsImage = [
 	},
 ]
 
-
 function createCardBrands(image) {
 	for (let i = 0; i < image.length; i++) {
 
@@ -130,11 +110,6 @@ function createCardBrands(image) {
 	}
 }
 createCardBrands(brandsImage);
-
-
-
-
-
 
 
 
@@ -175,15 +150,7 @@ createCardTechnic (services);
 
 
 
-
-
-
-
-
 const swiperPrice = document.querySelectorAll('.swiper-price');
-
-
-
 
 let price = [
 	{
@@ -290,23 +257,7 @@ createCardPrice (price);
 
 
 
-
-
-
-
-
-
-
-
-
-function dropBurger () {
-	
-}
-// dropBurger():
-
-
 // BUTTON FUNCTIONAL
-
 
 const buttonBurger = document.getElementById('buttonBurger');
 const buttonBurgerHidden = document.getElementById('buttonBurgerHidden');

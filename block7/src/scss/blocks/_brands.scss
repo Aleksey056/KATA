@@ -14,17 +14,22 @@
 			flex-direction: row;
 			flex-wrap: wrap;
 			align-items: center;
-			justify-content: space-around;
+			justify-content: space-between;
+			padding: 0 16px;
 			width: 240px;
 			height: 72px;
 			border: 1px solid $colorFormBorder;
 			border-radius: 6px;
 			background-color: $colorWhite;
+
 				.icon-button {
 					background-color: $colorWhite;
 					width: 40px;
 					height: 40px;
 					background-image: url(/img/brands/go.svg);
+					&:hover {
+						opacity: 50%;
+					}
 				}
 		}
 		.swiper-slide {

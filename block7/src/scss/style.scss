@@ -45,6 +45,9 @@
 		&--profile {
 			background-image: url(/img/header/profile.svg);
 		}
+		&:hover {
+			opacity: 50%;
+		}
 	}
 
 

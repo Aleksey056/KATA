@@ -19,8 +19,10 @@
 				border-radius: 6px;
 				padding: 0 16px;
 				box-sizing: border-box;
-				
 			}
+		@media (min-width: $widescreen) {
+			padding: 0 24px;
+		}
 		&__item {
 			display: flex;
 			flex-direction: column;
@@ -84,7 +86,7 @@
 		.icon-price {
 			position: absolute;
 			bottom: 16px;
-			right: 16px;
+			right: 0;
 			background-color: $colorWhite;
 			width: 119px;
 			height: 32px;
@@ -93,6 +95,9 @@
 						position: static;
 						// margin: 16px;
 					}
+		&:hover {
+			opacity: 50%;
+		}
 		}
 		}
 		.swiper-slide {
@@ -115,8 +120,6 @@
 			height: auto;
 		}
 	}
-	.expand-button {
-		display: none;
-	}
+
 }
 }

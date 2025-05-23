@@ -379,6 +379,7 @@ expandButtonText.addEventListener('click', function () {
 	} else {
 		expandButtonText.textContent = 'Показать всё';
 	}
+	
 });
 
 const expandTechnic = document.getElementById('technicList');
@@ -386,7 +387,7 @@ const expandButtonTechnic = document.getElementById('technic-expandButtonText');
 
 expandButtonTechnic.addEventListener('click', function () {
 	expandTechnic.classList.toggle('swiper-technic--expand');
-	expandButton.classList.toggle('expand-button--expand');
+	technicExpandButton.classList.toggle('expand-button--expand');
 	if (expandTechnic.classList.contains('swiper-technic--expand')) {
 		expandButtonTechnic.textContent = 'Скрыть';
 	} else {

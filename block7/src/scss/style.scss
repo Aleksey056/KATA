@@ -25,25 +25,25 @@
 		border-radius: 50% ;
 		border-style: none; 
 		&--burger {
-			background-image: url(/img/header/burger.svg);
+			background-image: url('./img/header/burger.svg');
 				@media (min-width: $widescreen) {
 					display: none;
 				}
 		}
 		&--repair {
-			background-image: url(/img/header/repair.svg);
+			background-image: url('./img/header/repair.svg');
 		}
 		&--checkstatus {
-			background-image: url(/img/header/checkstatus.svg);
+			background-image: url('./img/header/checkstatus.svg');
 		}
 		&--call {
-			background-image: url(/img/header/call.svg);
+			background-image: url('./img/header/call.svg');
 		}
 		&--chat {
-			background-image: url(/img/header/chat.svg);
+			background-image: url('./img/header/chat.svg');
 		}
 		&--profile {
-			background-image: url(/img/header/profile.svg);
+			background-image: url('./img/header/profile.svg');
 		}
 		&:hover {
 			opacity: 50%;
@@ -66,7 +66,7 @@ body {
 		background-color: $colorFon;
 		
 		&__img {
-			background-image: url(/img/body/expand.svg);
+			background-image: url('./img/body/expand.svg');
 			width: 24px;
 			height: 24px;
 		}

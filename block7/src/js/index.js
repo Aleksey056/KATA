@@ -367,6 +367,7 @@ function keyESC () {
 keyESC();
 
 
+
 document.addEventListener('click', function(evt){
   if(evt.target.classList.contains('blur')){
     feedback.classList.remove('feedback--active');
@@ -376,3 +377,10 @@ document.addEventListener('click', function(evt){
 		main.classList.remove('blur');
   }
 })
+
+
+
+function bodyBlur (toggle) {
+	document.classList.add('blur')
+	
+}

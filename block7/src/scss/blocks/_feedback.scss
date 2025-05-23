@@ -113,6 +113,9 @@
   z-index: 300;
   transform: translateX(0);
 	box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+	::before {
+		background-color: black;
+	}
 		// @media (min-width: 1440px) {
 		// 	right: auto;
 		// 	transform: translateX(1000px);

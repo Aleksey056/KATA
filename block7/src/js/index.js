@@ -347,3 +347,21 @@ expandButtonTechnic.addEventListener('click', function () {
 });
 
 
+
+function keyESC () {
+	document.addEventListener('keydown', function(e){
+    if (e.keyCode === 27 && feedback.classList.contains('feedback--active') ||
+    		e.keyCode === 27 && main.classList.contains('mobil-menu--active') ||
+      	e.keyCode === 27 && callback.classList.contains('callback--open') ||
+				e.keyCode === 27 && main.classList.contains('blur')) {
+      		
+					
+					feedback.classList.remove('feedback--active');
+      		callback.classList.remove('callback--active');
+					mobilMenu.classList.remove('mobil-menu--active');
+					mobilMenu.classList.remove('blur');
+					main.classList.remove('blur');
+    }
+  })
+}
+keyESC();

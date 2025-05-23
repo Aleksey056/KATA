@@ -11,13 +11,14 @@
 				background-color: $colorWhite;
 				width: 720px;
 				border-radius: 6px;
-				padding: 16px;
+				padding: 0 16px;
 				box-sizing: border-box;
 				
 			}
 		&__item {
 			display: flex;
 			flex-direction: column;
+			justify-content: space-between;
 			width: 260px;
 			height: 200px;
 			border: 1px solid $colorFormBorder;
@@ -30,9 +31,10 @@
 						height: auto;
 						flex-direction: row;
 						padding: 0;
+						padding: 16px 0;
 						border: none;
 						border-radius: 0;
-						border-bottom: 1px solid black;
+						border-bottom: 1px solid $colorFormBorder;
 						align-items: center;
 					}
 			div {
@@ -57,7 +59,9 @@
 					font-size: 14px;
 					line-height: 18px;
 					letter-spacing: 0.2px;
-					margin: 23px 0;
+							@media (min-width: $tablet) {
+								margin: 0;
+							}
 				}
 			}
 			

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+	<title>Главная</title>
+</head>
+<body class="body">
+	<div class="windowBlur" id="windowBlur"></div>
+<div class="drops-menu" >
+	<div class="mobil-menu" id="mobil-menu">
+		<div>
+		<div class="header-block">
+			<div class="header-block__block-1">
+				<button class="round-icon round-icon--burger" id="buttonBurgerHidden"></button>
+				<a href="../#" class="logo"></a>
+			</div>
+			<div class="header-block__block-2">
+				<button class="round-icon round-icon--search"></button>
+			</div>
+		</div>
+		<nav class="nav">	
+			<ul class="menu">
+				<li class="menu-block menu-block--hover">
+					<a class="menu-block__text menu-block__text--hover" href="#">Ремонт техники</a>
+				</li>
+				<li class="menu-block menu-block--hover">
+					<a class="menu-block__text menu-block__text--hover" href="#">Услуги и сервисы</a>
+				</li>
+				<li class="menu-block menu-block--hover">
+					<a class="menu-block__text menu-block__text--hover" href="#">Корпоративным клиентам</a>
+				</li>
+				<li class="menu-block menu-block--hover">
+					<a class="menu-block__text menu-block__text--hover" href="#">Продавцам техники</a>
+				</li>
+				<li class="menu-block menu-block--hover">
+					<a class="menu-block__text menu-block__text--hover" href="#">Партнерам</a>
+				</li>
+				<li class="menu-block menu-block--hover">
+					<a class="menu-block__text menu-block__text--hover" href="#">Производителям</a>
+				</li>
+				<li class="menu-block menu-block--hover">
+					<a class="menu-block__text menu-block__text--hover" href="#">Наши сервисные центры</a>
+				</li>
+				<li class="menu-block menu-block--hover">
+					<a class="menu-block__text menu-block__text--hover" href="#">Контакты</a>
+				</li>
+			</ul> 
+		</nav>
+		</div>
+		<div class="aside-footer">	
+			<div class="contact-info">
+				<div class="contact-info__round-icon">
+					<button class="round-icon round-icon--call" id="buttonFeedback"></button>
+					<button class="round-icon round-icon--chat" id="buttonCallback"></button>
+					<button class="round-icon round-icon--profile"></button>
+				</div>
+				<span>mail@cps.com</span>
+				<span class="contact-info__number">8 800 890 8900</span>
+			</div>
+			<div class="contact-info__lang">
+				<button class="contact-info__lang">RU</button>
+				<button class="contact-info__lang">EN</button>
+				<button class="contact-info__lang">CH</button>
+			</div>
+		</div>
+	</div>
+	<div class="feedback" id="feedback">
+		<div class="drops-menu-green-line" ></div>
+		<button class="round-icon round-icon--feedback" id="buttonFeedbackHidden"></button>
+		<div class="feedback-title">
+			<div class="feedback-title__img"></div>
+			<h1 class="feedback-title__text">Обратная связь</h1>
+		</div>
+		<form class="form">
+			<input type="text" class="form__name" placeholder="Имя">
+			<input type="text" class="form__number" placeholder="Телефон">
+			<input type="text" class="form__email" placeholder="Электронная почта">
+			<textarea name="#" id="#" class="form__text" placeholder="Сообщение"></textarea>
+			<p>Нажимая “отправить”, вы даете согласие на <span class="text-color--red">обработку 
+				персональных данных</span> и соглашаетесь 
+				с нашей <span class="text-color--red">политикой конфиденциальности</span></p>
+			<button class="form__button-send"></button>
+		</form>
+	</div>
+	<div class="callback" id="callback">
+		<div class="drops-menu-green-line" ></div>	
+		<button class="round-icon round-icon--callback" id="buttonCallbackHidden"></button>
+		<div class="callback-title">
+			<div class="callback-title__img"></div>
+			<h1 class="callback-title__text">Заказать звонок</h1>
+		</div>
+		<form class="form">
+			<input type="text" class="form__number" placeholder="Телефон">
+			<p>Нажимая “отправить”, вы даете согласие на <span class="text-color--red">обработку 
+				персональных данных</span> и соглашаетесь 
+				с нашей <span class="text-color--red">политикой конфиденциальности</span></p>
+			<button class="form__button-send"></button>
+		</form>
+	</div>
+</div>
+
+<main>
+	<header class="header">
+		<div class="header-block">
+			<div class="header-block__block1">
+					<button class="round-icon round-icon--burger" id="buttonBurger"></button>
+					<a class="logo" href="#"></a>	
+					<hr class="icon icon--divider">
+			</div>
+			<div class="header-block__block2">
+				<button class="round-icon round-icon--call" id="buttonFeedback2"></button>
+				<button class="round-icon round-icon--chat"></button>
+				<button class="round-icon round-icon--profile"></button>
+				<hr class="icon icon--divider">
+			</div>
+			<div class="header-block__block3">
+				<button class="round-icon round-icon--repair"></button>
+				<button class="round-icon round-icon--checkstatus"></button>
+			</div>
+		</div>
+	<hr class="shadow">
+	</header>
+
+	<div class="main">
+		<section class="title">
+			<div class="title-block">
+				<div class="title-block__block1">
+					<div class="title-block__img"></div>
+					<h1 class="title-block__text">Услуги и сервисы</h1>
+				</div>
+				<div class="title-block__block2">
+					<button class="title-label">Оставить заявку
+						<span class="round-icon round-icon--repair"></span>
+					</button>
+					<button class="title-label">Статус ремонта
+						<span class="round-icon round-icon--checkstatus"></span>
+					</button>
+				</div>
+			</div>	
+		</section>
+		<nav class="nav">	
+			<ul class="menu">
+				<li><a class="menu__link menu__link--hover" href="#">Ремонтируемые устройства</a></li>
+				<li><a class="menu__link" href="#">Дополнительные услуги</a></li>
+				<li><a class="menu__link" href="#">Цены на услуги</a></li>
+				<li><a class="menu__link" href="#">Адреса сервисных центров</a></li>
+				<li><a class="menu__link" href="#">Специальные цены</a></li>
+				<li><a class="menu__link" href="#">Отзывы</a></li>
+			</ul>
+		</nav>
+		<div class="section-info">
+			<div class="section-info__text">
+				<p class="scroll-text">
+					Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+					<br><br>
+					Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+				</p>
+				<button class="expand-button">
+					<span class="expand-button__img"></span>
+					<span class="expand-button__text">Читать далее</span>
+				</button>
+			</div>
+			<div >
+				<img class="section-info__img" src="img/body/info-img.png" alt="">
+			</div>
+		</div>
+	</div>
+
+	<section class="swiper-conteiner">
+
+		<div class="swiper-conteiner__title-section"> 
+			<div class="green-line"></div> 
+			<h2>Ремонт техники различных брендов</h2>
+		</div>
+
+		<div class="brands">
+			<div class="swiper slider" >
+      <span class="swiper__shadow"></span>
+      <div class="swiper-wrapper swiper-brands" id="brandsList"></div>
+      <div class="swiper-pagination"></div>
+
+      <button class="expand-button expand-button--brands" id="expandButton">
+				<span class="expand-button__img"></span>
+				<span class="expand-button__text" id="expandButtonText">Показать всё</span>
+			</button>
+			</div>
+		</div>
+
+		<div class="swiper-conteiner__title-section"> 
+			<div class="green-line"></div> 
+			<h2>Ремонт различных видов техники</h2>
+		</div>
+
+		<div class="technic">
+			<div class="swiper slider" >
+      <span class="swiper__shadow"></span>
+      <div class="swiper-wrapper swiper-technic" id="technicList"></div>
+      <div class="swiper-pagination"></div>
+
+      <button class="expand-button expand-button--technic" id="technicExpandButton">
+				<span class="expand-button__img"></span>
+				<span class="expand-button__text" id="technic-expandButtonText">Показать всё</span>
+			</button>
+			</div>
+		</div>
+
+		<div class="swiper-conteiner__title-section"> 
+			<div class="green-line"></div> 
+			<h2>цены на услуги</h2>
+		</div>
+
+		<div class="title-span">
+			<span class="title-span__span1">Ремонтные услуги</span>
+			<span class="title-span__span2">Цена</span>
+			<span class="title-span__span3">Срок</span>
+			<span class="title-span__span4"></span>
+		</div>
+
+		<div class="price">
+			<div class="swiper slider" >
+					<span class="swiper__shadow"></span>
+					<div class="swiper-wrapper swiper-price" id="priceList"></div>
+					<div class="swiper-pagination"></div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="commercial">
+		<h4>
+			Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. 
+			Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
+		</h4>
+		<a class = "commercial__link" href="#">
+			Получить коммерческое предложение<span class="line"></span>
+		</a>
+	</section>
+
+	<footer>
+		<div class="green-line"></div>
+		<div class="footer">
+			<div class="footer__block--1">
+				<span>© 2019 CPS</span>
+				<span>Разработано командой Apesong</span>
+			</div>
+			<div class="footer__block--2">
+				<span>Политика конфиденциальности</span>
+			</div>
+			<div class="footer__block--3">
+				<span>Информация, размещенная на данной странице, не является публичной офертой</span>
+			</div>
+		</div>
+	</footer>
+
+</main>
+	
+
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- <script src="/src/js/index.js"></script> -->
+
+</body>
+</html>

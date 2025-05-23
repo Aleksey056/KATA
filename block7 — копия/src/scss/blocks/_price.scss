@@ -1,0 +1,125 @@
+@import 'var', 'mix';
+
+.price {
+	padding-bottom: 24px;
+	background-color: $colorFon;
+
+.swiper {
+			@media (min-width: $tablet) {
+				padding: 0 24px;
+			}
+			@media (min-width: $widescreen) {
+				padding: 0 32px;
+			}
+	&-price {
+		@media (min-width: $tablet)
+			{
+				background-color: $colorWhite;
+				width: 100%;
+				border-radius: 6px;
+				padding: 0 16px;
+				box-sizing: border-box;
+			}
+		@media (min-width: $widescreen) {
+			padding: 0 24px;
+		}
+		&__item {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			width: 260px;
+			height: 200px;
+			border: 1px solid $colorFormBorder;
+			border-radius: 6px;
+			background-color: $colorWhite;
+			padding: 16px 16px 0 16px;
+			box-sizing: border-box;
+					@media (min-width: $tablet) {
+						// flex-wrap: nowrap;
+						width: 100%;
+						height: auto;
+						flex-direction: row;
+						padding: 0;
+						padding: 16px 0;
+						border: none;
+						border-bottom: 1px solid $colorFormBorder;
+						align-items: center;
+						// justify-content: left;
+					}
+			div {
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 16px;
+					@media (min-width: $tablet) {
+						margin-bottom: 0;
+					}
+				.span-title {
+					font-size: 14px;
+					line-height: 16px;
+					letter-spacing: 0px;
+					color: $colorTextBlock;
+					padding-bottom: 4px;
+							@media (min-width: $tablet) {
+								display: none;
+							}
+				}
+				.span-text {
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 18px;
+					letter-spacing: 0.2px;
+							@media (min-width: $tablet) {
+								margin: 0;
+							}
+				}
+				&:nth-child(1) .span-text {
+					width: 348px;
+				}
+				&:nth-child(2) .span-text {
+					width: 74px;
+				}
+				&:nth-child(3) .span-text {
+					width: 81px;
+				}
+			}
+			
+		.icon-price {
+			position: absolute;
+			bottom: 16px;
+			right: 0;
+			background-color: $colorWhite;
+			width: 119px;
+			height: 32px;
+			background-image: url('/src/img/price/price-button.svg');
+					@media (min-width: $tablet) {
+						position: static;
+						// margin: 16px;
+					}
+		&:hover {
+			opacity: 50%;
+		}
+		}
+		}
+		.swiper-slide {
+			display: flex;
+			width: 240px;
+			margin-right: 16px;
+				@media (min-width: $tablet) {
+					width: 100%;
+					justify-content: center;
+					&:last-child .swiper-price__item {
+							border-bottom: none;
+						}
+				}
+				@media (min-width: $widescreen) {
+					width: 100%;
+				}
+				
+		}
+		&--expand {
+			height: auto;
+		}
+	}
+
+}
+}

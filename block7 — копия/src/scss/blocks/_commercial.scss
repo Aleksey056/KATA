@@ -1,0 +1,45 @@
+@import 'var', 'mix';
+
+.commercial {
+	box-sizing: border-box;
+	padding-left: 16px;
+	padding-bottom: 40px;
+	background-color: $colorFon;
+		@media (min-width: $tablet) {
+			padding-left: 24px;
+			padding-bottom: 47px;
+		}
+	h4 {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		display: block;
+		// width: 288px;
+		// height: 100px;
+		padding-bottom: 16px;
+		color: $colorBlack;
+			@media (min-width: $tablet) {
+				width: 421px;
+				height: 60px;
+			}
+	}
+	
+	&__link {
+		display: inline-block;
+		color: $colorBlack;
+		width: 192px;
+			@media (min-width: $tablet) {
+				display: inline;
+			}
+
+		.line {
+			position: absolute;
+			background-image: url('/src/img/main/more.svg') ;
+			background-position: center;
+			width: 24px;
+			height: 24px;
+		}
+	}
+	
+	
+}

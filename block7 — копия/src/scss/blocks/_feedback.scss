@@ -1,0 +1,125 @@
+@import 'var', 'mix';
+
+.feedback {
+	position: fixed;
+	right: 0;
+  background-color: $colorWhite;
+  width: 320px;
+  z-index: 200;
+  transform: translateX(513px);
+	transition: transform 0.8s;
+  height: 100%;
+    @media (min-width: $widescreen) {
+      width: 440px;
+    }
+
+  .round-icon--feedback {
+  background-image: url(/img/mobile_menu/burger.svg);
+  margin-top: 24px;
+  margin-left: 16px;
+    @media (min-width: $widescreen) {
+      position: absolute;
+      margin-top: 0;
+      top: 32px;
+      left: -88px;
+    }
+  }
+
+  .feedback-title {
+    margin-top: 32px;
+		display: flex;
+		align-items: center;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		&__img {
+			height: 40px;
+			width: 4px;
+			background-image: url(/src/img/title/highlight.svg);
+		}
+		&__text {
+			margin: 0;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 32px;
+			letter-spacing: -0.6px;
+		}
+	}
+  
+  .form {
+    padding-top: 24px;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+      @media (min-width: $widescreen) {
+        padding-left: 32px;;
+        }
+    &__name, &__number, &__email {
+      width: 288px;
+      height: 48px;
+      border-radius: 8px;
+      border: 1px solid $colorFormBorder;
+        @media (min-width: $widescreen) {
+          width: 376px;
+        }
+    }
+    &__text {
+      box-sizing: border-box;
+      width: 288px;
+      height: 118px;
+      border-radius: 8px;
+      border: 1px solid $colorFormBorder;
+        @media (min-width: $widescreen) {
+          width: 376px;
+        }
+    }
+    input, textarea {
+      box-sizing: border-box;
+      padding: 16px 0 16px 12px;
+      font-family: TT Lakes;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+    }
+    p {
+      margin-right: 16px;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0px;
+        .text-color--red {
+            color: $colorRed;
+        }
+    }
+    &__button-send {
+			
+			margin-left: auto;
+      margin-right: 16px;
+      width: 136px;
+      height: 32px;
+      border-radius: 16px;
+      background-image: url('/src/img/feedback/Group.svg');
+			&:hover {
+				opacity: 50%;
+			}
+    }
+  }
+}
+
+.feedback--active {
+	display: block;
+  z-index: 300;
+  transform: translateX(0);
+	box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+	::before {
+		background-color: black;
+	}
+		// @media (min-width: 1440px) {
+		// 	right: auto;
+		// 	transform: translateX(1000px);
+		// 	// чтоб не было по центру страницы закоментировать этот media
+		// }
+}
+  

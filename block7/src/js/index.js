@@ -365,3 +365,14 @@ function keyESC () {
   })
 }
 keyESC();
+
+
+document.addEventListener('click', function(evt){
+  if(evt.target.classList.contains('blur')){
+    feedback.classList.remove('feedback--active');
+    callback.classList.remove('callback--active');
+		mobilMenu.classList.remove('mobil-menu--active');
+		mobilMenu.classList.remove('blur');
+		main.classList.remove('blur');
+  }
+})

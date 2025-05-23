@@ -84,10 +84,6 @@
       line-height: 24px;
       letter-spacing: -0.2px;
     }
-    &__button-send {
-      margin-left: auto;
-      margin-right: 16px;
-    }
     p {
       margin-right: 16px;
       font-size: 14px;
@@ -98,10 +94,12 @@
         }
     }
     &__button-send {
+			margin-left: auto;
+      margin-right: 16px;
       width: 136px;
       height: 32px;
       border-radius: 16px;
-      background-image: url('/src/img/feedback/Group\ 10.svg');
+      background-image: url('/src/img/feedback/Group.svg');
     }
   }
 }

@@ -5,11 +5,17 @@
 	background-color: $colorFon;
 
 .swiper {
+			@media (min-width: $tablet) {
+				padding: 0 24px;
+			}
+			@media (min-width: $widescreen) {
+				padding: 0 32px;
+			}
 	&-price {
 		@media (min-width: $tablet)
 			{
 				background-color: $colorWhite;
-				width: 720px;
+				width: 100%;
 				border-radius: 6px;
 				padding: 0 16px;
 				box-sizing: border-box;
@@ -27,15 +33,16 @@
 			padding: 16px 16px 0 16px;
 			box-sizing: border-box;
 					@media (min-width: $tablet) {
-						width: 668px;
+						// flex-wrap: nowrap;
+						width: 100%;
 						height: auto;
 						flex-direction: row;
 						padding: 0;
 						padding: 16px 0;
 						border: none;
-						border-radius: 0;
 						border-bottom: 1px solid $colorFormBorder;
 						align-items: center;
+						// justify-content: left;
 					}
 			div {
 				display: flex;
@@ -63,6 +70,15 @@
 								margin: 0;
 							}
 				}
+				&:nth-child(1) .span-text {
+					width: 348px;
+				}
+				&:nth-child(2) .span-text {
+					width: 74px;
+				}
+				&:nth-child(3) .span-text {
+					width: 81px;
+				}
 			}
 			
 		.icon-price {
@@ -82,22 +98,25 @@
 		.swiper-slide {
 			display: flex;
 			width: 240px;
-				@media (min-width: $tablet) and (max-width: 1119px) {
-					width: 688px;
+			margin-right: 16px;
+				@media (min-width: $tablet) {
+					width: 100%;
 					justify-content: center;
 					&:last-child .swiper-price__item {
 							border-bottom: none;
 						}
+				}
+				@media (min-width: $widescreen) {
+					width: 100%;
 				}
 				
 		}
 		&--expand {
 			height: auto;
 		}
-		@media (min-width: $widescreen) {
-			gap: 16px 32px;
-		}
 	}
-	
+	.expand-button {
+		display: none;
+	}
 }
 }

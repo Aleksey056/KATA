@@ -5,7 +5,7 @@ function swiperFunction() {
 
   let swiper = new Swiper(".slider", {
     slidesPerView: 'auto',
-    spaceBetween: 16,
+    // spaceBetween: 16,
 
     pagination: {
       el: '.swiper-pagination',

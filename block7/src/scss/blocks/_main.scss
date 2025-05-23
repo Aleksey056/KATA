@@ -2,7 +2,7 @@
 
 main {
 	
-	@media (min-width: 1440px) {
+	@media (min-width: $widescreen) {
 		max-width: 1120px;
 		margin-left: 320px;
 	}
@@ -13,17 +13,17 @@ main {
 	padding-top: 24px;
 	background-color: $colorFon;
 
-		@media (min-width: 768px) {
+		@media (min-width: $tablet) {
 			padding-top: 24px;
 		}
 
-		@media (min-width: 1440px) {
+		@media (min-width: $widescreen) {
 			padding-top: 42px;
 			
 		}
 
 	.logo {
-		@media (min-width: 768px) {
+		@media (min-width: $tablet) {
 			background-color: #FFFFFF;
 			background-image: url(/img/header/Header_Group.svg);
 			width: 96.54814910888672px;
@@ -64,7 +64,7 @@ main {
 		}
 		&__block2 {
 			display: none;
-				@media (min-width: 1440px) {
+				@media (min-width: $widescreen) {
 					height: 40px;
 					display: flex;
 					gap: 8px;
@@ -78,7 +78,7 @@ main {
 	}
 
 	.title-label {
-		@media (min-width: 1440px) {
+		@media (min-width: $widescreen) {
 			display: flex;
 			align-items: center;
 			gap: 8px;
@@ -92,7 +92,7 @@ main {
 	.nav {
 		margin-bottom: 24px;
 		margin-left: 16px;
-			@media (min-width: 768px) {
+			@media (min-width: $tablet) {
 				margin-left: 24px;
 			}
 	}
@@ -105,7 +105,7 @@ main {
 		flex-wrap: nowrap;
 		overflow: auto; 
 		scrollbar-width: none;
-			@media (min-width: 768px) {
+			@media (min-width: $tablet) {
 				max-height: 40px;
 			}
 		&__link {
@@ -127,7 +127,7 @@ main {
 
 	.link-reviews {
 		display: none;
-			@media (min-width: 1440px) {
+			@media (min-width: $widescreen) {
 				display: flex;
 			}
 	}
@@ -138,7 +138,7 @@ main {
 	}
 
 	.section-info {
-		@media (min-width: 768px) {
+		@media (min-width: $tablet) {
 			height: 208px;
 			margin-bottom: 40px;
 			display: flex;
@@ -146,14 +146,14 @@ main {
 			margin: 0 24px;
 			margin-left: 24px;
 		}
-		@media (min-width: 1440px) {
+		@media (min-width: $tablet) {
 			height: 307px;
 		}
 		&__text {
 			padding: 0;
 			margin: 0 16px;
 			margin-bottom: 16px;
-				@media (min-width: 768px) {
+				@media (min-width: $tablet) {
 					margin: 0;
 					padding: 0;
 					border: 2px #B8FFEC;
@@ -164,12 +164,12 @@ main {
 		&__img {
 		margin:0;
 		width: 100%;
-			@media (min-width: 768px) {
+			@media (min-width: $tablet) {
 				width: 360px;
 				height: 208px;
 				border-radius: 2%;
 			}
-			@media (min-width: 1440px) {
+			@media (min-width: $widescreen) {
 				width: 531.34619140625px;
 				height: 307px;
 			}
@@ -186,12 +186,12 @@ main {
 		overflow: auto; 
 		scrollbar-width: none;
 		margin-bottom: 16px;
-			@media (min-width: 768px) {
+			@media (min-width: $tablet) {
 				max-height: 160px;
 				line-height: 20px;
 				margin-bottom: 10px;
 			}
-			@media (min-width: 1440px) {
+			@media (min-width: $widescreen) {
 				max-height: 160px;
 			}
 	}

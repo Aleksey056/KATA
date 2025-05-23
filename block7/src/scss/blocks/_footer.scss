@@ -21,7 +21,7 @@ footer {
   // padding: 0 32px 20px 32px;
   flex-wrap: nowrap;
   align-items: center;
-		@media (min-width: 768px) {
+		@media (min-width: $tablet) {
 			flex-direction: row;
 			padding: 32px 24px 20px 24px;
 			height: auto;
@@ -42,7 +42,7 @@ footer {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-					@media (min-width: 768px) {
+					@media (min-width: $tablet) {
 						width: 218px;
 						height: 32px;
 						align-items: baseline;
@@ -50,7 +50,7 @@ footer {
 			}
 			&--3 {
 				text-align: center;
-					@media (min-width: 768px) {
+					@media (min-width: $tablet) {
 						width: 213px;
 						text-align: right;
 							span {
@@ -64,7 +64,7 @@ footer {
 
 
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
 	.main-footer {
 		flex-direction: row;
 		justify-content:space-between;

@@ -2,7 +2,7 @@
 
 .header {
 	background-color: $colorWhite;
-		@media (min-device-width: 1440px) {
+		@media (min-width: $widescreen) {
 			display: none;
 		}
 	.header-block {
@@ -58,7 +58,7 @@
 	}
 	
 
-	@media screen and (min-device-width: 768px) {
+	@media (min-width: $tablet) {
 
 	.header {
 		margin-bottom: 24px;

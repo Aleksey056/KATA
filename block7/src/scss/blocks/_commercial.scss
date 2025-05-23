@@ -5,7 +5,7 @@
 	padding-left: 16px;
 	padding-bottom: 40px;
 	background-color: $colorFon;
-		@media (min-width: 768px) {
+		@media (min-width: $tablet) {
 			padding-left: 24px;
 			padding-bottom: 47px;
 		}
@@ -18,7 +18,7 @@
 		// height: 100px;
 		padding-bottom: 16px;
 		color: $colorBlack;
-			@media (min-width: 768px) {
+			@media (min-width: $tablet) {
 				width: 421px;
 				height: 60px;
 			}
@@ -28,7 +28,7 @@
 		display: inline-block;
 		color: $colorBlack;
 		width: 192px;
-			@media (min-width: 768px) {
+			@media (min-width: $tablet) {
 				display: inline;
 			}
 

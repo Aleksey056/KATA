@@ -11,7 +11,7 @@
 	justify-content: space-between;
 	transform: translateX(-320px);
 	transition: transform 0.8s;
-		@media (min-width: 1440px) {
+		@media (min-width: $widescreen) {
 			box-shadow: none;
 			background-color: $colorWhite;
 			transform: translateX(0);
@@ -74,7 +74,7 @@
 
 	.nav {
 		padding-bottom: 32px;
-		@media (min-width: 1440px) {
+		@media (min-width: $widescreen) {
 			background-color: $colorWhite;
 		}
 	}
@@ -152,7 +152,7 @@
 	background-color: $colorWhite;
 	box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
 	z-index: 300;
-		@media (min-width: 1440px) {
+		@media (min-width: $widescreen) {
 			box-shadow: none;
 		}
 }

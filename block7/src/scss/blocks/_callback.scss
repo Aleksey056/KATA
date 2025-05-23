@@ -9,7 +9,7 @@
   transform: translateX(513px);
 	transition: transform 0.8s;
   height: 100%;
-    @media (min-width: 1440px) {
+    @media (min-width: $widescreen) {
       width: 440px;
     }
 
@@ -18,7 +18,7 @@
   margin-top: 24px;
   margin-left: 16px;
 	
-    @media (min-width: 1440px) {
+    @media (min-width: $widescreen) {
       position: absolute;
       margin-top: 0;
       top: 32px;
@@ -54,7 +54,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 16px;
-      @media (min-width: 1440px) {
+      @media (min-width: $widescreen) {
         padding-left: 32px;
         }
     &__number{
@@ -62,7 +62,7 @@
       height: 48px;
       border-radius: 8px;
       border: 1px solid $colorFormBorder;
-        @media (min-width: 1440px) {
+        @media (min-width: $widescreen) {
           width: 376px;
         }
     }

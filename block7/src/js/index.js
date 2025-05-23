@@ -25,6 +25,28 @@ function swiperFunction() {
 swiperFunction();
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const swiperBrands = document.querySelectorAll('.swiper-brands');
 
 let brandsImage = [
@@ -254,6 +276,71 @@ createCardPrice (price);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// expand block
+
+const expandBrands = document.getElementById('brandsList');
+const expandButtonText = document.getElementById('expandButtonText');
+
+expandButtonText.addEventListener('click', function () {
+	expandBrands.classList.toggle('swiper-brands--expand');
+	expandButton.classList.toggle('expand-button--expand');
+	if (expandBrands.classList.contains('swiper-brands--expand')) {
+		expandButtonText.textContent = 'Скрыть';
+	} else {
+		expandButtonText.textContent = 'Показать всё';
+	}
+	
+});
+
+const expandTechnic = document.getElementById('technicList');
+const expandButtonTechnic = document.getElementById('technic-expandButtonText');
+
+expandButtonTechnic.addEventListener('click', function () {
+	expandTechnic.classList.toggle('swiper-technic--expand');
+	technicExpandButton.classList.toggle('expand-button--expand');
+	if (expandTechnic.classList.contains('swiper-technic--expand')) {
+		expandButtonTechnic.textContent = 'Скрыть';
+	} else {
+		expandButtonTechnic.textContent = 'Показать всё';
+	}
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // BUTTON FUNCTIONAL
 
 const buttonBurger = document.getElementById('buttonBurger');
@@ -318,50 +405,36 @@ buttonCallbackHidden.addEventListener('click', function() {
 
 
 
-// expand block
 
-const expandBrands = document.getElementById('brandsList');
-const expandButtonText = document.getElementById('expandButtonText');
 
-expandButtonText.addEventListener('click', function () {
-	expandBrands.classList.toggle('swiper-brands--expand');
-	expandButton.classList.toggle('expand-button--expand');
-	if (expandBrands.classList.contains('swiper-brands--expand')) {
-		expandButtonText.textContent = 'Скрыть';
-	} else {
-		expandButtonText.textContent = 'Показать всё';
-	}
-	
-});
 
-const expandTechnic = document.getElementById('technicList');
-const expandButtonTechnic = document.getElementById('technic-expandButtonText');
 
-expandButtonTechnic.addEventListener('click', function () {
-	expandTechnic.classList.toggle('swiper-technic--expand');
-	technicExpandButton.classList.toggle('expand-button--expand');
-	if (expandTechnic.classList.contains('swiper-technic--expand')) {
-		expandButtonTechnic.textContent = 'Скрыть';
-	} else {
-		expandButtonTechnic.textContent = 'Показать всё';
-	}
-});
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 function keyESC () {
 	document.addEventListener('keydown', function(e){
     if (e.keyCode === 27 && feedback.classList.contains('feedback--active') ||
-    		e.keyCode === 27 && main.classList.contains('mobil-menu--active') ||
-      	e.keyCode === 27 && callback.classList.contains('callback--open') ||
-				e.keyCode === 27 && main.classList.contains('blur')) {
+    		e.keyCode === 27 && windowBlur.classList.contains('mobil-menu--active') ||
+      	e.keyCode === 27 && callback.classList.contains('callback--active') ||
+				e.keyCode === 27 && windowBlur.classList.contains('windowBlur--active')) {
       		
 					
 					feedback.classList.remove('feedback--active');
       		callback.classList.remove('callback--active');
 					mobilMenu.classList.remove('mobil-menu--active');
-					mobilMenu.classList.remove('blur');
-					main.classList.remove('blur');
+					windowBlur.classList.remove('windowBlur--active');
     }
   })
 }
@@ -369,26 +442,25 @@ keyESC();
 
 
 
-// document.addEventListener('click', function(evt){
-//   if(evt.target.classList.contains('blur')){
-//     feedback.classList.remove('feedback--active');
-//     callback.classList.remove('callback--active');
-// 		mobilMenu.classList.remove('mobil-menu--active');
-// 		mobilMenu.classList.remove('blur');
-// 		windowBlur.classList.remove('blur');
-//   }
-// })
 
 
-// const windowBlur = document.classList.contains('windowBlur');
 
-// function blur (toggle) {
-// 	if (toggle) {
-// 		windowBlur.classList.add('--active');
 
-// 	} else {
-// 		windowBlur.classList.remove('--active');
 
-// 	}
-// }
+
+
+
+
+
+
+
+document.addEventListener('click', function(evt){
+  if(evt.target.classList.contains('windowBlur')){
+    feedback.classList.remove('feedback--active');
+    callback.classList.remove('callback--active');
+		mobilMenu.classList.remove('mobil-menu--active');
+		mobilMenu.classList.remove('windowBlur--active');
+		windowBlur.classList.remove('windowBlur--active');
+  }
+})
 

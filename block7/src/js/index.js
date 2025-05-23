@@ -360,42 +360,51 @@ const windowBlur = document.getElementById('windowBlur');
 
 
 
+
+
 // drop-burger
+
 buttonBurger.addEventListener('click', function () {
 	mobilMenu.classList.add('mobil-menu--active');
 	windowBlur.classList.add('windowBlur--active');
 });
+
 buttonBurgerHidden.addEventListener('click', function() {
 	mobilMenu.classList.remove('mobil-menu--active');
 	windowBlur.classList.remove('windowBlur--active');
 });
 
+
+
 // drop-feedback
+
 buttonFeedback.addEventListener('click', function() {
 	feedback.classList.add('feedback--active');
 	mobilMenu.classList.remove('mobil-menu--active');
+	callback.classList.remove('callback--active');
 	mobilMenu.classList.add('windowBlur--active')
 	windowBlur.classList.add('windowBlur--active');
 });
+
 buttonFeedbackHidden.addEventListener('click', function() {
-	console.log('ckic')
 	feedback.classList.remove('feedback--active');
 	windowBlur.classList.remove('windowBlur--active');
 	mobilMenu.classList.remove('windowBlur--active')
 });
 
+
+
 //drop-callback
+
 buttonCallback.addEventListener('click', function() {
-	console.log("нажатие")
 	callback.classList.add('callback--active');
 	mobilMenu.classList.remove('mobil-menu--active');
+	feedback.classList.remove('feedback--active');
 	mobilMenu.classList.add('windowBlur--active')
 	windowBlur.classList.add('windowBlur--active');
-	blur(false);
 });
+
 buttonCallbackHidden.addEventListener('click', function() {
-	console.log("закрытие")
-	console.log('ckic')
 	callback.classList.remove('callback--active');
 	windowBlur.classList.remove('windowBlur--active');
 	mobilMenu.classList.remove('windowBlur--active')
@@ -426,13 +435,13 @@ buttonCallbackHidden.addEventListener('click', function() {
 function keyESC () {
 	document.addEventListener('keydown', function(e){
     if (e.keyCode === 27 && feedback.classList.contains('feedback--active') ||
-    		e.keyCode === 27 && windowBlur.classList.contains('mobil-menu--active') ||
-      	e.keyCode === 27 && callback.classList.contains('callback--active') ||
+				e.keyCode === 27 && windowBlur.classList.contains('mobil-menu--active') ||
+				e.keyCode === 27 && callback.classList.contains('callback--active') ||
 				e.keyCode === 27 && windowBlur.classList.contains('windowBlur--active')) {
-      		
+
 					
 					feedback.classList.remove('feedback--active');
-      		callback.classList.remove('callback--active');
+					callback.classList.remove('callback--active');
 					mobilMenu.classList.remove('mobil-menu--active');
 					windowBlur.classList.remove('windowBlur--active');
     }

@@ -25,9 +25,6 @@ function swiperFunction() {
 swiperFunction();
 
 
-
-
-
 const swiperBrands = document.querySelectorAll('.swiper-brands');
 
 let brandsImage = [
@@ -271,30 +268,33 @@ const buttonCallbackHidden = document.getElementById('buttonCallbackHidden');
 const mobilMenu = document.getElementById('mobil-menu');
 const feedback = document.getElementById('feedback');
 const callback = document.getElementById('callback');
-const main = document.querySelector('main', 'mobil-menu');
+const windowBlur = document.getElementById('windowBlur');
+
+
+
 
 // drop-burger
 buttonBurger.addEventListener('click', function () {
 	mobilMenu.classList.add('mobil-menu--active');
-	main.classList.add('blur');
+	windowBlur.classList.add('windowBlur--active');
 });
 buttonBurgerHidden.addEventListener('click', function() {
 	mobilMenu.classList.remove('mobil-menu--active');
-	main.classList.remove('blur');
+	windowBlur.classList.remove('windowBlur--active');
 });
 
 // drop-feedback
 buttonFeedback.addEventListener('click', function() {
 	feedback.classList.add('feedback--active');
 	mobilMenu.classList.remove('mobil-menu--active');
-	mobilMenu.classList.add('blur')
-	main.classList.add('blur');
+	mobilMenu.classList.add('windowBlur--active')
+	windowBlur.classList.add('windowBlur--active');
 });
 buttonFeedbackHidden.addEventListener('click', function() {
 	console.log('ckic')
 	feedback.classList.remove('feedback--active');
-	main.classList.remove('blur');
-	mobilMenu.classList.remove('blur')
+	windowBlur.classList.remove('windowBlur--active');
+	mobilMenu.classList.remove('windowBlur--active')
 });
 
 //drop-callback
@@ -302,15 +302,16 @@ buttonCallback.addEventListener('click', function() {
 	console.log("нажатие")
 	callback.classList.add('callback--active');
 	mobilMenu.classList.remove('mobil-menu--active');
-	mobilMenu.classList.add('blur')
-	main.classList.add('blur');
+	mobilMenu.classList.add('windowBlur--active')
+	windowBlur.classList.add('windowBlur--active');
+	blur(false);
 });
 buttonCallbackHidden.addEventListener('click', function() {
 	console.log("закрытие")
 	console.log('ckic')
 	callback.classList.remove('callback--active');
-	main.classList.remove('blur');
-	mobilMenu.classList.remove('blur')
+	windowBlur.classList.remove('windowBlur--active');
+	mobilMenu.classList.remove('windowBlur--active')
 });
 
 
@@ -368,19 +369,26 @@ keyESC();
 
 
 
-document.addEventListener('click', function(evt){
-  if(evt.target.classList.contains('blur')){
-    feedback.classList.remove('feedback--active');
-    callback.classList.remove('callback--active');
-		mobilMenu.classList.remove('mobil-menu--active');
-		mobilMenu.classList.remove('blur');
-		main.classList.remove('blur');
-  }
-})
+// document.addEventListener('click', function(evt){
+//   if(evt.target.classList.contains('blur')){
+//     feedback.classList.remove('feedback--active');
+//     callback.classList.remove('callback--active');
+// 		mobilMenu.classList.remove('mobil-menu--active');
+// 		mobilMenu.classList.remove('blur');
+// 		windowBlur.classList.remove('blur');
+//   }
+// })
 
 
+// const windowBlur = document.classList.contains('windowBlur');
 
-function bodyBlur (toggle) {
-	document.classList.add('blur')
-	
-}
+// function blur (toggle) {
+// 	if (toggle) {
+// 		windowBlur.classList.add('--active');
+
+// 	} else {
+// 		windowBlur.classList.remove('--active');
+
+// 	}
+// }
+

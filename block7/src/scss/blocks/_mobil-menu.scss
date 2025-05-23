@@ -10,6 +10,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	transform: translateX(-320px);
+	transition: transform 0.8s;
 		@media (min-width: 1440px) {
 			box-shadow: none;
 			background-color: $colorWhite;

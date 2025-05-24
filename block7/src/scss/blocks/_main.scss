@@ -25,7 +25,7 @@ main {
 	.logo {
 		@media (min-width: $tablet) {
 			background-color: #FFFFFF;
-			background-image: url(../img/header/Header_Group.svg);
+			background-image: url(../../img/header/Header_Group.svg);
 			width: 96.54814910888672px;
 			height: 50.814815521240234px;
 			order: 1;
@@ -53,7 +53,7 @@ main {
 		&__img {
 			height: 40px;
 			width: 4px;
-			background-image: url(../img/title/highlight.svg);
+			background-image: url(../../img/title/highlight.svg);
 		}
 		&__text {
 			margin: 0;

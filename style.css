@@ -54,7 +54,7 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
       gap: 15px; }
   .header .logo {
     background-color: #FFFFFF;
-    background-image: url("/src/img/header/Header_Group.svg");
+    background-image: url(./static/Header_Group.svg);
     width: 96.54814910888672px;
     height: 50.814815521240234px;
     border-style: none; }
@@ -63,7 +63,7 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
     border: 0px;
     width: 2px;
     height: 32px;
-    background-image: url("/src/img/header/divider.svg"); }
+    background-image: url(./static/divider.svg); }
   .header .shadow {
     margin: 0;
     margin-left: 0;
@@ -93,7 +93,7 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
       gap: 16px; }
     .header .logo {
       background-color: #FFFFFF;
-      background-image: url("/src/img/header/Header_Group.svg");
+      background-image: url(./static/Header_Group.svg);
       width: 96.54814910888672px;
       height: 50.814815521240234px;
       order: 1;
@@ -172,7 +172,7 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
       gap: 8px;
       border: none; }
       .swiper .expand-button__img {
-        background-image: url("/src/img/body/expand.svg");
+        background-image: url(./static/expand.svg);
         width: 24px;
         height: 24px; } }
 
@@ -226,7 +226,7 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
   @media (min-width: 768px) {
     .main .logo {
       background-color: #FFFFFF;
-      background-image: url("/src/img/header/Header_Group.svg");
+      background-image: url(./static/Header_Group.svg);
       width: 96.54814910888672px;
       height: 50.814815521240234px;
       order: 1;
@@ -248,7 +248,7 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
     .main .title-block__img {
       height: 40px;
       width: 4px;
-      background-image: url("/src/img/title/highlight.svg"); }
+      background-image: url(./static/highlight.svg); }
     .main .title-block__text {
       margin: 0;
       font-weight: 700;
@@ -387,7 +387,7 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
     background-color: #FFFFFF;
     width: 40px;
     height: 40px;
-    background-image: url("/src/img/brands/go.svg"); }
+    background-image: url(./static/go.svg); }
     .swiper-brands__item .icon-button:hover {
       opacity: 50%; }
 
@@ -432,7 +432,7 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
       background-color: #FFFFFF;
       width: 40px;
       height: 40px;
-      background-image: url("/src/img/brands/go.svg"); }
+      background-image: url(./static/go.svg); }
       .technic .swiper-technic__item .icon-button:hover {
         opacity: 50%; }
   .technic .swiper-technic .swiper-slide {
@@ -529,7 +529,7 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
       background-color: #FFFFFF;
       width: 119px;
       height: 32px;
-      background-image: url("/src/img/price/price-button.svg"); }
+      background-image: url(./static/price-button.svg); }
       @media (min-width: 768px) {
         .price .swiper-price__item .icon-price {
           position: static; } }
@@ -593,18 +593,18 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
     border-radius: 50%;
     border-style: none; }
     .mobil-menu .round-icon--burger {
-      background-image: url("/src/img/mobile_menu/burger.svg"); }
+      background-image: url(./static/burger.svg); }
     .mobil-menu .round-icon--search {
-      background-image: url("/src/img/mobile_menu/search.svg"); }
+      background-image: url(./static/search.svg); }
     .mobil-menu .round-icon--call {
-      background-image: url("/src/img/header/call.svg"); }
+      background-image: url(./static/call.svg); }
     .mobil-menu .round-icon--chat {
-      background-image: url("/src/img/header/chat.svg"); }
+      background-image: url(./static/chat.svg); }
     .mobil-menu .round-icon--profile {
-      background-image: url("/src/img/header/profile.svg"); }
+      background-image: url(./static/profile.svg); }
   .mobil-menu .logo {
     background-color: #FFFFFF;
-    background-image: url("/src/img/header/Header_Group.svg");
+    background-image: url(./static/Header_Group.svg);
     width: 96.54814910888672px;
     height: 50.814815521240234px;
     border-style: none; }
@@ -629,7 +629,7 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
       text-decoration: none;
       transition: all 0.5s ease-out; }
     .mobil-menu .menu-block--hover:hover {
-      background-image: url("/src/img/title/highlight.svg");
+      background-image: url(./static/highlight.svg);
       background-repeat: no-repeat; }
     .mobil-menu .menu-block__text--hover:hover {
       color: #7E7E82; }
@@ -684,7 +684,7 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
     .feedback {
       width: 440px; } }
   .feedback .round-icon--feedback {
-    background-image: url("/src/img/mobile_menu/burger.svg");
+    background-image: url(./static/burger.svg);
     margin-top: 24px;
     margin-left: 16px; }
     @media (min-width: 1366px) {
@@ -704,7 +704,7 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
     .feedback .feedback-title__img {
       height: 40px;
       width: 4px;
-      background-image: url("/src/img/title/highlight.svg"); }
+      background-image: url(./static/highlight.svg); }
     .feedback .feedback-title__text {
       margin: 0;
       font-weight: 700;
@@ -758,7 +758,7 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
       width: 136px;
       height: 32px;
       border-radius: 16px;
-      background-image: url("/src/img/feedback/Group.svg"); }
+      background-image: url(./static/Group.svg); }
       .feedback .form__button-send:hover {
         opacity: 50%; }
 
@@ -783,7 +783,7 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
     .callback {
       width: 440px; } }
   .callback .round-icon--callback {
-    background-image: url("/src/img/mobile_menu/burger.svg");
+    background-image: url(./static/burger.svg);
     margin-top: 24px;
     margin-left: 16px; }
     @media (min-width: 1366px) {
@@ -803,7 +803,7 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
     .callback .callback-title__img {
       height: 40px;
       width: 4px;
-      background-image: url("/src/src/img/title/highlight.svg"); }
+      background-image: url(./static/highlight.svg); }
     .callback .callback-title__text {
       margin: 0;
       font-weight: 700;
@@ -833,7 +833,7 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
       width: 136px;
       height: 32px;
       border-radius: 16px;
-      background-image: url("/src/img/feedback/Group.svg"); }
+      background-image: url(./static/Group.svg); }
       .callback .form__button-send:hover {
         opacity: 50%; }
   .callback input {
@@ -887,7 +887,7 @@ body, p, ul, li, button, h1, h2, h3, h4, h5, h6, a {
         display: inline; } }
     .commercial__link .line {
       position: absolute;
-      background-image: url("/src/img/main/more.svg");
+      background-image: url(./static/more.svg);
       background-position: center;
       width: 24px;
       height: 24px; }
@@ -967,20 +967,20 @@ footer {
   border-radius: 50%;
   border-style: none; }
   .round-icon--burger {
-    background-image: url("/src/img/header/burger.svg"); }
+    background-image: url(./static/burger.svg); }
     @media (min-width: 1366px) {
       .round-icon--burger {
         display: none; } }
   .round-icon--repair {
-    background-image: url("/src/img/header/repair.svg"); }
+    background-image: url(./static/repair.svg); }
   .round-icon--checkstatus {
-    background-image: url("/src/img/header/checkstatus.svg"); }
+    background-image: url(./static/checkstatus.svg); }
   .round-icon--call {
-    background-image: url("/src/img/header/call.svg"); }
+    background-image: url(./static/call.svg); }
   .round-icon--chat {
-    background-image: url("/src/img/header/chat.svg"); }
+    background-image: url(./static/chat.svg); }
   .round-icon--profile {
-    background-image: url("/src/img/header/profile.svg"); }
+    background-image: url(./static/profile.svg); }
   .round-icon:hover {
     opacity: 50%; }
 
@@ -995,7 +995,7 @@ footer {
   border: none;
   background-color: #F8F8F8; }
   .expand-button__img {
-    background-image: url("/src/img/body/expand.svg");
+    background-image: url(./static/expand.svg);
     width: 24px;
     height: 24px; }
 

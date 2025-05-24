@@ -14,7 +14,7 @@
     }
 
   .round-icon--feedback {
-  background-image: url('img/mobile_menu/burger.svg');
+  background-image: url(../img/mobile_menu/burger.svg);
   margin-top: 24px;
   margin-left: 16px;
     @media (min-width: $widescreen) {
@@ -36,7 +36,7 @@
 		&__img {
 			height: 40px;
 			width: 4px;
-			background-image: url('img/title/highlight.svg');
+			background-image: url(../img/title/highlight.svg);
 		}
 		&__text {
 			margin: 0;
@@ -100,7 +100,7 @@
       width: 136px;
       height: 32px;
       border-radius: 16px;
-      background-image: url('img/feedback/Group.svg');
+      background-image: url(../img/feedback/Group.svg);
 			&:hover {
 				opacity: 50%;
 			}

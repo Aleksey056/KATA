@@ -34,7 +34,7 @@
 
 	.logo {
 		background-color: $colorWhite;
-		background-image: url('./img/header/Header_Group.svg');
+		background-image: url('/src/img/header/Header_Group.svg');
 		width: 96.54814910888672px;
 		height: 50.814815521240234px;
 		border-style: none; 
@@ -45,7 +45,7 @@
 		border: 0px;
 		width: 2px;
 		height: 32px;
-		background-image: url('./img/header/divider.svg');
+		background-image: url('/src/img/header/divider.svg');
 	}
 
 	.shadow {
@@ -89,7 +89,7 @@
 	}
 		.logo {
 			background-color: $colorWhite;
-			background-image: url('./img/header/Header_Group.svg');
+			background-image: url('/src/img/header/Header_Group.svg');
 			width: 96.54814910888672px;
 			height: 50.814815521240234px;
 			order: 1;

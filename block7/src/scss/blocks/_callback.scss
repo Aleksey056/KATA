@@ -14,7 +14,7 @@
     }
 
   .round-icon--callback {
-  background-image: url('./img/mobile_menu/burger.svg');
+  background-image: url('/src/img/mobile_menu/burger.svg');
   margin-top: 24px;
   margin-left: 16px;
 	
@@ -37,7 +37,7 @@
 		&__img {
 			height: 40px;
 			width: 4px;
-			background-image: url('./src/img/title/highlight.svg');
+			background-image: url('/src/src/img/title/highlight.svg');
 		}
 		&__text {
 			margin: 0;
@@ -72,7 +72,7 @@
       width: 136px;
       height: 32px;
       border-radius: 16px;
-      background-image: url('./src/img/feedback/Group.svg');
+      background-image: url('/src/img/feedback/Group.svg');
 			&:hover {
 				opacity: 50%;
 			}
